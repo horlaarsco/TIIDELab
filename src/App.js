@@ -56,7 +56,7 @@ const Wrapper = styled.div`
 
   & > div {
     position: relative;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 `;

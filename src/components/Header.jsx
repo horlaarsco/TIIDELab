@@ -35,7 +35,7 @@ export function Header() {
 const Head = styled.header`
   span {
     background: #f4f2f2;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

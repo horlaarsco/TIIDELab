@@ -139,7 +139,7 @@ const Faq = styled.div`
   margin-top: 200px;
   position: relative;
   span {
-    padding: 5rem 18rem;
+    padding: 5rem 15rem;
     background: #f4f4f4;
     display: block;
   }
@@ -151,7 +151,7 @@ const Faq = styled.div`
   }
 
   div {
-    padding: 5rem 18rem;
+    padding: 5rem 15rem;
     margin-top: 13rem;
   }
 
@@ -191,7 +191,7 @@ const LightApplyButton = styled(ApplyButton)`
 
 const FormDiv = styled.div`
   position: relative;
-  padding: 5rem 18rem;
+  padding: 5rem 15rem;
 
   h2 {
     font-size: 2rem;
@@ -273,7 +273,7 @@ const Number = styled.p`
 `;
 
 const Bottom = styled.div`
-  padding: 7rem 18rem;
+  padding: 7rem 15rem;
   p {
     width: 572px;
     font-weight: 300;
@@ -285,7 +285,7 @@ const Bottom = styled.div`
 `;
 
 const Top = styled.div`
-  padding: 6rem 18rem;
+  padding: 6rem 15rem;
   background: #f4f2f2;
   /* width: 572px; */
   position: relative;
