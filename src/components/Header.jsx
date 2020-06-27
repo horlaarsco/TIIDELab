@@ -33,19 +33,20 @@ export function Header() {
 }
 
 const Head = styled.header`
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   span {
     background: #f4f2f2;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 4rem 5.5rem;
+    padding: 3rem 5.5rem;
     font-size: 1.9rem;
     align-items: center;
     padding-bottom: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
   }
 
   div {
