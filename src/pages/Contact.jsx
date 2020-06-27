@@ -25,7 +25,7 @@ export function Contact() {
         </Bottom>
         <Absolute>
           <SquareCircle></SquareCircle>
-          <img src='/Group.png' alt='' />
+          <img width='350px' src='/Group.png' alt='' />
           <span></span>
         </Absolute>
       </Hero>
@@ -47,7 +47,7 @@ export function Contact() {
       <Faq>
         <span>
           <Header>FAQ’s</Header>
-          <img src='/faq.svg' alt='' />
+          <img width='600px' src='/faq.svg' alt='' />
         </span>
         <div>
           <p> 1. What is the duration of the training?</p>
@@ -123,23 +123,23 @@ const ApplyDiv = styled.div`
   color: white;
 
   h3 {
-    font-size: 3rem;
     margin: 0;
+    font-size: 3.5rem;
+    font-weight: 900;
   }
 
   p {
     max-width: 630px;
-    font-size: 1.9rem;
     line-height: 1.5;
     margin: 2.4rem 0;
   }
 `;
 
 const Faq = styled.div`
-  margin-top: 266px;
+  margin-top: 200px;
   position: relative;
   span {
-    padding: 5rem 22rem;
+    padding: 5rem 18rem;
     background: #f4f4f4;
     display: block;
   }
@@ -147,17 +147,15 @@ const Faq = styled.div`
   img {
     position: absolute;
     right: 0;
-    top: -266px;
+    top: -200px;
   }
 
   div {
-    padding: 5rem 22rem;
+    padding: 5rem 18rem;
     margin-top: 13rem;
   }
 
   p {
-    font-size: 2.2rem;
-    line-height: 1.2;
     color: #080808;
     font-weight: 300;
   }
@@ -169,7 +167,7 @@ const ApplyButton = styled.button`
   border: none;
   padding: 1rem 3rem;
   position: relative;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   &:after {
     content: " ";
     border: 1px solid #c13147;
@@ -193,10 +191,11 @@ const LightApplyButton = styled(ApplyButton)`
 
 const FormDiv = styled.div`
   position: relative;
-  padding: 5rem 22rem;
+  padding: 5rem 18rem;
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    color: #434343;
     margin-bottom: 5rem;
   }
 
@@ -207,7 +206,7 @@ const FormDiv = styled.div`
     display: block;
     border: none;
     border-bottom: 1px solid #979797;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     padding: 1.8rem;
     color: #080808;
     width: 100%;
@@ -219,7 +218,7 @@ const FormDiv = styled.div`
     border-bottom: 1px solid #979797;
     width: 100%;
     margin-bottom: 3rem;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     padding: 1.8rem;
     color: #080808;
   }
@@ -230,7 +229,7 @@ const FormDiv = styled.div`
     top: 0;
     background: #fff5f7;
     height: 100%;
-    width: 450px;
+    width: 350px;
     border-top-left-radius: 40%;
     border-bottom-left-radius: 40%;
   }
@@ -253,32 +252,30 @@ const SquareCircle = styled.div`
   height: 108px;
   width: 54px;
   background: #c13147;
-  border-bottom-left-radius: 80px;
+  border-bottom-left-radius: 70px;
   margin-right: 1.5rem;
 `;
 const TopCircle = styled.div`
   background: #e9e8e8;
-  width: 80px;
-  height: 80px;
-  border-top-left-radius: 80px;
+  width: 70px;
+  height: 70px;
+  border-top-left-radius: 70px;
 `;
 
 const BottomCircle = styled.div`
   background: #c6c4c4;
-  width: 80px;
-  height: 80px;
-  border-bottom-left-radius: 80px;
+  width: 70px;
+  height: 70px;
+  border-bottom-left-radius: 70px;
 `;
 const Number = styled.p`
   line-height: 1;
 `;
 
 const Bottom = styled.div`
-  padding: 7rem 22rem;
+  padding: 7rem 18rem;
   p {
-    font-size: 1.9rem;
     width: 572px;
-    line-height: 1.36;
     font-weight: 300;
   }
 
@@ -288,7 +285,7 @@ const Bottom = styled.div`
 `;
 
 const Top = styled.div`
-  padding: 8rem 22rem;
+  padding: 6rem 18rem;
   background: #f4f2f2;
   /* width: 572px; */
   position: relative;
@@ -318,7 +315,7 @@ const Hero = styled.div`
 `;
 
 const Header = styled.h2`
-  font-size: 4.1rem;
+  font-size: 3.5rem;
   color: #434343;
   font-weight: 900;
 `;

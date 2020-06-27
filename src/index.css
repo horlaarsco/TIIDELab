@@ -42,3 +42,7 @@ a:active {
   text-decoration: none;
   color: black;
 }
+
+p {
+  font-size: 1.6rem;
+}
