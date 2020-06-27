@@ -25,7 +25,7 @@ export function Contact() {
         </Bottom>
         <Absolute>
           <SquareCircle></SquareCircle>
-          <img src='/Group.svg' alt='' />
+          <img src='/Group.png' alt='' />
           <span></span>
         </Absolute>
       </Hero>
