@@ -47,7 +47,7 @@ export function Contact() {
       <Faq>
         <span>
           <Header>FAQ’s</Header>
-          <img width='600px' src='/faq.svg' alt='' />
+          <img width='550px' src='/faq.svg' alt='' />
         </span>
         <div>
           <p> 1. What is the duration of the training?</p>
@@ -139,7 +139,7 @@ const Faq = styled.div`
   margin-top: 200px;
   position: relative;
   span {
-    padding: 5rem 15rem;
+    padding: 3rem 15rem;
     background: #f4f4f4;
     display: block;
   }
@@ -151,7 +151,7 @@ const Faq = styled.div`
   }
 
   div {
-    padding: 5rem 15rem;
+    padding: 3rem 15rem;
     margin-top: 13rem;
   }
 
@@ -249,8 +249,8 @@ const Absolute = styled.div`
 `;
 
 const SquareCircle = styled.div`
-  height: 108px;
-  width: 54px;
+  height: 100px;
+  width: 50px;
   background: #c13147;
   border-bottom-left-radius: 70px;
   margin-right: 1.5rem;
@@ -273,7 +273,7 @@ const Number = styled.p`
 `;
 
 const Bottom = styled.div`
-  padding: 7rem 15rem;
+  padding: 5rem 15rem;
   p {
     width: 572px;
     font-weight: 300;
