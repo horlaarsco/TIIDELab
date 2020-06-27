@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 export function Header() {
   return (
     <Head>
-      <img className='navbar-brand' src='/tiidelab-logo.svg' alt='' />
+      <Link to='/'>
+        <img className='navbar-brand' src='/tiidelab-logo.svg' alt='' />
+      </Link>
       <Nav>
         <li>
           <Link to='/'> Home</Link>
@@ -15,6 +17,9 @@ export function Header() {
         </li>
         <li>
           <Link to='/contact'> Contact Us</Link>
+        </li>
+        <li>
+          <Link to='/gallery'> Gallery</Link>
         </li>
       </Nav>
       <div>

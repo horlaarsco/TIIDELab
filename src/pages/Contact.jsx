@@ -44,9 +44,124 @@ export function Contact() {
         </form>
         <div></div>
       </FormDiv>
+      <Faq>
+        <span>
+          <Header>FAQ’s</Header>
+          <img src='/faq.svg' alt='' />
+        </span>
+        <div>
+          <p> 1. What is the duration of the training?</p>
+          <Answer>
+            <strong> Answer:</strong> it’s a 5 month intensive training
+          </Answer>
+          <p> 2. Can I apply if I have a job?</p>
+          <Answer>
+            <strong> Answer:</strong> The training will be very intensive and we
+            do not want any distractions that could hinder your progress. It is
+            80% remote and 20% physical.
+          </Answer>
+          <p> 3. What Learning methods will be employed?</p>
+          <Answer>
+            <strong> Answer:</strong> We use a blended learning approach which
+            is 70% self-learning and 30% mentor.
+          </Answer>
+          <p> 4. Will I get employed after my training?</p>
+          <Answer>
+            <strong> Answer:</strong> After the training you will be interviewed
+            by partner companies who need interns with the possibility of full
+            time employment after an evaluation period.
+          </Answer>
+          <p> 5. Must I reside in Lagos or Abuja?</p>
+          <Answer>
+            <strong> Answer:</strong> You must not reside in Abuja or Lagos
+            provided you will not miss the physical meet up once a week. The
+            physical meet up is important requirement and absence won’t be
+            tolerated.
+          </Answer>
+          <p> 6. Will I pay for this opportunity?</p>
+          <Answer>
+            <strong> Answer:</strong> TIIDELab reduces the burden of this cost
+            intensive process on the part of the fellows. We are proud to
+            partner with ITF and NECA whose values align with our core mission
+            and believe in “Harnessing the African Potential”. Using a very
+            competitive selection process, we ensure that passionate individuals
+            are selected for this process.
+          </Answer>
+        </div>
+      </Faq>
+      <ApplyDiv>
+        <h3>Do not be left out</h3>
+        <p>
+          Whether you are completely new to coding or had prior experience, we
+          will help you accelerate your dream of becoming a world-class software
+          developer or designer in record time.
+        </p>
+        <LightApplyButton>Apply Now</LightApplyButton>
+      </ApplyDiv>
     </div>
   );
 }
+
+const Answer = styled.p`
+  display: flex;
+  margin-top: 2rem;
+  line-height: 1.7;
+
+  strong {
+    margin-right: 1rem;
+    font-weight: 600;
+  }
+`;
+const ApplyDiv = styled.div`
+  padding: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: black;
+  color: white;
+
+  h3 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  p {
+    max-width: 630px;
+    font-size: 1.9rem;
+    line-height: 1.5;
+    margin: 2.4rem 0;
+  }
+`;
+
+const Faq = styled.div`
+  margin-top: 266px;
+  position: relative;
+  span {
+    padding: 5rem 22rem;
+    background: #f4f4f4;
+    display: block;
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    top: -266px;
+  }
+
+  div {
+    padding: 5rem 22rem;
+    margin-top: 13rem;
+  }
+
+  p {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: #080808;
+    font-weight: 300;
+  }
+`;
 
 const ApplyButton = styled.button`
   background: #c13147;
@@ -63,6 +178,16 @@ const ApplyButton = styled.button`
     height: 100%;
     left: -7px;
     bottom: -7px;
+  }
+`;
+
+const LightApplyButton = styled(ApplyButton)`
+  background: white;
+  color: #c13147;
+  border: 1px solid #c13147;
+
+  &:after {
+    border: 1px solid white;
   }
 `;
 
@@ -156,6 +281,10 @@ const Bottom = styled.div`
     line-height: 1.36;
     font-weight: 300;
   }
+
+  strong {
+    font-weight: 600;
+  }
 `;
 
 const Top = styled.div`
@@ -191,5 +320,5 @@ const Hero = styled.div`
 const Header = styled.h2`
   font-size: 4.1rem;
   color: #434343;
-  font-weight: bold;
+  font-weight: 900;
 `;
