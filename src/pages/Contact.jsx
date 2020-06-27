@@ -5,13 +5,20 @@ export function Contact() {
   return (
     <div>
       <Hero>
-        <Top>
-          <Header>Contact Us</Header>
-          <div>
+        <WrapTop>
+          <Absolute>
             <TopCircle></TopCircle>
             <BottomCircle></BottomCircle>
-          </div>
-        </Top>
+          </Absolute>
+          <Top>
+            <Header>Contact Us</Header>
+            <div>
+              <SquareCircle></SquareCircle>
+              <img width='350px' src='/Group.png' alt='' />
+              <span></span>
+            </div>
+          </Top>
+        </WrapTop>
         <Bottom>
           <p>
             Challenges around getting young people employed and productive in
@@ -23,11 +30,6 @@ export function Contact() {
           <Number>+234 906 1995 782</Number>
           <p>* Mon - Sat (9am - 6pm). Sun (2pm - 6pm)</p>
         </Bottom>
-        <Absolute>
-          <SquareCircle></SquareCircle>
-          <img width='350px' src='/Group.png' alt='' />
-          <span></span>
-        </Absolute>
       </Hero>
       <FormDiv>
         <form action=''>
@@ -46,8 +48,10 @@ export function Contact() {
       </FormDiv>
       <Faq>
         <span>
-          <Header>FAQ’s</Header>
-          <img width='550px' src='/faq.svg' alt='' />
+          <div>
+            <Header>FAQ’s</Header>
+            <img width='550px' src='/faq.svg' alt='' />
+          </div>
         </span>
         <div>
           <p> 1. What is the duration of the training?</p>
@@ -137,22 +141,28 @@ const ApplyDiv = styled.div`
 
 const Faq = styled.div`
   margin-top: 200px;
-  position: relative;
   span {
     padding: 3rem 15rem;
     background: #f4f4f4;
     display: block;
+    div {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
   }
 
   img {
     position: absolute;
     right: 0;
-    top: -200px;
+    top: -230px;
   }
 
   div {
     padding: 3rem 15rem;
-    margin-top: 13rem;
+    margin-top: 10rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   p {
@@ -191,6 +201,8 @@ const LightApplyButton = styled(ApplyButton)`
 
 const FormDiv = styled.div`
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 5rem 15rem;
 
   h2 {
@@ -234,19 +246,6 @@ const FormDiv = styled.div`
     border-bottom-left-radius: 40%;
   }
 `;
-const Absolute = styled.div`
-  position: absolute;
-  right: 118px;
-  top: 40px;
-  display: flex;
-
-  span {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: #e7c941;
-  }
-`;
 
 const SquareCircle = styled.div`
   height: 100px;
@@ -273,6 +272,9 @@ const Number = styled.p`
 `;
 
 const Bottom = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+
   padding: 5rem 15rem;
   p {
     width: 572px;
@@ -286,30 +288,32 @@ const Bottom = styled.div`
 
 const Top = styled.div`
   padding: 6rem 15rem;
-  background: #f4f2f2;
-  /* width: 572px; */
+  margin: 0 auto;
   position: relative;
+  max-width: 1200px;
 
   & > div {
     position: absolute;
-    bottom: 15px;
-    right: 0;
+    right: 100px;
+    top: 40px;
+    display: flex;
+
+    span {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #e7c941;
+    }
   }
 `;
-const Right = styled.div`
-  flex: 1;
 
-  img {
-    margin-right: 11.8rem;
-  }
+const Absolute = styled.span`
+  position: absolute;
+  right: 0;
+  top: 80px;
 `;
-
 const Hero = styled.div`
-  /* max-width: 1000px; */
-  /* display: flex; */
-
   position: relative;
-
   img {
   }
 `;
@@ -318,4 +322,8 @@ const Header = styled.h2`
   font-size: 3.5rem;
   color: #434343;
   font-weight: 900;
+`;
+
+const WrapTop = styled.section`
+  background: #f4f2f2;
 `;

@@ -36,6 +36,7 @@ const Head = styled.header`
   position: sticky;
   top: 0;
   z-index: 100;
+  background: #f4f2f2;
 
   span {
     background: #f4f2f2;
