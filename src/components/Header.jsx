@@ -40,7 +40,7 @@ const Head = styled.header`
 
   span {
     background: #f4f2f2;
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

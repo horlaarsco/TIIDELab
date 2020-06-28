@@ -146,7 +146,7 @@ const Faq = styled.div`
     background: #f4f4f4;
     display: block;
     div {
-      max-width: 1200px;
+      max-width: 1240px;
       margin: 0 auto;
       position: relative;
     }
@@ -161,7 +161,7 @@ const Faq = styled.div`
   div {
     padding: 3rem 15rem;
     margin-top: 10rem;
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
   }
 
@@ -201,7 +201,7 @@ const LightApplyButton = styled(ApplyButton)`
 
 const FormDiv = styled.div`
   position: relative;
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 5rem 15rem;
 
@@ -272,7 +272,7 @@ const Number = styled.p`
 `;
 
 const Bottom = styled.div`
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
 
   padding: 5rem 15rem;
@@ -290,7 +290,7 @@ const Top = styled.div`
   padding: 6rem 15rem;
   margin: 0 auto;
   position: relative;
-  max-width: 1200px;
+  max-width: 1240px;
 
   & > div {
     position: absolute;
