@@ -91,10 +91,17 @@ const Ham = styled.div`
   }
 `;
 const MNav = styled.div`
+  position: absolute;
   display: ${({ showNav }) => (showNav ? "block" : "none")};
   padding: 0 4rem;
   padding-bottom: 3rem;
-
+  background-color: #f4f2f2;
+  width: 100%;
+  -webkit-transition: all 0.26s ease-in-out;
+  -moz-transition: all 0.26s ease-in-out;
+  -ms-transition: all 0.26s ease-in-out;
+  -o-transition: all 0.26s ease-in-out;
+  transition: all 0.26s ease-in-out;
   ul {
     list-style-type: none;
     padding: 0;
