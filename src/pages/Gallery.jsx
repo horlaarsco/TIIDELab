@@ -1,5 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import {
+  SectionDiv,
+  WineSemiCircle,
+  Button,
+  TopCircle,
+  BottomCircle,
+  SubHeader,
+  WrapTop,
+  Absolute,
+  Bottom,
+} from "../components";
 
 export function Gallery() {
   return (
@@ -7,13 +18,12 @@ export function Gallery() {
       <Hero>
         <WrapTop>
           <Absolute>
-            <TopCircle></TopCircle>
-            <BottomCircle></BottomCircle>
+            <TopCircle /> <BottomCircle />
           </Absolute>
           <Top>
-            <Header>Gallery</Header>
+            <SubHeader>Gallery</SubHeader>
             <div>
-              <SquareCircle></SquareCircle>
+              <WineSemiCircle />
               <img width='350px' src='/gallery.svg' alt='' />
               <span></span>
             </div>
@@ -33,185 +43,96 @@ export function Gallery() {
           </p>
         </Bottom>
       </Hero>
-      <Images>
-        <div>
-          <LeftImage>
-            <ImageGrid
-              w='100%'
-              h='100%'
-              src='https://via.placeholder.com/400x400.png'
-              alt=''
-            />
-          </LeftImage>
-          <RightImage>
-            <ImageGrid
-              h='50%'
-              src='https://via.placeholder.com/400x400.png'
-              alt=''
-            />
-            <div>
-              <ImageGrid
-                w='50%'
-                src='https://via.placeholder.com/400x400.png'
-                alt=''
-              />
-              <ImageGrid
-                w='50%'
-                src='https://via.placeholder.com/400x400.png'
-                alt=''
-              />
-            </div>
-          </RightImage>
-        </div>
+      <Images className='row'>
+        <img
+          className='col-12 col-sm-4 col-md-3'
+          src='https://via.placeholder.com/400x400.png'
+          alt=''
+        />
+        <img
+          className='col-12 col-sm-4 col-md-3'
+          src='https://via.placeholder.com/400x400.png'
+          alt=''
+        />
+        <img
+          className='col-12 col-sm-4 col-md-3'
+          src='https://via.placeholder.com/400x400.png'
+          alt=''
+        />
+        <img
+          className='col-12 col-sm-4 col-md-3'
+          src='https://via.placeholder.com/400x400.png'
+          alt=''
+        />
+        <img
+          className='col-12 col-sm-4 col-md-3'
+          src='https://via.placeholder.com/400x400.png'
+          alt=''
+        />
+        <img
+          className='col-12 col-sm-4 col-md-3'
+          src='https://via.placeholder.com/400x400.png'
+          alt=''
+        />
+        <img
+          className='col-12 col-sm-4 col-md-3'
+          src='https://via.placeholder.com/400x400.png'
+          alt=''
+        />
+        <img
+          className='col-12 col-sm-4 col-md-3'
+          src='https://via.placeholder.com/400x400.png'
+          alt=''
+        />
       </Images>
-      <Journey>
+      <SectionDiv bg='#c13147'>
         <h3>Be a Junior Developer Today</h3>
         <p>
           We are TIIDELab, an acronym for THINK, INNOVATE, IDEATE, DEVELOP and
           EXECUTE. We are a technology driven enterprise focused on helping
           African youths thrive and impact their society.
         </p>
-        <JourneyButton>Start Journey Now</JourneyButton>
-      </Journey>
+        <Button>Start Journey Now</Button>
+      </SectionDiv>
     </div>
   );
 }
 
-const WrapTop = styled.section`
-  background: #f4f2f2;
-`;
-
 const Images = styled.div`
-  & > div {
-    display: flex;
-  }
-
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 5rem 15rem;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
   img {
     object-fit: cover;
     border: 1px solid white;
-  }
-`;
-
-const RightImage = styled.div`
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-
-  div {
-    display: flex;
-    height: 50%;
-  }
-`;
-const LeftImage = styled.div`
-  width: 50%;
-`;
-
-const ImageGrid = styled.img`
-  width: ${(props) => props.w};
-  height: ${(props) => props.h};
-`;
-
-const JourneyButton = styled.button`
-  background: white;
-  color: #c13147;
-  border: 1px solid #c13147;
-  padding: 1rem 3rem;
-  position: relative;
-  font-size: 1.6rem;
-  &:after {
-    content: " ";
-    border: 1px solid white;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -7px;
-    bottom: -7px;
-  }
-`;
-
-const Journey = styled.div`
-  padding: 8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #c13147;
-  color: white;
-
-  h3 {
-    font-size: 3.5rem;
-    margin: 0;
-    font-weight: 900;
+    padding: 0.5rem;
   }
 
-  p {
-    max-width: 630px;
-    line-height: 1.5;
-    margin: 2.4rem 0;
+  @media (max-width: 1200px) {
+    padding: 3rem 10rem;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 3rem 5rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 3rem;
   }
 `;
 
 const Hero = styled.div`
-  /* max-width: 1000px; */
-  /* display: flex; */
-
   position: relative;
-
-  img {
-  }
-`;
-
-const Header = styled.h2`
-  font-size: 3.5rem;
-  color: #434343;
-  font-weight: 900;
-`;
-
-const SquareCircle = styled.div`
-  height: 108px;
-  width: 54px;
-  background: #c13147;
-  border-bottom-left-radius: 80px;
-  margin-right: 1.5rem;
-`;
-const TopCircle = styled.div`
-  background: #e9e8e8;
-  width: 80px;
-  height: 80px;
-  border-top-left-radius: 80px;
-`;
-
-const BottomCircle = styled.div`
-  background: #c6c4c4;
-  width: 80px;
-  height: 80px;
-  border-bottom-left-radius: 80px;
-`;
-
-const Bottom = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 5rem 15rem;
-  p {
-    width: 572px;
-    font-weight: 300;
-  }
-
-  strong {
-    font-weight: 600;
-  }
 `;
 
 const Top = styled.div`
   padding: 6rem 15rem;
   margin: 0 auto;
   position: relative;
-  max-width: 1200px;
+  max-width: 1300px;
 
   & > div {
     position: absolute;
@@ -226,10 +147,26 @@ const Top = styled.div`
       background: #e7c941;
     }
   }
-`;
 
-const Absolute = styled.span`
-  position: absolute;
-  right: 0;
-  top: 80px;
+  @media (max-width: 1200px) {
+    padding: 5rem 10rem;
+    & > div {
+      right: 0 !important;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    padding: 6rem 5rem;
+    img {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 6rem 3rem;
+
+    & > div {
+      display: none;
+    }
+  }
 `;

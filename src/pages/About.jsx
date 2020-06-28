@@ -302,3 +302,75 @@ export const About = () => {
     </React.Fragment>
   )
 }
+
+const Vision = styled.div`
+  display: flex;
+  max-width: 1300px;
+  margin: 10rem auto;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 3rem 10rem;
+  }
+`;
+
+const LightApplyButton = styled(Button)`
+  background: white;
+  color: #c13147;
+  border: 1px solid #c13147;
+
+  &:after {
+    border: 1px solid white;
+  }
+`;
+
+const Hero = styled.div`
+  position: relative;
+  margin-bottom: 100px;
+`;
+
+const Top = styled.div`
+  padding: 6rem 15rem;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1300px;
+
+  & > div {
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    display: flex;
+
+    span {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #e7c941;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    padding: 5rem 10rem;
+    & > div {
+      right: 0 !important;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    padding: 6rem 5rem;
+    img {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 6rem 3rem;
+
+    & > div {
+      display: none;
+    }
+  }
+`;
