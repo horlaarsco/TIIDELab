@@ -14,7 +14,7 @@ export function Contact() {
             <Header>Contact Us</Header>
             <div>
               <SquareCircle></SquareCircle>
-              <img width='350px' src='/Group.png' alt='' />
+              <img src='/Group.png' alt='' />
               <span></span>
             </div>
           </Top>
@@ -32,7 +32,7 @@ export function Contact() {
         </Bottom>
       </Hero>
       <FormDiv>
-        <form action=''>
+        <Form action=''>
           <h2>Send us a Message</h2>
           <input type='text' placeholder='Email Address*' />
           <input type='text' placeholder='Subject*' />
@@ -43,7 +43,7 @@ export function Contact() {
             placeholder='Message*            '
           ></textarea>
           <ApplyButton>Send Message</ApplyButton>
-        </form>
+        </Form>
         <div></div>
       </FormDiv>
       <Faq>
@@ -126,6 +126,9 @@ const ApplyDiv = styled.div`
   background: black;
   color: white;
 
+  @media (max-width: 758px) {
+    padding: 5rem 3rem;
+  }
   h3 {
     margin: 0;
     font-size: 3.5rem;
@@ -141,6 +144,9 @@ const ApplyDiv = styled.div`
 
 const Faq = styled.div`
   margin-top: 200px;
+  h2 {
+    margin: 4rem 0;
+  }
   span {
     background: #f4f4f4;
     display: block;
@@ -159,16 +165,57 @@ const Faq = styled.div`
     top: -200px;
   }
 
+  @media (max-width: 768px) {
+    img {
+      display: none;
+    }
+  }
+
   div {
     padding: 3rem 15rem;
     margin-top: 10rem;
     max-width: 1300px;
     margin: 0 auto;
   }
-
   p {
     color: #080808;
     font-weight: 300;
+  }
+
+  @media (max-width: 1200px) {
+    div {
+      padding: 3rem 10rem;
+    }
+
+    span {
+      div {
+        padding: 5rem 10rem;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    div {
+      padding: 3rem 5rem;
+    }
+
+    span {
+      div {
+        padding: 5rem 5rem;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    div {
+      padding: 3rem 3rem;
+    }
+
+    span {
+      div {
+        padding: 5rem 3rem;
+      }
+    }
   }
 `;
 
@@ -200,11 +247,39 @@ const LightApplyButton = styled(ApplyButton)`
   }
 `;
 
+const Form = styled.form`
+  width: 575px;
+
+  @media (max-width: 768px) {
+    width: 100% !important;
+    
+  }
+
+  @media (max-width: 1200px) {
+    width: 400px;x
+  }
+`;
+
 const FormDiv = styled.div`
   position: relative;
   max-width: 1300px;
   margin: 0 auto;
   padding: 5rem 15rem;
+  @media (max-width: 1200px) {
+    padding: 5rem 10rem;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 5rem 5rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 6rem 3rem;
+
+    div {
+      display: none;
+    }
+  }
 
   h2 {
     font-size: 2rem;
@@ -212,9 +287,6 @@ const FormDiv = styled.div`
     margin-bottom: 5rem;
   }
 
-  form {
-    width: 575px;
-  }
   input {
     display: block;
     border: none;
@@ -279,6 +351,10 @@ const Bottom = styled.div`
   margin: 0 auto;
 
   padding: 5rem 15rem;
+
+  @media (max-width: 1200px) {
+    padding: 5rem 10rem;
+  }
   p {
     width: 572px;
     font-weight: 300;
@@ -287,6 +363,26 @@ const Bottom = styled.div`
   strong {
     font-weight: 600;
   }
+
+  @media (max-width: 1000px) {
+    padding: 6rem 5rem;
+    p {
+      max-width: 502px;
+    }
+  }
+
+  @media (max-width: 870px) {
+    p {
+      max-width: 402px;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 6rem 3rem;
+
+    p {
+      max-width: 100%;
+    }
+  }
 `;
 
 const Top = styled.div`
@@ -294,6 +390,23 @@ const Top = styled.div`
   margin: 0 auto;
   position: relative;
   max-width: 1300px;
+  img {
+    width: 350px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 5rem 10rem;
+    & > div {
+      right: 0 !important;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    padding: 6rem 5rem;
+    img {
+      width: 300px;
+    }
+  }
 
   & > div {
     position: absolute;
@@ -308,6 +421,14 @@ const Top = styled.div`
       background: #e7c941;
     }
   }
+
+  @media (max-width: 768px) {
+    padding: 6rem 3rem;
+
+    & > div {
+      display: none;
+    }
+  }
 `;
 
 const Absolute = styled.span`
@@ -317,7 +438,8 @@ const Absolute = styled.span`
 `;
 const Hero = styled.div`
   position: relative;
-  img {
+  h2 {
+    margin: 4rem 0;
   }
 `;
 

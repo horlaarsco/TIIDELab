@@ -3,10 +3,15 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export function Header() {
+  const [showNav, setShowNav] = React.useState(false);
+
+  React.useEffect(() => {
+    console.log(showNav);
+  }, [showNav]);
   return (
     <Head>
       <span>
-        <Link to='/'>
+        <Link onClick={() => setShowNav(false)} to='/'>
           <img className='navbar-brand' src='/tiidelab-logo.svg' alt='' />
         </Link>
         <Nav>
@@ -23,14 +28,96 @@ export function Header() {
             <Link to='/gallery'> Gallery</Link>
           </li>
         </Nav>
-        <div>
-          <Link to='/'> Hire</Link>
+        <HireBox>
+          <Hire>
+            <Link to='/'>Hire</Link>
+          </Hire>
           <ApplyButton>Apply Now</ApplyButton>
-        </div>
+        </HireBox>
+        <Ham onClick={() => setShowNav(!showNav)}>
+          <div></div> <div></div>
+          <div></div>
+        </Ham>
       </span>
+
+      <MNav showNav={showNav}>
+        <ul>
+          <li>
+            <Link onClick={() => setShowNav(false)} to='/'>
+              {" "}
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => setShowNav(false)} to='/about'>
+              {" "}
+              About Us{" "}
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => setShowNav(false)} to='/contact'>
+              {" "}
+              Contact Us
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => setShowNav(false)} to='/gallery'>
+              {" "}
+              Gallery
+            </Link>
+          </li>
+        </ul>
+        <ApplyButton mobile='true'>Apply Now</ApplyButton>
+      </MNav>
     </Head>
   );
 }
+
+const Ham = styled.div`
+  display: block;
+  cursor: pointer;
+  /* border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  width: 40px; */
+  div {
+    width: 35px;
+    height: 5px;
+    background-color: #c0c0c0;
+    margin: 6px 0;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+const MNav = styled.div`
+  display: ${({ showNav }) => (showNav ? "block" : "none")};
+  padding: 0 4rem;
+  padding-bottom: 3rem;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 1rem 0;
+  }
+
+  button {
+    margin: 1rem 0;
+    margin-bottom: 0;
+  }
+`;
+
+const Hire = styled.p`
+  font-weight: bold;
+  font-size: 1.6rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
 
 const Head = styled.header`
   position: sticky;
@@ -49,15 +136,27 @@ const Head = styled.header`
     align-items: center;
   }
 
-  div {
-    display: flex;
-    align-items: center;
-  }
-
   a {
     text-decoration: none;
     font-size: 1.4rem;
   }
+
+  @media (max-width: 1000px) {
+    span {
+      padding: 0.8rem 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    span {
+      padding: 2rem 2rem;
+    }
+  }
+`;
+
+const HireBox = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const ApplyButton = styled.button`
@@ -78,6 +177,10 @@ const ApplyButton = styled.button`
     bottom: -7px;
   }
   margin-top: -7px;
+
+  @media (max-width: 768px) {
+    display: ${({ mobile }) => (mobile ? "block" : "none")};
+  }
 `;
 
 const Nav = styled.ul`
@@ -87,5 +190,15 @@ const Nav = styled.ul`
 
   li {
     margin-right: 6rem;
+  }
+
+  @media (max-width: 1000px) {
+    li {
+      margin-right: 3rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
