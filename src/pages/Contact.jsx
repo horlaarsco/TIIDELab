@@ -250,7 +250,7 @@ const FormDiv = styled.div`
 
 const SquareCircle = styled.div`
   height: 100px;
-  width: 50px;
+  width: 40px;
   background: #c13147;
   border-bottom-left-radius: 70px;
   margin-right: 1.5rem;
