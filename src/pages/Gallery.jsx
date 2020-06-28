@@ -4,15 +4,21 @@ import styled from "styled-components";
 export function Gallery() {
   return (
     <div>
-      {" "}
       <Hero>
-        <Top>
-          <Header>Gallery</Header>
-          <div>
+        <WrapTop>
+          <Absolute>
             <TopCircle></TopCircle>
             <BottomCircle></BottomCircle>
-          </div>
-        </Top>
+          </Absolute>
+          <Top>
+            <Header>Gallery</Header>
+            <div>
+              <SquareCircle></SquareCircle>
+              <img width='350px' src='/gallery.svg' alt='' />
+              <span></span>
+            </div>
+          </Top>
+        </WrapTop>
         <Bottom>
           <p>
             Challenges around getting young people employed and productive in
@@ -26,11 +32,6 @@ export function Gallery() {
             opportunities.
           </p>
         </Bottom>
-        <Absolute>
-          <SquareCircle></SquareCircle>
-          <img src='/gallery.svg' alt='' />
-          <span></span>
-        </Absolute>
       </Hero>
       <Images>
         <div>
@@ -76,13 +77,19 @@ export function Gallery() {
   );
 }
 
+const WrapTop = styled.section`
+  background: #f4f2f2;
+`;
+
 const Images = styled.div`
   & > div {
     display: flex;
   }
 
   width: 100%;
-  padding: 7rem 22rem;
+  max-width: 1200px;
+  padding: 5rem 15rem;
+  margin: 0 auto;
   img {
     object-fit: cover;
     border: 1px solid white;
@@ -114,7 +121,7 @@ const JourneyButton = styled.button`
   border: 1px solid #c13147;
   padding: 1rem 3rem;
   position: relative;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   &:after {
     content: " ";
     border: 1px solid white;
@@ -137,13 +144,13 @@ const Journey = styled.div`
   color: white;
 
   h3 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 0;
+    font-weight: 900;
   }
 
   p {
     max-width: 630px;
-    font-size: 1.9rem;
     line-height: 1.5;
     margin: 2.4rem 0;
   }
@@ -160,7 +167,7 @@ const Hero = styled.div`
 `;
 
 const Header = styled.h2`
-  font-size: 4.1rem;
+  font-size: 3.5rem;
   color: #434343;
   font-weight: 900;
 `;
@@ -187,11 +194,11 @@ const BottomCircle = styled.div`
 `;
 
 const Bottom = styled.div`
-  padding: 7rem 22rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 15rem;
   p {
-    font-size: 1.9rem;
     width: 572px;
-    line-height: 1.36;
     font-weight: 300;
   }
 
@@ -201,28 +208,28 @@ const Bottom = styled.div`
 `;
 
 const Top = styled.div`
-  padding: 8rem 22rem;
-  background: #f4f2f2;
-  /* width: 572px; */
+  padding: 6rem 15rem;
+  margin: 0 auto;
   position: relative;
+  max-width: 1200px;
 
   & > div {
     position: absolute;
-    bottom: 15px;
-    right: 0;
+    right: 100px;
+    top: 40px;
+    display: flex;
+
+    span {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #e7c941;
+    }
   }
 `;
 
-const Absolute = styled.div`
+const Absolute = styled.span`
   position: absolute;
-  right: 118px;
-  top: 40px;
-  display: flex;
-
-  span {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: #e7c941;
-  }
+  right: 0;
+  top: 80px;
 `;
