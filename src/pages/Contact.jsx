@@ -259,6 +259,7 @@ const TopCircle = styled.div`
   width: 70px;
   height: 70px;
   border-top-left-radius: 70px;
+  opacity: 0.5;
 `;
 
 const BottomCircle = styled.div`
@@ -266,6 +267,7 @@ const BottomCircle = styled.div`
   width: 70px;
   height: 70px;
   border-bottom-left-radius: 70px;
+  opacity: 0.5;
 `;
 const Number = styled.p`
   line-height: 1;
