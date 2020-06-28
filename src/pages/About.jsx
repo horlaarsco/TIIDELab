@@ -1,5 +1,169 @@
 import React from "react";
+import styled from "styled-components";
+import {
+  WineSemiCircle,
+  TopCircle,
+  BottomCircle,
+  SubHeader,
+  WrapTop,
+  Absolute,
+  Bottom,
+  SectionDiv,
+  Button,
+} from "../components";
 
 export function About() {
-  return <div>About</div>;
+  return (
+    <div>
+      <Hero>
+        <WrapTop>
+          <Absolute>
+            <TopCircle /> <BottomCircle />
+          </Absolute>
+          <Top>
+            <SubHeader>About Us</SubHeader>
+            <div>
+              <WineSemiCircle />
+              <img src='/woman.svg' alt='' />
+              <span></span>
+            </div>
+          </Top>
+        </WrapTop>
+        <Bottom>
+          <p>
+            Challenges around getting young people employed and productive in
+            the technological work place inspired the birth of TIIDELab. Since
+            then, we have trained 28 full stack developers through the first
+            cohort of the TIIDELab Fellowship.
+            <br /> <br />
+            With 50+ years of experience in technology, business development and
+            communications, our team continuously bridges the gap around
+            employment, infrastructure, quality trainings and access to
+            opportunities.
+          </p>
+        </Bottom>
+      </Hero>
+      <SectionDiv bg='#c13147'>
+        <h3>Who We are</h3>
+        <p>
+          We are TIIDELab, an acronym for THINK, INNOVATE, IDEATE, DEVELOP and
+          EXECUTE. We are a technology driven enterprise focused on helping
+          African youths thrive and impact their society.
+        </p>
+      </SectionDiv>
+      <Vision>
+        <img width='550px' src='/faq.svg' alt='' />
+        <div>
+          <SubHeader>Our Vision</SubHeader>
+          <p>
+            - Develop young Africans who use technology enabled means in solving
+            everyday challenges{" "}
+          </p>
+
+          <p>- Developing Africa’s largest pool of problem solvers</p>
+
+          <p>- Raising Africa’s next generation of problem solvers. </p>
+
+          <p>- To Build young Africans with a culture of problem solving </p>
+
+          <p>
+            - To Develop Young Africans with a culture of solving problems to
+            African challenges
+          </p>
+        </div>
+      </Vision>
+      <SectionDiv color='black' bg='#f4f2f2'>
+        <h3>Our Mission</h3>
+        <p>
+          Our mission Is to train our fellows with relevant digital skills and
+          tools in an enabling environment (to positively influence the
+          continent).
+          <br />
+          By creating an enabling environment, we provide relevant skills and
+          tools to influence the African continent.
+        </p>
+      </SectionDiv>
+      <SectionDiv bg='black'>
+        <h3>Do not be left out</h3>
+        <p>
+          Whether you are completely new to coding or had prior experience, we
+          will help you accelerate your dream of becoming a world-class software
+          developer or designer in record time.
+        </p>
+        <LightApplyButton>Apply Now</LightApplyButton>
+      </SectionDiv>
+    </div>
+  );
 }
+
+const Vision = styled.div`
+  display: flex;
+  max-width: 1300px;
+  margin: 10rem auto;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 3rem 10rem;
+  }
+`;
+
+const LightApplyButton = styled(Button)`
+  background: white;
+  color: #c13147;
+  border: 1px solid #c13147;
+
+  &:after {
+    border: 1px solid white;
+  }
+`;
+
+const Hero = styled.div`
+  position: relative;
+  margin-bottom: 100px;
+`;
+
+const Top = styled.div`
+  padding: 6rem 15rem;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1300px;
+
+  & > div {
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    display: flex;
+
+    span {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #e7c941;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    padding: 5rem 10rem;
+    & > div {
+      right: 0 !important;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    padding: 6rem 5rem;
+    img {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 6rem 3rem;
+
+    & > div {
+      display: none;
+    }
+  }
+`;

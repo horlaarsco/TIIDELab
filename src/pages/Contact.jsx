@@ -1,5 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import {
+  SectionDiv,
+  WineSemiCircle,
+  Button,
+  TopCircle,
+  BottomCircle,
+  SubHeader,
+  WrapTop,
+  Absolute,
+  Bottom,
+} from "../components";
 
 export function Contact() {
   return (
@@ -7,13 +18,12 @@ export function Contact() {
       <Hero>
         <WrapTop>
           <Absolute>
-            <TopCircle></TopCircle>
-            <BottomCircle></BottomCircle>
+            <TopCircle /> <BottomCircle />
           </Absolute>
           <Top>
-            <Header>Contact Us</Header>
+            <SubHeader>Contact Us</SubHeader>
             <div>
-              <SquareCircle></SquareCircle>
+              <WineSemiCircle />
               <img src='/Group.png' alt='' />
               <span></span>
             </div>
@@ -42,14 +52,14 @@ export function Contact() {
             rows='5'
             placeholder='Message*            '
           ></textarea>
-          <ApplyButton>Send Message</ApplyButton>
+          <Button>Send Message</Button>
         </Form>
         <div></div>
       </FormDiv>
       <Faq>
         <span>
           <div>
-            <Header>FAQ’s</Header>
+            <SubHeader>FAQ’s</SubHeader>
             <img width='550px' src='/faq.svg' alt='' />
           </div>
         </span>
@@ -93,7 +103,7 @@ export function Contact() {
           </Answer>
         </div>
       </Faq>
-      <ApplyDiv>
+      <SectionDiv bg='black'>
         <h3>Do not be left out</h3>
         <p>
           Whether you are completely new to coding or had prior experience, we
@@ -101,7 +111,7 @@ export function Contact() {
           developer or designer in record time.
         </p>
         <LightApplyButton>Apply Now</LightApplyButton>
-      </ApplyDiv>
+      </SectionDiv>
     </div>
   );
 }
@@ -114,31 +124,6 @@ const Answer = styled.p`
   strong {
     margin-right: 1rem;
     font-weight: 600;
-  }
-`;
-const ApplyDiv = styled.div`
-  padding: 8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: black;
-  color: white;
-
-  @media (max-width: 758px) {
-    padding: 5rem 3rem;
-  }
-  h3 {
-    margin: 0;
-    font-size: 3.5rem;
-    font-weight: 900;
-  }
-
-  p {
-    max-width: 630px;
-    line-height: 1.5;
-    margin: 2.4rem 0;
   }
 `;
 
@@ -206,7 +191,7 @@ const Faq = styled.div`
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 768px) {
     div {
       padding: 3rem 3rem;
     }
@@ -219,25 +204,7 @@ const Faq = styled.div`
   }
 `;
 
-const ApplyButton = styled.button`
-  background: #c13147;
-  color: white;
-  border: none;
-  padding: 1rem 3rem;
-  position: relative;
-  font-size: 1.6rem;
-  &:after {
-    content: " ";
-    border: 1px solid #c13147;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -7px;
-    bottom: -7px;
-  }
-`;
-
-const LightApplyButton = styled(ApplyButton)`
+const LightApplyButton = styled(Button)`
   background: white;
   color: #c13147;
   border: 1px solid #c13147;
@@ -320,69 +287,8 @@ const FormDiv = styled.div`
   }
 `;
 
-const SquareCircle = styled.div`
-  height: 100px;
-  width: 40px;
-  background: #c13147;
-  border-bottom-left-radius: 70px;
-  margin-right: 1.5rem;
-`;
-const TopCircle = styled.div`
-  background: #e9e8e8;
-  width: 70px;
-  height: 70px;
-  border-top-left-radius: 70px;
-  opacity: 0.5;
-`;
-
-const BottomCircle = styled.div`
-  background: #c6c4c4;
-  width: 70px;
-  height: 70px;
-  border-bottom-left-radius: 70px;
-  opacity: 0.5;
-`;
 const Number = styled.p`
   line-height: 1;
-`;
-
-const Bottom = styled.div`
-  max-width: 1300px;
-  margin: 0 auto;
-
-  padding: 5rem 15rem;
-
-  @media (max-width: 1200px) {
-    padding: 5rem 10rem;
-  }
-  p {
-    width: 572px;
-    font-weight: 300;
-  }
-
-  strong {
-    font-weight: 600;
-  }
-
-  @media (max-width: 1000px) {
-    padding: 6rem 5rem;
-    p {
-      max-width: 502px;
-    }
-  }
-
-  @media (max-width: 870px) {
-    p {
-      max-width: 402px;
-    }
-  }
-  @media (max-width: 768px) {
-    padding: 6rem 3rem;
-
-    p {
-      max-width: 100%;
-    }
-  }
 `;
 
 const Top = styled.div`
@@ -431,24 +337,6 @@ const Top = styled.div`
   }
 `;
 
-const Absolute = styled.span`
-  position: absolute;
-  right: 0;
-  top: 80px;
-`;
 const Hero = styled.div`
   position: relative;
-  h2 {
-    margin: 4rem 0;
-  }
-`;
-
-const Header = styled.h2`
-  font-size: 3.5rem;
-  color: #434343;
-  font-weight: 900;
-`;
-
-const WrapTop = styled.section`
-  background: #f4f2f2;
 `;
