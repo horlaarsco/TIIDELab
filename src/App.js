@@ -1,7 +1,8 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import { Home, About, Contact, Gallery } from "./pages";
-import { Header, Footer } from "./components";
+import { Header} from "./components";
+import Footer from "./components/Footer/Footer";
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
@@ -12,7 +13,7 @@ function App() {
     <Suspense fallback={<div>Loading ...</div>}>
       <Router>
         <div>
-          <Header />
+          {/* <Header /> */}
           <Switch>
             <Route path="/" exact>
               <Home />
@@ -27,7 +28,7 @@ function App() {
               <Gallery />
             </Route> */}
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </Router>
     </Suspense>

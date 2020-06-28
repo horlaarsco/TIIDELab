@@ -1,21 +1,24 @@
 import React from "react";
 import Layout from '../components/Layout';
 import Nav from '../components/Navbar';
+import Footer from '../components/Footer/Footer';
 import styled from 'styled-components';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
 const ApplyButton = styled.button`
-  background: var(--c-color1);
-  color: white;
+  background: ${props => props.bg || "var(--c-color1)"};
+  color: ${props => props.color || "white"};
   border: none;
   font-family: "Overpass", sans-serif;
   padding: 0.5rem 1rem;
   position: relative;
+  margin-left:${props => props.mleft};
+  margin-right:${props => props.mright};
   font-size: 1rem;
   &:after {
     content: " ";
-    border: 1px solid #c13147;
+    // border: 1px solid #c13147;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -137,6 +140,23 @@ const Count= styled.p`
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
 `;
+
+const ApplyNowAction = styled.div`
+  background-image: url(./asset/img/leftbg.png);
+  width: 100%;
+  height: 300px;
+  margin-top: 5rem;
+  background-repeat: no-repeat;
+`
+
+const CenterParagraph = styled.p`
+  color: ${props =>  props.color || "var(--c-color8)"};
+  font-weight: 300;
+  font-family: 'Overpass', sans-serif !important;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.5rem 10rem 0.5rem 10rem
+`
 
 const Home  = () => {
 
@@ -291,7 +311,17 @@ const Home  = () => {
               </div>
             </div>
           </section>
+          <section>
+            <div className="mt-5">
+              <ApplyNowAction className="p-5">
+                <SubHead className="text-center" color="#ffffff">Do not be left out</SubHead>
+                <CenterParagraph className="text-center" color="#FFFFFF">Whether you are completely new to coding or had prior experience,  we will help you accelerate your dream of becoming a world-class software developer or designer in record time.</CenterParagraph>
+                <ApplyButton bg="#ffffff" color="var(--c-color1)" mleft="50%">Apply Now</ApplyButton>
+              </ApplyNowAction>
+            </div>          
+          </section>
         </main>
+        <Footer />
       </Layout>
     </React.Fragment>
   )

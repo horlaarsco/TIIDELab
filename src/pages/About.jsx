@@ -2,6 +2,7 @@ import React from "react";
 import Layout from '../components/Layout';
 import Nav from '../components/Navbar'
 import styled from 'styled-components';
+import Footer from '../components/Footer/Footer';
 
 const Header = styled.header`
   background: rgb(244, 242, 242);
@@ -170,6 +171,7 @@ const BigDivider = styled.div`
 const ApplyNowAction = styled.div`
   background-image: url(./asset/img/leftbg.png);
   width: 100%;
+  margin-top: 10rem !important;
   height: 300px;
   margin-top: 5rem;
   background-repeat: no-repeat;
@@ -272,6 +274,7 @@ const About = () => {
             </ApplyNowAction>
           </div>
         </main>
+        <Footer />
       </Layout>
     </React.Fragment>
   )
