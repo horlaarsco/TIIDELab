@@ -44,10 +44,9 @@ const Head = styled.header`
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 3rem 5.5rem;
-    font-size: 1.9rem;
+    padding: 0.8rem 5.5rem;
+    font-size: 1.4rem;
     align-items: center;
-    padding-bottom: 1rem;
   }
 
   div {
@@ -57,7 +56,7 @@ const Head = styled.header`
 
   a {
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 `;
 
@@ -68,7 +67,7 @@ const ApplyButton = styled.button`
   margin-left: 6rem;
   padding: 1rem 3rem;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   &:after {
     content: " ";
     border: 1px solid #c13147;
@@ -78,6 +77,7 @@ const ApplyButton = styled.button`
     left: -7px;
     bottom: -7px;
   }
+  margin-top: -7px;
 `;
 
 const Nav = styled.ul`

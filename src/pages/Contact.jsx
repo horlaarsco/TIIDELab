@@ -294,7 +294,7 @@ const Top = styled.div`
 
   & > div {
     position: absolute;
-    right: 100px;
+    right: 0;
     top: 40px;
     display: flex;
 
