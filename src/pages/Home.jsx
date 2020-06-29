@@ -37,7 +37,7 @@ export const Home = () => {
             id='carouselExampleSlidesOnly'
             className='carousel slide'
             data-ride='carousel'
-            data-interval='2000'
+            data-interval='3000'
           >
             <main className='carousel-inner'>
               <main className='carousel-item active'>
@@ -206,7 +206,7 @@ export const Home = () => {
             id='carouselExampleSlidesOnly'
             className='carousel slide'
             data-ride='carousel'
-            data-interval='2000'
+            data-interval='5000'
           >
             <div className='carousel-inner'>
               <div className='carousel-item active'>

@@ -91,6 +91,7 @@ export function Gallery() {
           id='carouselExampleSlidesOnly'
           className='carousel slide'
           data-ride='carousel'
+          data-interval='3000'
         >
           <div className='carousel-inner'>
             <div className='carousel-item active'>
