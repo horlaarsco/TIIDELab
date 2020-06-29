@@ -4,7 +4,16 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { SubHeader, SectionDiv, Button } from "../components";
 import { ReactComponent as Steps3 } from "../assets/icons/3-steps.svg";
+import Slider from "react-slick";
+
 export const Home = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <>
       <Hero>
@@ -158,15 +167,21 @@ export const Home = () => {
         </div>
         <Testimonial>
           <p>
-            We were in the middle of the largest project we’ve undertaken as a
-            business. There’s no way we would have been able to grow as
-            aggressively or be as successful as we have been without our Andela
-            team.
+            Tiidelab has helped me gain more focus and shed more light on what I
+            want to do and how to go about it. Within the space of five months,
+            I've been able to learn how to look for growing problems in the
+            society, how to come up with a solution and how to create the
+            solution using tech. I've improved not only as a developer and a
+            business personnel but also as a person.
           </p>
-          <h2>Tope Abdulahi</h2>
+          <h2>Sanusi Micheal HAYATU</h2>
           <p>
             <i>-Former student/Lead Engineer at Apple</i>
           </p>
+          <img
+            src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593454384/sanusi_Pasport_strd9b.png'
+            alt=''
+          />
         </Testimonial>
       </main>
     </>
@@ -339,6 +354,10 @@ const Count = styled.p`
 const Testimonial = styled.div`
   text-align: center;
   padding: 10rem 15rem;
+
+  img {
+    margin-top: 2rem;
+  }
 
   h2 {
     margin: 2rem 0;
