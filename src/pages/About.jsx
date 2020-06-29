@@ -23,8 +23,11 @@ export function About() {
           <Top>
             <SubHeader>About Us</SubHeader>
             <div>
-              <WineSemiCircle />
-              <img src='/woman.svg' alt='' />
+              {/* <WineSemiCircle /> */}
+              <img
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593449129/about_us_bp5pqk.png'
+                alt=''
+              />
               <span></span>
             </div>
           </Top>
@@ -32,14 +35,14 @@ export function About() {
         <Bottom>
           <p>
             Challenges around getting young people employed and productive in
-            the technological work place inspired the birth of TIIDELab. Since
+            the technological workplace inspired the birth of TIIDELab. Since
             then, we have trained 28 full stack developers through the first
             cohort of the TIIDELab Fellowship.
             <br /> <br />
-            With 50+ years of experience in technology, business development and
-            communications, our team continuously bridges the gap around
+            With over a decade of experience in technology, business development
+            and communications, our team continuously bridges the gap around
             employment, infrastructure, quality trainings and access to
-            opportunities.
+            opportunities. …Harnessing the African potentials.
           </p>
         </Bottom>
       </Hero>
@@ -60,13 +63,17 @@ export function About() {
       <Vision>
         <span>
           <img
-            src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593435943/smiling_fellow_in_tiidelab_shirt_k9t3t6.jpg'
+            src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593449077/our_vision_jejivh.png'
             alt=''
           />
         </span>
 
         <div>
           <SubHeader>Our Vision</SubHeader>
+          <p>
+            - To Develop Young Africans with a culture of solving problems to
+            African challenges
+          </p>
           <p>
             - Develop young Africans who use technology enabled means in solving
             everyday challenges{" "}
@@ -77,11 +84,6 @@ export function About() {
           <p>- Raising Africa’s next generation of problem solvers. </p>
 
           <p>- To Build young Africans with a culture of problem solving </p>
-
-          <p>
-            - To Develop Young Africans with a culture of solving problems to
-            African challenges
-          </p>
         </div>
       </Vision>
       <div
@@ -92,10 +94,10 @@ export function About() {
         <SectionDiv color='black' bg='#f4f2f2'>
           <h3>Our Mission</h3>
           <p>
-            Our mission Is to train our fellows with relevant digital skills and
-            tools in an enabling environment (to positively influence the
-            continent). By creating an enabling environment, we provide relevant
-            skills and tools to influence the African continent.
+            Our mission is to train our fellows with relevant digital skills and
+            tools in an enabling environment to positively influence the African
+            continent and develop our fellows with relevant skills and use of
+            digital tools to become self-reliant.
           </p>
         </SectionDiv>
       </div>
@@ -117,7 +119,7 @@ export function About() {
         </div>
         <span>
           <img
-            src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593436761/Mr_Bankole_addressing_fellows_ozigo4.jpg'
+            src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593449019/what_we_do_brv98a.png'
             alt=''
           />
         </span>
