@@ -77,12 +77,12 @@ const HParagraph = styled.p`
   font-family: "Overpass", sans-serif !important;
   font-size: 2rem;
 `;
-const Heading1 = styled.h1`
-  color: var(--c-color1);
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 2.1rem;
-`;
+// const Heading1 = styled.h1`
+//   color: var(--c-color1);
+//   font-family: "Poppins", sans-serif;
+//   font-weight: 600;
+//   font-size: 2.1rem;
+// `;
 
 const SemiCircle1 = styled.div`
   width: ${(props) => props.width || "3.1rem"};
