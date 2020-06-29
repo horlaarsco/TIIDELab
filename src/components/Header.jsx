@@ -82,7 +82,7 @@ const Ham = styled.div`
   div {
     width: 35px;
     height: 5px;
-    background-color: #c0c0c0;
+    background-color: #000000;
     margin: 6px 0;
   }
 
