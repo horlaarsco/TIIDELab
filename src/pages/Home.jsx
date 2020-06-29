@@ -84,17 +84,17 @@ const HParagraph = styled.p`
 //   font-size: 2.1rem;
 // `;
 
-const SemiCircle1 = styled.div`
-  width: ${(props) => props.width || "3.1rem"};
-  height: ${(props) => props.height || "6rem"};
-  background: ${(props) => props.bg};
-  border-radius: ${(props) => props.radius};
-  position: ${(props) => props.position};
-  bottom: ${(props) => props.bottom};
-  opacity: ${(props) => props.opacity};
-  left: ${(props) => props.left};
-  right: ${(props) => props.right};
-`;
+// const SemiCircle1 = styled.div`
+//   width: ${(props) => props.width || "3.1rem"};
+//   height: ${(props) => props.height || "6rem"};
+//   background: ${(props) => props.bg};
+//   border-radius: ${(props) => props.radius};
+//   position: ${(props) => props.position};
+//   bottom: ${(props) => props.bottom};
+//   opacity: ${(props) => props.opacity};
+//   left: ${(props) => props.left};
+//   right: ${(props) => props.right};
+// `;
 
 const TimeLine = styled.div`
   position: relative;
