@@ -207,7 +207,7 @@ const Faq = styled.div`
 const LightApplyButton = styled(Button)`
   background: white;
   color: #c13147;
-  border: 1px solid #c13147;
+  border: none;
 
   &:after {
     border: 1px solid white;
