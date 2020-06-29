@@ -35,17 +35,17 @@ export const Home = () => {
 								<div className='mb-5 mb-md-0'>
 									<h4>Get Admitted: </h4>
 									<p>
-										Basic Requirements: Laptop, Knowledge of HTML, CSS and
-										JavaScript.
+										You require a laptop, pass our aptitude test, basic
+										knowledge of HTML, CSS and JavaScript.
 									</p>
 								</div>
 
 								<div className='mt-md-37 mb-5 mb-md-0'>
 									<h4>Get Employed: </h4>
 									<p>
-										You will be exposed to internship and job opportunities at
-										partner companies and kick start your junior developer
-										career.
+										Upon completion, you will be exposed to internship and job
+										opportunities at partner companies. Earn while you advance
+										your developer career.
 									</p>
 								</div>
 							</div>
@@ -54,11 +54,11 @@ export const Home = () => {
 							</div>
 							<div className='col-md'>
 								<div className='mt-md-21 mb-5 mb-md-0'>
-									<h4>Get Employed: </h4>
+									<h4>Get Trained: </h4>
 									<p>
-										You will be exposed to internship and job opportunities at
-										partner companies and kick start your junior developer
-										career.
+										Free internet access for entire programme (5 months). Choose
+										either front-end or back-end track. 80% remote and 20%
+										classroom (Abuja and Lagos). Competency-based learning
 									</p>
 								</div>
 							</div>
