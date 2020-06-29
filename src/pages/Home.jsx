@@ -491,6 +491,7 @@ const Count = styled.p`
 const Testimonial = styled.div`
   text-align: center;
   padding: 10rem 15rem;
+  background: #f4f2f2;
 
   img {
     margin-top: 2rem;
