@@ -46,3 +46,66 @@ a:active {
 p {
   font-size: 1.6rem;
 }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem !important;
+  font-family: 'Overpass', sans-serif;
+  padding-left: 1.5rem !important;
+}
+
+.h-mobile{
+  display: none;
+}
+
+.nav-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:800px) {
+  .h-mobile{
+    display: block !important;
+  }
+  .h-desktop{
+    display: none;
+  }
+}
+
+.mt-6{
+  padding-top: 14rem;
+}
+
+.firstTimeline{
+  position: absolute;
+  left: 50%;
+}
+
+.thirdTimeline{
+  position: absolute;
+  left: calc(50% - 0.1rem);
+  top: 21.5rem;
+}
+
+.secondTimeline{
+  position: absolute;
+  top: 9.2rem;
+  left: calc(50.1% + 5.4rem);
+}
+
+/* .secondTimeline svg {
+  position: absolute;
+  top: 9.2rem;
+  left: calc(50.1% + 5.4rem);
+} */
+
+.bg-tiide{
+  background: rgb(244, 242, 242);
+}
+
+.countuo{
+  color: var(--c-color1);
+  font-size: 41px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+

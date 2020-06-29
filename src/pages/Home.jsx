@@ -85,8 +85,6 @@ const Light = styled.span`
   font-weight: 300;
 `
 const SvgImage = styled.img`
-  border-radius: 100px;
-  border: ${props => props.border};
   padding: 0.4rem;
   position: ${props => props.position};
   left: ${props => props.left};
@@ -142,7 +140,7 @@ const Count= styled.p`
 `;
 
 const ApplyNowAction = styled.div`
-  background-image: url(./asset/img/leftbg.png);
+  background-image: url(./leftbg.png);
   width: 100%;
   height: 300px;
   margin-top: 5rem;
@@ -156,6 +154,11 @@ const CenterParagraph = styled.p`
   margin-right: auto;
   margin-left: auto;
   padding: 0.5rem 10rem 0.5rem 10rem
+`
+
+const BorderImg = styled.div`
+border-radius: 100px;
+border: ${props => props.border};
 `
 
 export const Home  = () => {
@@ -178,7 +181,7 @@ export const Home  = () => {
               <div className="col-md-6">
                 <Caption top="5rem" left="0" position="relative">
                   <SemiCircle1 radius="64px 0 0 0" bg="var(--c-color1)" width="5.5rem" height="2.1rem"></SemiCircle1>
-                  <Image src="./asset/img/home1.png" alt="Man in front of a computer" height="400px"></Image>
+                  <Image src="./home1.png" alt="Man in front of a computer" height="400px"></Image>
                   <SemiCircle1 radius="0 0 0 64px" bg="#0D218A" width="5.5rem" height="2.1rem" position="absolute" left="19rem" bottom="0"></SemiCircle1>
                 </Caption>
               </div>
@@ -201,7 +204,9 @@ export const Home  = () => {
                           </g>
                       </g>
                     </svg>
-                    <SvgImage src="./asset/img/feedback.svg" alt="Feedback" position="absolute" left="2.7rem" top="0.6rem" border="2px solid #777777"></SvgImage>
+                    <BorderImg>
+                      <SvgImage src="./asset/img/feedback.svg" alt="Feedback" position="absolute" left="2.7rem" top="0.6rem" border="2px solid #777777"></SvgImage>
+                    </BorderImg>
                     <LeftTimeline>
                       <Plink>Get Admitted: </Plink>
                       <Paragraph>Basic Requirements: Laptop, Knowledge <br /> of HTML, CSS and JavaScript</Paragraph>
