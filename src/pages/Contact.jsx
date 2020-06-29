@@ -107,19 +107,24 @@ export function Contact() {
           </Answer>
         </div>
       </Faq>
-      <SectionDiv
-        style={{ backgroundPosition: "center bottom", backgroundSize: "cover" }}
-        bgimage='url(https://res.cloudinary.com/ddxgfwoao/image/upload/c_scale,q_auto:eco,w_1068/v1593431132/image_ntvtkj.png)'
+      <div
+        style={{
+          backgroundImage:
+            "url(https://res.cloudinary.com/ddxgfwoao/image/upload/c_scale,q_auto:eco,w_1068/v1593431132/image_ntvtkj.png)",
+          backgroundPosition: "center bottom",
+          backgroundSize: "cover",
+        }}
       >
-        {" "}
-        <h3>Do not be left out</h3>
-        <p>
-          Whether you are completely new to coding or had prior experience, we
-          will help you accelerate your dream of becoming a world-class software
-          developer or designer in record time.
-        </p>
-        <LightApplyButton>Apply Now</LightApplyButton>
-      </SectionDiv>
+        <SectionDiv>
+          <h3>Do not be left out</h3>
+          <p>
+            Whether you are completely new to coding or had prior experience, we
+            will help you accelerate your dream of becoming a world-class
+            software developer or designer in record time.
+          </p>
+          <LightApplyButton>Apply Now</LightApplyButton>
+        </SectionDiv>
+      </div>
     </div>
   );
 }

@@ -36,7 +36,11 @@ export function Gallery() {
             <SubHeader>Gallery</SubHeader>
             <div>
               <WineSemiCircle />
-              <img width='350px' src='/gallery.svg' alt='' />
+              <img
+                width='350px'
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:good/v1593439208/Group_photo_of_fellows_wdm2vs.jpg'
+                alt=''
+              />
               <span></span>
             </div>
           </Top>
@@ -65,18 +69,34 @@ export function Gallery() {
           />
         ))}
       </Images>
-      <SectionDiv bg='#c13147'>
-        <h3>Be a Junior Developer Today</h3>
-        <p>
-          We are TIIDELab, an acronym for THINK, INNOVATE, IDEATE, DEVELOP and
-          EXECUTE. We are a technology driven enterprise focused on helping
-          African youths thrive and impact their society.
-        </p>
-        <Button>Start Journey Now</Button>
-      </SectionDiv>
+      <div
+        style={{
+          background: "#c13147",
+        }}
+      >
+        <SectionDiv bg='#c13147'>
+          <h3>Be a Junior Developer Today</h3>
+          <p>
+            We are TIIDELab, an acronym for THINK, INNOVATE, IDEATE, DEVELOP and
+            EXECUTE. We are a technology driven enterprise focused on helping
+            African youths thrive and impact their society.
+          </p>
+          <LightApplyButton>Start Journey Now</LightApplyButton>
+        </SectionDiv>
+      </div>
     </div>
   );
 }
+
+const LightApplyButton = styled(Button)`
+  background: white;
+  color: #c13147;
+  border: none;
+
+  &:after {
+    border: 1px solid white;
+  }
+`;
 
 const Images = styled.div`
   width: 100%;
@@ -126,6 +146,11 @@ const Top = styled.div`
       border-radius: 50%;
       background: #e7c941;
     }
+  }
+
+  img {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
   }
 
   @media (max-width: 1200px) {

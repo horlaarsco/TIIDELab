@@ -43,14 +43,20 @@ export function About() {
           </p>
         </Bottom>
       </Hero>
-      <SectionDiv bg='#c13147'>
-        <h3>Who We are</h3>
-        <p>
-          We are TIIDELab, an acronym for THINK, INNOVATE, IDEATE, DEVELOP and
-          EXECUTE. We are a technology driven enterprise focused on helping
-          African youths thrive and impact their society.
-        </p>
-      </SectionDiv>
+      <div
+        style={{
+          background: "#c13147",
+        }}
+      >
+        <SectionDiv bg='#c13147'>
+          <h3>Who We are</h3>
+          <p>
+            We are TIIDELab, an acronym for THINK, INNOVATE, IDEATE, DEVELOP and
+            EXECUTE. We are a technology driven enterprise focused on helping
+            African youths thrive and impact their society.
+          </p>
+        </SectionDiv>
+      </div>
       <Vision>
         <span>
           <img
@@ -78,15 +84,21 @@ export function About() {
           </p>
         </div>
       </Vision>
-      <SectionDiv color='black' bg='#f4f2f2'>
-        <h3>Our Mission</h3>
-        <p>
-          Our mission Is to train our fellows with relevant digital skills and
-          tools in an enabling environment (to positively influence the
-          continent). By creating an enabling environment, we provide relevant
-          skills and tools to influence the African continent.
-        </p>
-      </SectionDiv>
+      <div
+        style={{
+          background: "#f4f2f2",
+        }}
+      >
+        <SectionDiv color='black' bg='#f4f2f2'>
+          <h3>Our Mission</h3>
+          <p>
+            Our mission Is to train our fellows with relevant digital skills and
+            tools in an enabling environment (to positively influence the
+            continent). By creating an enabling environment, we provide relevant
+            skills and tools to influence the African continent.
+          </p>
+        </SectionDiv>
+      </div>
       <WhatWedo>
         <div>
           <SubHeader> What we do</SubHeader>
@@ -111,18 +123,24 @@ export function About() {
         </span>
       </WhatWedo>
 
-      <SectionDiv
-        style={{ backgroundPosition: "center bottom", backgroundSize: "cover" }}
-        bgimage='url(https://res.cloudinary.com/ddxgfwoao/image/upload/c_scale,q_auto:eco,w_1068/v1593431132/image_ntvtkj.png)'
+      <div
+        style={{
+          backgroundImage:
+            "url(https://res.cloudinary.com/ddxgfwoao/image/upload/c_scale,q_auto:eco,w_1068/v1593431132/image_ntvtkj.png)",
+          backgroundPosition: "center bottom",
+          backgroundSize: "cover",
+        }}
       >
-        <h3>Do not be left out</h3>
-        <p>
-          Whether you are completely new to coding or had prior experience, we
-          will help you accelerate your dream of becoming a world-class software
-          developer or designer in record time.
-        </p>
-        <LightApplyButton>Apply Now</LightApplyButton>
-      </SectionDiv>
+        <SectionDiv>
+          <h3>Do not be left out</h3>
+          <p>
+            Whether you are completely new to coding or had prior experience, we
+            will help you accelerate your dream of becoming a world-class
+            software developer or designer in record time.
+          </p>
+          <LightApplyButton>Apply Now</LightApplyButton>
+        </SectionDiv>
+      </div>
     </div>
   );
 }

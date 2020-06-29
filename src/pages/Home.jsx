@@ -26,6 +26,10 @@ const Hero = styled.header`
     align-items: center;
   }
 
+  p {
+    max-width: 480px;
+  }
+
   img {
     width: 520px;
   }
@@ -228,7 +232,7 @@ export const Home = () => {
             </p>
             <Button className='mt-5'>Apply Now</Button>
           </div>
-          <img src='/chinese.svg' alt='' />
+          <img src='/home.svg' alt='' />
         </section>
       </Hero>
       <main id='main'>
@@ -302,21 +306,24 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        <SectionDiv
+        <div
           style={{
+            backgroundImage:
+              "url(https://res.cloudinary.com/ddxgfwoao/image/upload/c_scale,q_auto:eco,w_1068/v1593431132/image_ntvtkj.png)",
             backgroundPosition: "center bottom",
             backgroundSize: "cover",
           }}
-          bgimage='url(https://res.cloudinary.com/ddxgfwoao/image/upload/c_scale,q_auto:eco,w_1068/v1593431132/image_ntvtkj.png)'
         >
-          <h3>Do not be left out</h3>
-          <p>
-            Whether you are completely new to coding or had prior experience, we
-            will help you accelerate your dream of becoming a world-class
-            software developer or designer in record time.
-          </p>
-          <LightButton>Apply Now</LightButton>
-        </SectionDiv>
+          <SectionDiv>
+            <h3>Do not be left out</h3>
+            <p>
+              Whether you are completely new to coding or had prior experience,
+              we will help you accelerate your dream of becoming a world-class
+              software developer or designer in record time.
+            </p>
+            <LightButton>Apply Now</LightButton>
+          </SectionDiv>
+        </div>
       </main>
     </>
   );
