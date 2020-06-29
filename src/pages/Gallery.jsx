@@ -38,10 +38,10 @@ export function Gallery() {
           <Top>
             <SubHeader>Gallery</SubHeader>
             <div>
-              <WineSemiCircle />
+              {/* <WineSemiCircle /> */}
               <img
                 width='350px'
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:good/v1593439208/Group_photo_of_fellows_wdm2vs.jpg'
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593449112/Gallery_axfohb.png'
                 alt=''
               />
               <span></span>
@@ -87,9 +87,37 @@ export function Gallery() {
           <LightApplyButton>Start Journey Now</LightApplyButton>
         </SectionDiv>
       </div>
+      <div
+        style={{
+          backgroundImage:
+            "url(https://res.cloudinary.com/ddxgfwoao/image/upload/c_scale,q_auto:eco,w_1068/v1593431132/image_ntvtkj.png)",
+          backgroundPosition: "center bottom",
+          backgroundSize: "cover",
+        }}
+      >
+        <SectionDiv>
+          <h3>Do not be left out</h3>
+          <p>
+            Whether you are completely new to coding or had prior experience, we
+            will help you accelerate your dream of becoming a world-class
+            software developer or designer in record time.
+          </p>
+          <LightButton>Apply Now</LightButton>
+        </SectionDiv>
+      </div>
     </div>
   );
 }
+
+const LightButton = styled(Button)`
+  background: white;
+  color: #c13147;
+  border: none;
+
+  &:after {
+    border: 1px solid white;
+  }
+`;
 
 const LightApplyButton = styled(Button)`
   background: white;

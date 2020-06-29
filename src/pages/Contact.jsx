@@ -23,18 +23,17 @@ export function Contact() {
           <Top>
             <SubHeader>Contact Us</SubHeader>
             <div>
-              <WineSemiCircle />
-              <img src='/Group.png' alt='' />
+              {/* <WineSemiCircle /> */}
+              <img
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593449117/contact_Us_xltzmt.png'
+                alt=''
+              />
               <span></span>
             </div>
           </Top>
         </WrapTop>
         <Bottom>
           <p>
-            Challenges around getting young people employed and productive in
-            the technological work place inspired the birth of TIIDELab. Since
-            then, we have trained 28 full stack developers through the first
-            cohort of the TIIDELab Fellowship.
             <br /> <br /> <strong>Call us for quick response on</strong>
           </p>
           <Number>+234 906 1995 782</Number>
@@ -59,7 +58,7 @@ export function Contact() {
       <Faq>
         <span>
           <div>
-            <SubHeader>FAQ’s</SubHeader>
+            <SubHeader>FAQs</SubHeader>
             <img
               src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593446879/FAQ_rud9fs.png'
               alt=''

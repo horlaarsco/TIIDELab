@@ -153,10 +153,10 @@ export const Home = () => {
               {"< Junior Developer? >"}
             </SubHeader>
             <p>
-              we will help you accelerate your dream of becoming job ready in
+              We will help you accelerate your dream of becoming job ready in
               record time.
             </p>
-            <Button className='mt-5'>Apply Now</Button>
+            <Button className='mt-5'>See the path</Button>
           </div>
           <img src='/home.svg' alt='' />
         </section>
