@@ -41,6 +41,7 @@ export const Button = styled.button`
   padding: 1rem 3rem;
   position: relative;
   font-size: 1.6rem;
+  cursor: pointer;
   background: #c13147;
   &:after {
     content: " ";

@@ -79,34 +79,77 @@ export function Gallery() {
         <SectionDiv bg='#c13147'>
           <h3>Be a Junior Developer Today</h3>
           <p>
-            We are TIIDELab, an acronym for THINK, INNOVATE, IDEATE, DEVELOP and
-            EXECUTE. We are a technology driven enterprise focused on helping
-            African youths thrive and impact their society.
-          </p>
-          <LightApplyButton>Start Journey Now</LightApplyButton>
-        </SectionDiv>
-      </div>
-      <div
-        style={{
-          backgroundImage:
-            "url(https://res.cloudinary.com/ddxgfwoao/image/upload/c_scale,q_auto:eco,w_1068/v1593431132/image_ntvtkj.png)",
-          backgroundPosition: "center bottom",
-          backgroundSize: "cover",
-        }}
-      >
-        <SectionDiv>
-          <h3>Do not be left out</h3>
-          <p>
             Whether you are completely new to coding or had prior experience, we
             will help you accelerate your dream of becoming a world-class
             software developer or designer in record time.
           </p>
-          <LightButton>Apply Now</LightButton>
+          <LightApplyButton>Start Journey Now</LightApplyButton>
         </SectionDiv>
       </div>
+      <Testimonial>
+        <div
+          id='carouselExampleSlidesOnly'
+          className='carousel slide'
+          data-ride='carousel'
+        >
+          <div className='carousel-inner'>
+            <div className='carousel-item active'>
+              <p>
+                Tiidelab has helped me gain more focus and shed more light on
+                what I want to do and how to go about it. Within the space of
+                five months, I've been able to learn how to look for growing
+                problems in the society, how to come up with a solution and how
+                to create the solution using tech. I've improved not only as a
+                developer and a business personnel but also as a person.
+              </p>
+              <h2>Sanusi Micheal HAYATU</h2>
+              <p>
+                <i>-Former student/Lead Engineer at Apple</i>
+              </p>
+              <img
+                width='100px'
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593454384/sanusi_Pasport_strd9b.png'
+                alt=''
+              />
+            </div>
+          </div>
+        </div>
+      </Testimonial>
     </div>
   );
 }
+
+const Testimonial = styled.div`
+  text-align: center;
+  padding: 10rem 15rem;
+
+  img {
+    margin-top: 2rem;
+  }
+
+  h2 {
+    margin: 2rem 0;
+    color: #c13147;
+    font-weight: bold;
+  }
+
+  p {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 8rem 7rem;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 8rem 3rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 6rem 4rem;
+  }
+`;
 
 const LightButton = styled(Button)`
   background: white;
