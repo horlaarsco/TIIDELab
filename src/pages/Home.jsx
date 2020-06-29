@@ -103,7 +103,7 @@ export const Home = () => {
             </div>
             <main>
               {" "}
-              <Button className='mt-5 '>Apply Button</Button>
+              <Button className='mt-5 '>Apply Now</Button>
             </main>
           </section>
         </TimeLine>
@@ -117,7 +117,9 @@ export const Home = () => {
                 world-class software developer or designer in record time.
               </p>
               <span>
-                <Button className='mt-5'>View Gallery</Button>
+                <Link to='/gallery'>
+                  <Button className='mt-5'>View Gallery</Button>
+                </Link>
               </span>
             </div>
             <img
