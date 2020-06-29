@@ -100,7 +100,7 @@ export function About() {
         <img src='/about3.png' alt='' />
       </WhatWedo>
 
-      <SectionDiv bg='black'>
+      <SectionDiv bgimage='url(./leftbg.png)'>
         <h3>Do not be left out</h3>
         <p>
           Whether you are completely new to coding or had prior experience, we

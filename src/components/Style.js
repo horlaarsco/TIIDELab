@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const SectionDiv = styled.div`
+  background-image: ${({ bgimage }) => bgimage};
   padding: 8rem;
   display: flex;
   flex-direction: column;
@@ -9,6 +10,8 @@ export const SectionDiv = styled.div`
   text-align: center;
   background: ${({ bg }) => bg};
   color: ${({ color }) => color || "white"};
+  max-width: 1240px;
+  margin: 0 auto;
   h3 {
     font-size: 3.5rem;
     margin: 0;

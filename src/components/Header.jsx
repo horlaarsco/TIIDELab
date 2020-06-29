@@ -129,6 +129,7 @@ const Hire = styled.p`
 const Head = styled.header`
   position: sticky;
   top: 0;
+  padding: 1rem 0;
   z-index: 100;
   background: #f4f2f2;
 
@@ -194,6 +195,7 @@ const Nav = styled.ul`
   display: flex;
   list-style-type: none;
   align-items: center;
+  margin: auto;
 
   li {
     margin-right: 6rem;
