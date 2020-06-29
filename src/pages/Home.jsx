@@ -2,20 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
-import {
-  WineSemiCircle,
-  TopCircle,
-  BottomCircle,
-  SubHeader,
-  WrapTop,
-  Absolute,
-  Bottom,
-  SectionDiv,
-  Button,
-} from "../components";
+import { SubHeader, SectionDiv, Button } from "../components";
 
 const Hero = styled.header`
-  /* background-image: linear-gradient(90deg, #ffffff 69%, #eeeeee 60%); */
   width: 100%;
   overflow: hidden;
   section {
@@ -80,74 +69,6 @@ const HParagraph = styled.p`
   font-weight: 300;
   font-family: "Overpass", sans-serif !important;
   font-size: 2rem;
-`;
-// const Heading1 = styled.h1`
-//   color: var(--c-color1);
-//   font-family: "Poppins", sans-serif;
-//   font-weight: 600;
-//   font-size: 2.1rem;
-// `;
-
-// const SemiCircle1 = styled.div`
-//   width: ${(props) => props.width || "3.1rem"};
-//   height: ${(props) => props.height || "6rem"};
-//   background: ${(props) => props.bg};
-//   border-radius: ${(props) => props.radius};
-//   position: ${(props) => props.position};
-//   bottom: ${(props) => props.bottom};
-//   opacity: ${(props) => props.opacity};
-//   left: ${(props) => props.left};
-//   right: ${(props) => props.right};
-// `;
-
-const TimeLine = styled.div`
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 36rem;
-`;
-
-const Light = styled.span`
-  font-weight: 300;
-`;
-const SvgImage = styled.img`
-  padding: 0.4rem;
-  position: ${(props) => props.position};
-  left: ${(props) => props.left};
-  right: ${(props) => props.right};
-  top: ${(props) => props.top};
-`;
-
-const Plink = styled.a`
-  text-decoration: none;
-  color: #5c5c5c;
-  transition: 2s ease-in-out;
-  &:hover {
-    color: var(--c-color1) !important;
-  }
-`;
-
-const LeftTimeline = styled.div`
-  position: absolute;
-  left: -18rem;
-  top: 1.2rem;
-`;
-
-const LastTimeline = styled.div`
-  position: absolute;
-  left: -15rem;
-  top: 3.5rem;
-`;
-
-const Steps = styled.div`
-  margin-top: 4rem;
-  display: block;
-`;
-
-const RightTimeline = styled.div`
-  position: relative;
-  top: -9.5rem;
-  left: 7rem;
 `;
 
 const Journey = styled.div`
@@ -324,24 +245,64 @@ export const Home = () => {
             <LightButton>Apply Now</LightButton>
           </SectionDiv>
         </div>
+        <Testimonial>
+          <p>
+            We were in the middle of the largest project we’ve undertaken as a
+            business. There’s no way we would have been able to grow as
+            aggressively or be as successful as we have been without our Andela
+            team.
+          </p>
+          <h2>Tope Abdulahi</h2>
+          <p>
+            <i>-Former student/Lead Engineer at Apple</i>
+          </p>
+        </Testimonial>
       </main>
     </>
   );
 };
 
-const Timelines = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+const Testimonial = styled.div`
+  text-align: center;
+  padding: 10rem 15rem;
 
-  div {
-    width: 240px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  h2 {
+    margin: 2rem 0;
+    color: #c13147;
+    font-weight: bold;
+  }
+
+  p {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 8rem 7rem;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 8rem 3rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 6rem 4rem;
   }
 `;
+
+// const Timelines = styled.div`
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+
+//   div {
+//     width: 240px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// `;
 
 const LightButton = styled(Button)`
   background: white;
@@ -391,3 +352,72 @@ const LightButton = styled(Button)`
 //   </Timelines>
 // </TimeLine>
 // </Steps>
+
+// const Heading1 = styled.h1`
+//   color: var(--c-color1);
+//   font-family: "Poppins", sans-serif;
+//   font-weight: 600;
+//   font-size: 2.1rem;
+// `;
+
+// const SemiCircle1 = styled.div`
+//   width: ${(props) => props.width || "3.1rem"};
+//   height: ${(props) => props.height || "6rem"};
+//   background: ${(props) => props.bg};
+//   border-radius: ${(props) => props.radius};
+//   position: ${(props) => props.position};
+//   bottom: ${(props) => props.bottom};
+//   opacity: ${(props) => props.opacity};
+//   left: ${(props) => props.left};
+//   right: ${(props) => props.right};
+// `;
+
+// const TimeLine = styled.div`
+//   position: relative;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 36rem;
+// `;
+
+// const Light = styled.span`
+//   font-weight: 300;
+// `;
+// const SvgImage = styled.img`
+//   padding: 0.4rem;
+//   position: ${(props) => props.position};
+//   left: ${(props) => props.left};
+//   right: ${(props) => props.right};
+//   top: ${(props) => props.top};
+// `;
+
+// const Plink = styled.a`
+//   text-decoration: none;
+//   color: #5c5c5c;
+//   transition: 2s ease-in-out;
+//   &:hover {
+//     color: var(--c-color1) !important;
+//   }
+// `;
+
+// const LeftTimeline = styled.div`
+//   position: absolute;
+//   left: -18rem;
+//   top: 1.2rem;
+// `;
+
+// const LastTimeline = styled.div`
+//   position: absolute;
+//   left: -15rem;
+//   top: 3.5rem;
+// `;
+
+// const Steps = styled.div`
+//   margin-top: 4rem;
+//   display: block;
+// `;
+
+// const RightTimeline = styled.div`
+//   position: relative;
+//   top: -9.5rem;
+//   left: 7rem;
+// `;

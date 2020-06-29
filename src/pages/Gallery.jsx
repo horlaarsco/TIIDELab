@@ -22,6 +22,9 @@ const ImagesArray = [
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438035/Visit_to_NECA_Lagos_oepb85.jpg",
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438035/Visit_to_NECA_Lagos_1_kw0b2m.jpg",
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438330/IMG-20200322-WA0012_sp6q7y.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593441746/20200220_200552_qfgq1y.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593441746/dinner_with_CEO_1_zebvjs.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593441746/OSC_fest_Lagos_zgomfk.jpg",
 ];
 
 export function Gallery() {
