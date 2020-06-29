@@ -82,6 +82,7 @@ const Journey = styled.div`
     display: flex;
     max-width: 1300px;
     margin: 10rem auto;
+    position: relative;
   }
   div {
     display: flex;
@@ -174,7 +175,10 @@ export const Home = () => {
                 <Button className='mt-5'>View Gallery</Button>
               </span>
             </div>
-            <img src='/home3.png' />
+            <img
+              src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593446951/our_journey_so_far_ozylur.png'
+              alt=''
+            />
           </section>
         </Journey>
         <section>

@@ -12,7 +12,11 @@ export function Header() {
     <Head>
       <span>
         <Link onClick={() => setShowNav(false)} to='/'>
-          <img className='navbar-brand' src='/tiidelab-logo.svg' alt='' />
+          <img
+            className='navbar-brand'
+            src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593448767/tiidelab_logo_new_jliy5p.svg'
+            alt=''
+          />
         </Link>
         <Nav>
           <li>

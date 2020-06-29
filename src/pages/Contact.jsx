@@ -61,8 +61,7 @@ export function Contact() {
           <div>
             <SubHeader>FAQ’s</SubHeader>
             <img
-              width='550px'
-              src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593437043/Tiidelab_CEO_addressing_fellows_brlsug.jpg'
+              src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593446879/FAQ_rud9fs.png'
               alt=''
             />
           </div>
@@ -160,7 +159,8 @@ const Faq = styled.div`
   img {
     position: absolute;
     right: 0;
-    top: -120px;
+    top: -200px;
+    width: 550px;
   }
 
   @media (max-width: 768px) {
@@ -189,6 +189,10 @@ const Faq = styled.div`
       div {
         padding: 5rem 10rem;
       }
+    }
+
+    img {
+      width: 500px !important;
     }
   }
 
