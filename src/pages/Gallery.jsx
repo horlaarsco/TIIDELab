@@ -12,6 +12,18 @@ import {
   Bottom,
 } from "../components";
 
+const ImagesArray = [
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438037/dinner_with_CEO_cxq37b.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438038/Running_codes_in_class_wopugc.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438036/3_fellows_working_together_ul0nc2.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438038/fellows_with_Mrs_Folusho_Samuel_cafatk.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438037/Female_fellow_coding_z90gft.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438036/Dr_Lanre_Philips_mentorship_session_rns5mi.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438035/Visit_to_NECA_Lagos_oepb85.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438035/Visit_to_NECA_Lagos_1_kw0b2m.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438330/IMG-20200322-WA0012_sp6q7y.jpg",
+];
+
 export function Gallery() {
   return (
     <div>
@@ -44,46 +56,14 @@ export function Gallery() {
         </Bottom>
       </Hero>
       <Images className='row'>
-        <img
-          className='col-12 col-sm-4 col-md-3'
-          src='https://via.placeholder.com/400x400.png'
-          alt=''
-        />
-        <img
-          className='col-12 col-sm-4 col-md-3'
-          src='https://via.placeholder.com/400x400.png'
-          alt=''
-        />
-        <img
-          className='col-12 col-sm-4 col-md-3'
-          src='https://via.placeholder.com/400x400.png'
-          alt=''
-        />
-        <img
-          className='col-12 col-sm-4 col-md-3'
-          src='https://via.placeholder.com/400x400.png'
-          alt=''
-        />
-        <img
-          className='col-12 col-sm-4 col-md-3'
-          src='https://via.placeholder.com/400x400.png'
-          alt=''
-        />
-        <img
-          className='col-12 col-sm-4 col-md-3'
-          src='https://via.placeholder.com/400x400.png'
-          alt=''
-        />
-        <img
-          className='col-12 col-sm-4 col-md-3'
-          src='https://via.placeholder.com/400x400.png'
-          alt=''
-        />
-        <img
-          className='col-12 col-sm-4 col-md-3'
-          src='https://via.placeholder.com/400x400.png'
-          alt=''
-        />
+        {ImagesArray.map((image, index) => (
+          <img
+            key={index}
+            className='col-12 col-sm-4 col-md-3'
+            src={image}
+            alt=''
+          />
+        ))}
       </Images>
       <SectionDiv bg='#c13147'>
         <h3>Be a Junior Developer Today</h3>

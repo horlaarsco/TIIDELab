@@ -60,7 +60,11 @@ export function Contact() {
         <span>
           <div>
             <SubHeader>FAQ’s</SubHeader>
-            <img width='550px' src='/faq.svg' alt='' />
+            <img
+              width='550px'
+              src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593437043/Tiidelab_CEO_addressing_fellows_brlsug.jpg'
+              alt=''
+            />
           </div>
         </span>
         <div>
@@ -103,7 +107,11 @@ export function Contact() {
           </Answer>
         </div>
       </Faq>
-      <SectionDiv bgimage='url(./leftbg.png)'>
+      <SectionDiv
+        style={{ backgroundPosition: "center bottom", backgroundSize: "cover" }}
+        bgimage='url(https://res.cloudinary.com/ddxgfwoao/image/upload/c_scale,q_auto:eco,w_1068/v1593431132/image_ntvtkj.png)'
+      >
+        {" "}
         <h3>Do not be left out</h3>
         <p>
           Whether you are completely new to coding or had prior experience, we
@@ -147,7 +155,7 @@ const Faq = styled.div`
   img {
     position: absolute;
     right: 0;
-    top: -200px;
+    top: -120px;
   }
 
   @media (max-width: 768px) {

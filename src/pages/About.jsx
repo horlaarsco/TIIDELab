@@ -52,7 +52,13 @@ export function About() {
         </p>
       </SectionDiv>
       <Vision>
-        <img src='/about2.png' alt='' />
+        <span>
+          <img
+            src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593435943/smiling_fellow_in_tiidelab_shirt_k9t3t6.jpg'
+            alt=''
+          />
+        </span>
+
         <div>
           <SubHeader>Our Vision</SubHeader>
           <p>
@@ -97,10 +103,18 @@ export function About() {
             real life challenges.
           </p>
         </div>
-        <img src='/about3.png' alt='' />
+        <span>
+          <img
+            src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593436761/Mr_Bankole_addressing_fellows_ozigo4.jpg'
+            alt=''
+          />
+        </span>
       </WhatWedo>
 
-      <SectionDiv bgimage='url(./leftbg.png)'>
+      <SectionDiv
+        style={{ backgroundPosition: "center bottom", backgroundSize: "cover" }}
+        bgimage='url(https://res.cloudinary.com/ddxgfwoao/image/upload/c_scale,q_auto:eco,w_1068/v1593431132/image_ntvtkj.png)'
+      >
         <h3>Do not be left out</h3>
         <p>
           Whether you are completely new to coding or had prior experience, we
@@ -124,6 +138,11 @@ const WhatWedo = styled.div`
     justify-content: center;
     /* align-items: center; */
     padding: 3rem 10rem;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
   }
 
   img {
@@ -178,6 +197,11 @@ const Vision = styled.div`
 
   img {
     width: 550px;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
   }
 
   @media (max-width: 1200px) {

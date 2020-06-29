@@ -66,6 +66,16 @@ export function Header() {
               Gallery
             </Link>
           </li>
+          <li>
+            <Link
+              style={{ color: "#c13147" }}
+              onClick={() => setShowNav(false)}
+              to='/gallery'
+            >
+              {" "}
+              Hire
+            </Link>
+          </li>
         </ul>
         <ApplyButton mobile='true'>Apply Now</ApplyButton>
       </MNav>
@@ -120,6 +130,9 @@ const MNav = styled.div`
 const Hire = styled.p`
   font-weight: bold;
   font-size: 1.6rem;
+  a {
+    color: #c13147;
+  }
 
   @media (max-width: 768px) {
     display: none;
