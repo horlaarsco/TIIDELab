@@ -228,7 +228,7 @@ export const Home = () => {
                   alt=''
                 />
               </div>
-              <div className='carousel-item active'>
+              <div className='carousel-item '>
                 <p>
                   Tiidelab has helped me gain more focus and shed more light on
                   what I want to do and how to go about it. Within the space of
@@ -247,7 +247,7 @@ export const Home = () => {
                   alt=''
                 />
               </div>
-              <div className='carousel-item active'>
+              <div className='carousel-item '>
                 <p>
                   Tiidelab has helped me gain more focus and shed more light on
                   what I want to do and how to go about it. Within the space of
@@ -266,7 +266,7 @@ export const Home = () => {
                   alt=''
                 />
               </div>
-              <div className='carousel-item active'>
+              <div className='carousel-item '>
                 <p>
                   Tiidelab has helped me gain more focus and shed more light on
                   what I want to do and how to go about it. Within the space of
