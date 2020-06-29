@@ -37,6 +37,7 @@ export const Home = () => {
             id='carouselExampleSlidesOnly'
             className='carousel slide'
             data-ride='carousel'
+            data-interval='2000'
           >
             <main className='carousel-inner'>
               <main className='carousel-item active'>
@@ -205,8 +206,66 @@ export const Home = () => {
             id='carouselExampleSlidesOnly'
             className='carousel slide'
             data-ride='carousel'
+            data-interval='2000'
           >
             <div className='carousel-inner'>
+              <div className='carousel-item active'>
+                <p>
+                  Tiidelab has helped me gain more focus and shed more light on
+                  what I want to do and how to go about it. Within the space of
+                  five months, I've been able to learn how to look for growing
+                  problems in the society, how to come up with a solution and
+                  how to create the solution using tech. I've improved not only
+                  as a developer and a business personnel but also as a person.
+                </p>
+                <h2>Sanusi Micheal HAYATU</h2>
+                <p>
+                  <i>-Former student/Lead Engineer at Apple</i>
+                </p>
+                <img
+                  width='100px'
+                  src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593454384/sanusi_Pasport_strd9b.png'
+                  alt=''
+                />
+              </div>
+              <div className='carousel-item active'>
+                <p>
+                  Tiidelab has helped me gain more focus and shed more light on
+                  what I want to do and how to go about it. Within the space of
+                  five months, I've been able to learn how to look for growing
+                  problems in the society, how to come up with a solution and
+                  how to create the solution using tech. I've improved not only
+                  as a developer and a business personnel but also as a person.
+                </p>
+                <h2>Sanusi Micheal HAYATU</h2>
+                <p>
+                  <i>-Former student/Lead Engineer at Apple</i>
+                </p>
+                <img
+                  width='100px'
+                  src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593454384/sanusi_Pasport_strd9b.png'
+                  alt=''
+                />
+              </div>
+              <div className='carousel-item active'>
+                <p>
+                  Tiidelab has helped me gain more focus and shed more light on
+                  what I want to do and how to go about it. Within the space of
+                  five months, I've been able to learn how to look for growing
+                  problems in the society, how to come up with a solution and
+                  how to create the solution using tech. I've improved not only
+                  as a developer and a business personnel but also as a person.
+                </p>
+                <h2>Sanusi Micheal HAYATU</h2>
+                <p>
+                  <i>-Former student/Lead Engineer at Apple</i>
+                </p>
+                <img
+                  width='100px'
+                  src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593454384/sanusi_Pasport_strd9b.png'
+                  alt=''
+                />
+              </div>
               <div className='carousel-item active'>
                 <p>
                   Tiidelab has helped me gain more focus and shed more light on

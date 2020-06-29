@@ -70,7 +70,7 @@ export function Header() {
         </Nav>
         <HireBox>
           <Hire>
-            <Link to='/'>Hire</Link>
+            <a href='mailto:hello@TIIDELab.com'>Hire</a>
           </Hire>
           <ApplyButton>Apply Now</ApplyButton>
         </HireBox>
