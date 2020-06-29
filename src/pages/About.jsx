@@ -52,7 +52,7 @@ export function About() {
         </p>
       </SectionDiv>
       <Vision>
-        <img width='550px' src='/faq.svg' alt='' />
+        <img src='/about2.png' alt='' />
         <div>
           <SubHeader>Our Vision</SubHeader>
           <p>
@@ -77,12 +77,29 @@ export function About() {
         <p>
           Our mission Is to train our fellows with relevant digital skills and
           tools in an enabling environment (to positively influence the
-          continent).
-          <br />
-          By creating an enabling environment, we provide relevant skills and
-          tools to influence the African continent.
+          continent). By creating an enabling environment, we provide relevant
+          skills and tools to influence the African continent.
         </p>
       </SectionDiv>
+      <WhatWedo>
+        <div>
+          <SubHeader> What we do</SubHeader>
+          <p>
+            We provide access to high quality trainings for front or back end
+            development while incorporating problem solving and collaborative
+            skills. We give our fellows access to market and available
+            opportunities in the work sector by providing guidance using people
+            and relevant tools.
+            <br />
+            <br />
+            We utilize the blended learning process and strong evaluation
+            metrics to ensure that our fellows are adequately prepared to tackle
+            real life challenges.
+          </p>
+        </div>
+        <img src='/about3.png' alt='' />
+      </WhatWedo>
+
       <SectionDiv bg='black'>
         <h3>Do not be left out</h3>
         <p>
@@ -96,6 +113,56 @@ export function About() {
   );
 }
 
+const WhatWedo = styled.div`
+  display: flex;
+  max-width: 1300px;
+  margin: 10rem auto;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 3rem 10rem;
+  }
+
+  img {
+    width: 550px;
+  }
+
+  @media (max-width: 1200px) {
+    div {
+      padding: 3rem 7rem;
+    }
+
+    img {
+      width: 450px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    div {
+      padding: 3rem 4rem;
+    }
+
+    img {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    div {
+      padding: 3rem 4rem;
+    }
+
+    img {
+      padding: 3rem 4rem;
+      width: 100%;
+    }
+  }
+`;
+
 const Vision = styled.div`
   display: flex;
   max-width: 1300px;
@@ -108,12 +175,48 @@ const Vision = styled.div`
     /* align-items: center; */
     padding: 3rem 10rem;
   }
+
+  img {
+    width: 550px;
+  }
+
+  @media (max-width: 1200px) {
+    div {
+      padding: 3rem 7rem;
+    }
+
+    img {
+      width: 450px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    div {
+      padding: 3rem 4rem;
+    }
+
+    img {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    div {
+      padding: 3rem 4rem;
+    }
+
+    img {
+      padding: 3rem 4rem;
+      width: 100%;
+    }
+  }
 `;
 
 const LightApplyButton = styled(Button)`
   background: white;
   color: #c13147;
-  border: 1px solid #c13147;
+  border: none;
 
   &:after {
     border: 1px solid white;
@@ -130,19 +233,8 @@ const Top = styled.div`
   margin: 0 auto;
   position: relative;
   max-width: 1300px;
-
-  & > div {
-    position: absolute;
-    right: 100px;
-    top: 40px;
-    display: flex;
-
-    span {
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
-      background: #e7c941;
-    }
+  img {
+    width: 350px;
   }
 
   @media (max-width: 1200px) {
@@ -156,6 +248,20 @@ const Top = styled.div`
     padding: 6rem 5rem;
     img {
       width: 300px;
+    }
+  }
+
+  & > div {
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    display: flex;
+
+    span {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #e7c941;
     }
   }
 

@@ -33,15 +33,15 @@ export const WineSemiCircle = styled.div`
 `;
 
 export const Button = styled.button`
-  background: white;
-  color: #c13147;
-  border: 1px solid #c13147;
+  color: white;
+  border: none;
   padding: 1rem 3rem;
   position: relative;
   font-size: 1.6rem;
+  background: #c13147;
   &:after {
     content: " ";
-    border: 1px solid white;
+    border: 1px solid #c13147;
     position: absolute;
     width: 100%;
     height: 100%;
