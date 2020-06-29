@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export function Header() {
   const [showNav, setShowNav] = React.useState(false);
@@ -16,16 +16,52 @@ export function Header() {
         </Link>
         <Nav>
           <li>
-            <Link to='/'> Home</Link>
+            <NavLink
+              exact
+              activeStyle={{
+                fontWeight: "700",
+                color: "black",
+              }}
+              to='/'
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to='/about'> About Us </Link>
+            <NavLink
+              activeStyle={{
+                fontWeight: "700",
+                color: "black",
+              }}
+              to='/about'
+            >
+              {" "}
+              About Us{" "}
+            </NavLink>
           </li>
           <li>
-            <Link to='/contact'> Contact Us</Link>
+            <NavLink
+              activeStyle={{
+                fontWeight: "700",
+                color: "black",
+              }}
+              to='/contact'
+            >
+              {" "}
+              Contact Us
+            </NavLink>
           </li>
           <li>
-            <Link to='/gallery'> Gallery</Link>
+            <NavLink
+              activeStyle={{
+                fontWeight: "700",
+                color: "black",
+              }}
+              to='/gallery'
+            >
+              {" "}
+              Gallery
+            </NavLink>
           </li>
         </Nav>
         <HireBox>

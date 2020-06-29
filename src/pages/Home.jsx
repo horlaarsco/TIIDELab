@@ -19,6 +19,10 @@ const Hero = styled.header`
     max-width: 480px;
   }
 
+  h2 {
+    margin: 2rem 0;
+  }
+
   img {
     width: 520px;
   }
