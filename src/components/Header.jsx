@@ -117,13 +117,32 @@ export function Header() {
             </HireLink>
           </li>
         </ul>
-        <ApplyButton to='/apply' mobile='true'>
-          Apply Now
-        </ApplyButton>
+        <div>
+          <MobApply to='/apply'>Apply Now</MobApply>
+        </div>
       </MNav>
     </Head>
   );
 }
+
+const MobApply = styled(Link)`
+  background: #c13147;
+  color: white !important;
+  border: none;
+  padding: 1rem 3rem;
+  position: relative;
+  font-size: 1.6rem;
+  &:after {
+    content: " ";
+    border: 1px solid #c13147;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -7px;
+    bottom: -7px;
+  }
+  margin-top: -7px;
+`;
 
 const HireLink = styled(Link)``;
 
