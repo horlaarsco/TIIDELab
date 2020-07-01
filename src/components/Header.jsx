@@ -237,6 +237,10 @@ const ApplyButton = styled(Link)`
     bottom: -7px;
   }
   margin-top: -7px;
+
+  @media (max-width: 768px) {
+    display: ${({ mobile }) => (mobile ? "block" : "none")};
+  }
 `;
 
 const Nav = styled.ul`
