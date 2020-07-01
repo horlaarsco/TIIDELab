@@ -12,6 +12,13 @@ import {
 } from "../components";
 import Parser from "html-react-parser";
 
+const Above = styled.span`
+  background-image: url("/above.png");
+  height: 40px;
+  width: 100%;
+  display: block;
+`;
+
 export function Contact() {
   return (
     <div>
@@ -32,6 +39,7 @@ export function Contact() {
             </div>
           </Top>
         </WrapTop>
+        <Above />
         <Bottom>
           <p>
             <br /> <br /> <strong>Call us today</strong>

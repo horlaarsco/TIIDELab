@@ -7,6 +7,12 @@ import { ReactComponent as Steps3 } from "../assets/icons/3-steps.svg";
 import { Link } from "react-router-dom";
 import Parser from "html-react-parser";
 
+const Above = styled.div`
+  background-image: url("/above.png");
+  height: 40px;
+  width: 100%;
+`;
+
 export const Home = () => {
   return (
     <>
@@ -55,6 +61,7 @@ export const Home = () => {
             </main>
           </main>
         </section>
+        <Above />
       </Hero>
       <main id='main'>
         <TimeLine>
@@ -97,9 +104,9 @@ export const Home = () => {
               </div>
             </div>
             <main>
-              {Parser(
-                `<a class="typeform-share button apply-button mt-5" href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Apply Now </a> `
-              )}
+              <ApplyButton to='/apply' className='mt-5 '>
+                Apply Now
+              </ApplyButton>
             </main>
           </section>
         </TimeLine>
@@ -195,9 +202,7 @@ export const Home = () => {
               we will help you accelerate your dream of becoming a world-class
               software developer or designer in record time.
             </p>
-            {Parser(
-              `<a class="typeform-share button light-button mt-5" href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Apply Now </a> `
-            )}
+            <LightButton to='/apply'>Apply Now</LightButton>
           </SectionDiv>
         </div>
         <Testimonial />
@@ -205,6 +210,45 @@ export const Home = () => {
     </>
   );
 };
+
+const ApplyButton = styled(Link)`
+  color: white !important;
+  border: none;
+  padding: 1rem 3rem;
+  position: relative;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: #c13147;
+  &:after {
+    content: " ";
+    border: 1px solid #c13147;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -7px;
+    bottom: -7px;
+  }
+`;
+
+const LightButton = styled(Link)`
+  color: #c13147 !important;
+  border: none;
+  padding: 1rem 3rem;
+  position: relative;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: white;
+  &:after {
+    content: " ";
+    border: 1px solid white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -7px;
+    bottom: -7px;
+  }
+`;
+
 const Hero = styled.header`
   width: 100%;
   overflow: hidden;
@@ -212,7 +256,7 @@ const Hero = styled.header`
     display: flex;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 6rem 15rem;
+    padding: 5.5rem 15rem;
     align-items: center;
   }
 
@@ -255,7 +299,7 @@ const Hero = styled.header`
 
   @media (max-width: 768px) {
     section {
-      padding: 6rem 4rem;
+      padding: 4rem 4rem;
       flex-direction: column;
       /* align-items: flex-start; */
     }

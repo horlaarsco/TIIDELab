@@ -11,6 +11,13 @@ import {
 } from "../components";
 import Parser from "html-react-parser";
 
+const Above = styled.span`
+  background-image: url("/above.png");
+  height: 40px;
+  width: 100%;
+  display: block;
+`;
+
 export function About() {
   return (
     <div>
@@ -31,6 +38,7 @@ export function About() {
             </div>
           </Top>
         </WrapTop>
+        <Above />
         <Bottom>
           <p>
             Challenges around getting young people employed and productive in
@@ -68,11 +76,13 @@ export function About() {
         </span>
 
         <div>
-          <SubHeader>Our Vision</SubHeader>
-
+          <SubHeader>Our Mission</SubHeader>
           <p>
-            Develop young Africans who use technology enabled means in solving
-            everyday challenges.
+            - To train our fellows with relevant digital skills and tools in an
+            enabling environment to positively influence the African continent.
+            <br /> <br />
+            -To develop our fellows with relevant skills and use of digital
+            tools to become self-reliant.
           </p>
         </div>
       </Vision>
@@ -82,12 +92,11 @@ export function About() {
         }}
       >
         <SectionDiv color='black' bg='#f4f2f2'>
-          <h3>Our Mission</h3>
+          <h3>Our Vision</h3>
+
           <p>
-            Our mission is to train our fellows with relevant digital skills and
-            tools in an enabling environment to positively influence the African
-            continent and develop our fellows with relevant skills and use of
-            digital tools to become self-reliant.
+            Develop young Africans who use technology enabled means
+            <br /> in solving everyday challenges.
           </p>
         </SectionDiv>
       </div>

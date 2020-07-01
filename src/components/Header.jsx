@@ -56,27 +56,12 @@ export function Header() {
               Contact Us
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              activeStyle={{
-                fontWeight: "700",
-                color: "black",
-              }}
-              to='/gallery'
-            >
-              {" "}
-              Gallery
-            </NavLink>
-          </li>
         </Nav>
         <HireBox>
           <Hire>
             <a href='mailto:hi@tiidelab.com'>Hire</a>
           </Hire>
-          {/* <ApplyButton>Apply Now</ApplyButton> */}
-          {Parser(
-            `<a class="typeform-share apply-header " href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Apply Now </a> `
-          )}{" "}
+          <ApplyButton to='/apply'>Apply Now</ApplyButton>
         </HireBox>
         <Ham onClick={() => setShowNav(!showNav)}>
           <div></div> <div></div>
@@ -105,23 +90,20 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowNav(false)} to='/gallery'>
-              {" "}
-              Gallery
-            </Link>
-          </li>
-          <li>
             <Link
+              as='a'
+              href='mailto:hi@tiidelab.com'
               style={{ color: "#c13147" }}
               onClick={() => setShowNav(false)}
               to='/gallery'
             >
-              {" "}
               Hire
             </Link>
           </li>
         </ul>
-        <ApplyButton mobile='true'>Apply Now</ApplyButton>
+        <ApplyButton to='/apply' mobile='true'>
+          Apply Now
+        </ApplyButton>
       </MNav>
     </Head>
   );
@@ -224,9 +206,9 @@ const HireBox = styled.div`
   align-items: center;
 `;
 
-const ApplyButton = styled.button`
+const ApplyButton = styled(Link)`
   background: #c13147;
-  color: white;
+  color: white !important;
   border: none;
   margin-left: 6rem;
   padding: 1rem 3rem;

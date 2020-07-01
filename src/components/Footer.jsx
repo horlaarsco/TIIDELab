@@ -34,7 +34,8 @@ const Flink = styled(Link)`
   display: block;
 
   img {
-    width: 40px;
+    width: 25px;
+    margin-right: 1rem;
   }
 `;
 
@@ -45,17 +46,17 @@ const FlexWrapper = styled.div`
   margin: 0 auto;
   justify-content: space-between;
 
-  padding: 5rem 15rem;
+  padding: 10rem 15rem;
   @media (max-width: 1200px) {
-    padding: 5rem 10rem;
+    padding: 10rem 10rem;
   }
 
   @media (max-width: 1000px) {
-    padding: 5rem 5rem;
+    padding: 10rem 5rem;
   }
 
   @media (max-width: 768px) {
-    padding: 6rem 3rem;
+    padding: 10rem 3rem;
   }
 `;
 
@@ -65,84 +66,90 @@ const FooterLogo = styled.div`
     margin: 2rem 0 1rem;
   }
 `;
+
+const Bottom = styled.div`
+  background-image: url("/below.png");
+  height: 50px;
+  width: 100%;
+`;
 export const Footer = () => {
   return (
-    <Foot>
-      <FlexWrapper>
-        <FooterLogo>
-          <img src='./tiidelab-logo.svg' alt='tiidelab logo' />
-          <Paragraph color='#680D14'>Copyright © 2020, TIIDELab.</Paragraph>
-          <Row>
-            <Flink
-              as='a'
-              href='https://web.twitter.com/TIIDELab/'
-              className='mr-2'
-            >
-              <img src='/twitter.svg' alt='' />
-            </Flink>
-            <Flink
-              as='a'
-              href=' https://www.instagram.com/tiidelab'
-              className='mr-2'
-            >
-              <img src='/instagram.svg' alt='' />
-            </Flink>
-            <Flink
-              as='a'
-              href='https://web.facebook.com/TIIDELab/'
-              className='mr-2'
-            >
-              <img src='/facebook.svg' alt='' />
-            </Flink>
-            <Flink
-              as='a'
-              href='https://www.linkedin.com/company/64564200/admin/'
-              className='mr-2'
-            >
-              <img src='/linkedin.svg' alt='' />
-            </Flink>
-            <Flink
-              as='a'
-              href='https://medium.com/@tiidelabfellowship'
-              className='mr-2'
-            >
-              <img src='/medium.svg' alt='' />
-            </Flink>
-          </Row>
-        </FooterLogo>
+    <>
+      <Bottom></Bottom>
+      <Foot>
+        <FlexWrapper>
+          <FooterLogo>
+            <img src='./tiidelab-logo.svg' alt='tiidelab logo' />
+            <Paragraph color='#680D14'>Copyright © 2020, TIIDELab.</Paragraph>
+            <Row>
+              <Flink
+                as='a'
+                href='https://web.twitter.com/TIIDELab/'
+                className='mr-2'
+              >
+                <img src='/twitter.svg' alt='' />
+              </Flink>
+              <Flink
+                as='a'
+                href=' https://www.instagram.com/tiidelab'
+                className='mr-2'
+              >
+                <img src='/instagram.svg' alt='' />
+              </Flink>
+              <Flink
+                as='a'
+                href='https://web.facebook.com/TIIDELab/'
+                className='mr-2'
+              >
+                <img
+                  src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593620897/Path_hu8qby.svg'
+                  alt=''
+                />
+              </Flink>
+              <Flink
+                as='a'
+                href='https://www.linkedin.com/company/64564200/admin/'
+                className='mr-2'
+              >
+                <img src='/linkedin.svg' alt='' />
+              </Flink>
+              <Flink
+                as='a'
+                href='https://medium.com/@tiidelabfellowship'
+                className='mr-2'
+              >
+                <img src='/medium.svg' alt='' />
+              </Flink>
+            </Row>
+          </FooterLogo>
 
-        <div className=''>
-          <Fheading>Learn More</Fheading>
-          <Flink
-            as='a'
-            href='https://form.typeform.com/to/lWblM7mI'
-            data-mode='popup'
-            data-hide-headers='true'
-            target='_blank'
-            className='pt-4 typeform-share '
-          >
-            Apply
-          </Flink>
-          <Flink>FAQs</Flink>
-          <Flink>Terms & Conditions</Flink>
-          <Flink>Help Center</Flink>
-        </div>
-        <div className=''>
-          <Fheading>Company</Fheading>
-          <Flink to='/about' className='pt-4'>
-            About Us
-          </Flink>
-          <Flink to='/gallery'>Gallery</Flink>
-          <Flink to='/contact'>Contact Us</Flink>
-          <Flink as='a' href='mailto:hi@tiidelab.com'>
-            Hire a Developer
-          </Flink>
-        </div>
-      </FlexWrapper>
-    </Foot>
+          <div className=''>
+            <Fheading>Learn More</Fheading>
+            <Flink to='/apply' className='pt-4 '>
+              Apply
+            </Flink>
+            <Flink>FAQs</Flink>
+            <Flink>Terms & Conditions</Flink>
+            <Flink>Help Center</Flink>
+          </div>
+          <div className=''>
+            <Fheading>Company</Fheading>
+            <Flink to='/about' className='pt-4'>
+              About Us
+            </Flink>
+            <Flink to='/gallery'>Gallery</Flink>
+            <Flink to='/contact'>Contact Us</Flink>
+            <Flink as='a' href='mailto:hi@tiidelab.com'>
+              Hire a Developer
+            </Flink>
+          </div>
+        </FlexWrapper>
+      </Foot>
+    </>
   );
 };
 
 const Row = styled.div`
   display: flex;
+  align-items: center;
 `;

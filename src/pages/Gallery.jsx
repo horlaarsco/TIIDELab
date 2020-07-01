@@ -11,6 +11,14 @@ import {
 } from "../components";
 import { Testimonial } from "../components";
 import Parser from "html-react-parser";
+import { Link } from "react-router-dom";
+
+const Above = styled.span`
+  background-image: url("/above.png");
+  height: 40px;
+  width: 100%;
+  display: block;
+`;
 
 const ImagesArray = [
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438037/dinner_with_CEO_cxq37b.jpg",
@@ -48,9 +56,10 @@ export function Gallery() {
             </div>
           </Top>
         </WrapTop>
+        <Above />
         <Bottom>
           <p>
-            "Great innovations begin from humble beginnings. this has been our
+            Great innovations begin from humble beginnings. this has been our
             driving force at tiidelab as we have been able to train 28 amazing
             africans, made them junior developers, and exposed them to a journey
             of career development via internships and employment opportunities
@@ -61,7 +70,7 @@ export function Gallery() {
             employability skills development, mentorship session, contests and
             competition, routine fellowship exposure, fun, sports and
             recreational activities. we are delighted to take you through this
-            amazing journey with us as we harness the African potential!"
+            amazing journey with us as we harness the African potential!
           </p>
         </Bottom>
       </Hero>
@@ -87,15 +96,32 @@ export function Gallery() {
             will help you accelerate your dream of becoming a world-class
             software developer or designer in record time.
           </p>
-          {Parser(
-            `<a class="typeform-share button light-button mt-5" href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Start Journey Now</a> `
-          )}{" "}
+          <LightButton to='/apply'>Start Journey Now</LightButton>
         </SectionDiv>
       </div>
       <Testimonial />
     </div>
   );
 }
+
+const LightButton = styled(Link)`
+  color: #c13147 !important;
+  border: none;
+  padding: 1rem 3rem;
+  position: relative;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: white;
+  &:after {
+    content: " ";
+    border: 1px solid white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -7px;
+    bottom: -7px;
+  }
+`;
 
 const Images = styled.div`
   width: 100%;
