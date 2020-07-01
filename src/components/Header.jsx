@@ -70,7 +70,7 @@ export function Header() {
         </Nav>
         <HireBox>
           <Hire>
-            <a href='mailto:hello@TIIDELab.com'>Hire</a>
+            <a href='mailto:hi@tiidelab.com'>Hire</a>
           </Hire>
           <ApplyButton>Apply Now</ApplyButton>
         </HireBox>
@@ -193,13 +193,13 @@ const Head = styled.header`
     display: flex;
     justify-content: space-between;
     padding: 0.8rem 5.5rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     align-items: center;
   }
 
   a {
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   @media (max-width: 1000px) {
@@ -227,7 +227,7 @@ const ApplyButton = styled.button`
   margin-left: 6rem;
   padding: 1rem 3rem;
   position: relative;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   &:after {
     content: " ";
     border: 1px solid #c13147;

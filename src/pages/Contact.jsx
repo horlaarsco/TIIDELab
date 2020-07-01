@@ -33,10 +33,10 @@ export function Contact() {
         </WrapTop>
         <Bottom>
           <p>
-            <br /> <br /> <strong>Call us for quick response on</strong>
+            <br /> <br /> <strong>Call us today</strong>
           </p>
-          <Number>+234 906 1995 782</Number>
-          <p>* Mon - Sat (9am - 6pm). Sun (2pm - 6pm)</p>
+          <Number> +234 906 0000 293, +234 817 7098 608</Number>
+          <p> Mon - Sat (9am - 6pm). Sun (2pm - 6pm)</p>
         </Bottom>
       </Hero>
       <FormDiv>

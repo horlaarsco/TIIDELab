@@ -2,10 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
-import { SubHeader, SectionDiv, Button } from "../components";
+import { SubHeader, SectionDiv, Button, Testimonial } from "../components";
 import { ReactComponent as Steps3 } from "../assets/icons/3-steps.svg";
 import Slider from "react-slick";
 import { Link, NavLink } from "react-router-dom";
+import Parser from "html-react-parser";
+
+const Apply = styled(Button)``;
 
 export const Home = () => {
   const settings = {
@@ -15,12 +18,14 @@ export const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
   return (
     <>
       <Hero>
         <section className=' w-100'>
           <div className='mx-3'>
             <HParagraph>Want to become an employable</HParagraph>
+
             <SubHeader style={{ color: "#C13147" }}>
               {"< Junior Developer? >"}
             </SubHeader>
@@ -29,7 +34,7 @@ export const Home = () => {
               record time.
             </p>
             <a href='#main'>
-              <Button className='mt-5'>See the path</Button>
+              <Button className='mt-5'>Get Started</Button>
             </a>
           </div>
 
@@ -66,8 +71,8 @@ export const Home = () => {
         <TimeLine>
           <section className='container'>
             <SubHeader className='font-weight-light text-center'>
-              It Takes Just{" "}
-              <strong className='font-weight-bold'>3 Steps</strong>
+              The TIIDELab
+              <strong className='font-weight-bold'> Process</strong>
             </SubHeader>
             <div className='row'>
               <div className='col-md'>
@@ -103,8 +108,9 @@ export const Home = () => {
               </div>
             </div>
             <main>
-              {" "}
-              <Button className='mt-5 '>Apply Now</Button>
+              {Parser(
+                `<a class="typeform-share button apply-button mt-5" href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Apply Now </a> `
+              )}
             </main>
           </section>
         </TimeLine>
@@ -113,9 +119,11 @@ export const Home = () => {
             <div>
               <SubHeader> Our Journey so far</SubHeader>
               <p>
-                Whether you are completely new to coding or had prior
-                experience, we will help you accelerate your dream of becoming a
-                world-class software developer or designer in record time.
+                Great innovations begin from humble beginnings. this has been
+                our driving force at tiidelab as we have been able to train 28
+                amazing africans, made them junior developers, and exposed them
+                to a journey of career development via internships and
+                employment opportunities over time.
               </p>
               <span>
                 <Link to='/gallery'>
@@ -201,119 +209,7 @@ export const Home = () => {
             <LightButton>Apply Now</LightButton>
           </SectionDiv>
         </div>
-        <Testimonial>
-          <div
-            id='carouselExampleControls'
-            className='carousel slide'
-            data-ride='carousel'
-          >
-            <div className='carousel-inner'>
-              <div className='carousel-item active'>
-                <p>
-                  Tiidelab has helped me gain more focus and shed more light on
-                  what I want to do and how to go about it. Within the space of
-                  five months, I've been able to learn how to look for growing
-                  problems in the society, how to come up with a solution and
-                  how to create the solution using tech. I've improved not only
-                  as a developer and a business personnel but also as a person.
-                </p>
-                <h2>Sanusi Micheal HAYATU</h2>
-                <p>
-                  <i>-Former student/Lead Engineer at Apple</i>
-                </p>
-                <img
-                  width='100px'
-                  src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593454384/sanusi_Pasport_strd9b.png'
-                  alt=''
-                />
-              </div>
-              <div className='carousel-item '>
-                <p>
-                  At TIIDELab, I had an extensive learning experience about the
-                  requisite tech and non-tech skills for survival in the tech
-                  industry. I had the opportunity to meet wonderful people,
-                  learned a new Javascript Framework and conquered my fears
-                  about CLI Environment. With TIIDELab experience, my career in
-                  the software space has been given a leap to everlasting
-                  growth.
-                </p>
-                <h2>Christainah Oluwakemi OWOYELE</h2>
-                <p>
-                  <i>-Former student/Lead Engineer at Apple</i>
-                </p>
-                <img
-                  width='100px'
-                  src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593457186/girl_head_ylqddg.png'
-                  alt=''
-                />
-              </div>
-              <div className='carousel-item '>
-                <p>
-                  Joining TIIDELab Fellowship was a dream come true in my tech
-                  journey, it gave me the opportunity to view/understand the
-                  Tech world better, now I can confidently call myself a junior
-                  developer because I have gotten foundation and a path to
-                  follow in growing into a top senior developer in the nearest
-                  future.
-                </p>
-                <h2>Godwin JACOB</h2>
-                <p>
-                  <i>-Former student/Lead Engineer at Apple</i>
-                </p>
-                <img
-                  width='100px'
-                  src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593457179/godwin_head_cie1kt.png'
-                  alt=''
-                />
-              </div>
-              <div className='carousel-item '>
-                <p>
-                  I had basic knowledge of HTML and CSS before TIIDELab and
-                  looking back, I really did not know how vast software
-                  development was. At the fellowship, we were taught front end
-                  web development technologies such as HTML, CSS and JavaScript
-                  and VUE JS as a JavaScript framework. We also learnt back end
-                  web development technologies such as Node JS using Express JS
-                  as its framework and also a database management system, which
-                  is MySQL.
-                </p>
-                <h2>Adebayo AJIBADE</h2>
-                <p>
-                  <i>-Former student/Lead Engineer at Apple</i>
-                </p>
-                <img
-                  width='100px'
-                  src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593457391/ajibade_head_hlcqmn.png'
-                  alt=''
-                />
-              </div>
-            </div>
-            <a
-              className='carousel-control-prev'
-              href='#carouselExampleControls'
-              role='button'
-              data-slide='prev'
-            >
-              <span
-                className='carousel-control-prev-icon'
-                aria-hidden='true'
-              ></span>
-              <span className='sr-only'>Previous</span>
-            </a>
-            <a
-              className='carousel-control-next'
-              href='#carouselExampleControls'
-              role='button'
-              data-slide='next'
-            >
-              <span
-                className='carousel-control-next-icon'
-                aria-hidden='true'
-              ></span>
-              <span className='sr-only'>Next</span>
-            </a>
-          </div>
-        </Testimonial>
+        <Testimonial />
       </main>
     </>
   );
@@ -423,7 +319,7 @@ const HParagraph = styled.p`
   color: ${(props) => props.color || "var(--c-color8)"};
   font-weight: 300;
   font-family: "Overpass", sans-serif !important;
-  font-size: 2rem;
+  font-size: 3rem;
 `;
 
 const Journey = styled.div`
@@ -487,40 +383,6 @@ const Count = styled.p`
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 `;
-
-const Testimonial = styled.div`
-  text-align: center;
-  padding: 10rem 15rem;
-  background: #f4f2f2;
-
-  img {
-    margin-top: 2rem;
-  }
-
-  h2 {
-    margin: 2rem 0;
-    color: #c13147;
-    font-weight: bold;
-  }
-
-  p {
-    max-width: 575px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 1200px) {
-    padding: 8rem 7rem;
-  }
-
-  @media (max-width: 1100px) {
-    padding: 8rem 3rem;
-  }
-
-  @media (max-width: 768px) {
-    padding: 6rem 4rem;
-  }
-`;
-
 const LightButton = styled(Button)`
   background: white;
   color: #c13147;

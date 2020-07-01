@@ -20,7 +20,7 @@ const Fheading = styled.h5`
   color: #616161;
   font-size: 16px;
   font-family: "Overpass", sans-serif !important;
-  font-weight: 400;
+  font-weight: 700;
 `;
 
 const Flink = styled.a`
@@ -53,26 +53,27 @@ const FlexWrapper = styled.div`
     width: 40%;
   }
 `;
+
+const FooterLogo = styled.div`
+  align-self: flex-end;
+  p {
+    margin: 2rem 0;
+  }
+`;
 export const Footer = () => {
   return (
     <Foot>
       <PaddingSpace left='3rem' right='3rem' top='10rem' bottom='5rem'>
         <FlexWrapper>
-          <div className=''>
+          <FooterLogo>
             <img src='./tiidelab-logo.svg' alt='tiidelab logo' />
-            <Paragraph color='#292929' className='pt-4'>
-              We were in the middle of the largest project we’ve undertaken as a
-              business. There’s no way we would have been able to grow as
-              aggressively or be as successful as we have been without our
-              Andela team.
-            </Paragraph>
             <Paragraph color='#680D14'>Copyright © 2020, TIIDELab.</Paragraph>
-          </div>
+          </FooterLogo>
           <div className=''>
             <Fheading>Learn More</Fheading>
             <Flink className='pt-4'>Apply</Flink>
-            <Flink>FAQ'S</Flink>
-            <Flink>{"Term's & Conditions"}</Flink>
+            <Flink>FAQs</Flink>
+            <Flink>Terms & Conditions</Flink>
             <Flink>Help Center</Flink>
           </div>
           <div className=''>
@@ -87,7 +88,7 @@ export const Footer = () => {
             <Flink className='pt-4'>Twitter</Flink>
             <Flink>Instagram</Flink>
             <Flink>Facebook</Flink>
-            <Paragraph color='#680D14'>hello@TIIDELab.com</Paragraph>
+            <Paragraph color='#680D14'>hi@tiidelab.com</Paragraph>
           </div>
           {/* <div className="col-md-2"></div> */}
         </FlexWrapper>

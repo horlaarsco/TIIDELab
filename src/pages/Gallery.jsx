@@ -10,11 +10,12 @@ import {
   Absolute,
   Bottom,
 } from "../components";
+import { Testimonial } from "../components";
 
 const ImagesArray = [
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438037/dinner_with_CEO_cxq37b.jpg",
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438038/Running_codes_in_class_wopugc.jpg",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438036/3_fellows_working_together_ul0nc2.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593562493/Mr_Ricardo_addressing_fellows_copy_an5kwa.png",
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438038/fellows_with_Mrs_Folusho_Samuel_cafatk.jpg",
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438037/Female_fellow_coding_z90gft.jpg",
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438036/Dr_Lanre_Philips_mentorship_session_rns5mi.jpg",
@@ -49,15 +50,18 @@ export function Gallery() {
         </WrapTop>
         <Bottom>
           <p>
-            Challenges around getting young people employed and productive in
-            the technological work place inspired the birth of TIIDELab. Since
-            then, we have trained 28 full stack developers through the first
-            cohort of the TIIDELab Fellowship.
+            "Great innovations begin from humble beginnings. this has been our
+            driving force at tiidelab as we have been able to train 28 amazing
+            africans, made them junior developers, and exposed them to a journey
+            of career development via internships and employment opportunities
+            over time.
             <br /> <br />
-            With 50+ years of experience in technology, business development and
-            communications, our team continuously bridges the gap around
-            employment, infrastructure, quality trainings and access to
-            opportunities.
+            The unique tiidelab experience is such that it encompasses software
+            development (remote and class activities, soft skills and
+            employability skills development, mentorship session, contests and
+            competition, routine fellowship exposure, fun, sports and
+            recreational activities. we are delighted to take you through this
+            amazing journey with us as we harness the African potential!"
           </p>
         </Bottom>
       </Hero>
@@ -86,151 +90,10 @@ export function Gallery() {
           <LightApplyButton>Start Journey Now</LightApplyButton>
         </SectionDiv>
       </div>
-      <Testimonial>
-        <div
-          id='carouselExampleControls'
-          className='carousel slide'
-          data-ride='carousel'
-        >
-          <div className='carousel-inner'>
-            <div className='carousel-item active'>
-              <p>
-                Tiidelab has helped me gain more focus and shed more light on
-                what I want to do and how to go about it. Within the space of
-                five months, I've been able to learn how to look for growing
-                problems in the society, how to come up with a solution and how
-                to create the solution using tech. I've improved not only as a
-                developer and a business personnel but also as a person.
-              </p>
-              <h2>Sanusi Micheal HAYATU</h2>
-              <p>
-                <i>-Former student/Lead Engineer at Apple</i>
-              </p>
-              <img
-                width='100px'
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593454384/sanusi_Pasport_strd9b.png'
-                alt=''
-              />
-            </div>
-            <div className='carousel-item '>
-              <p>
-                At TIIDELab, I had an extensive learning experience about the
-                requisite tech and non-tech skills for survival in the tech
-                industry. I had the opportunity to meet wonderful people,
-                learned a new Javascript Framework and conquered my fears about
-                CLI Environment. With TIIDELab experience, my career in the
-                software space has been given a leap to everlasting growth.
-              </p>
-              <h2>Christainah Oluwakemi OWOYELE</h2>
-              <p>
-                <i>-Former student/Lead Engineer at Apple</i>
-              </p>
-              <img
-                width='100px'
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593457186/girl_head_ylqddg.png'
-                alt=''
-              />
-            </div>
-            <div className='carousel-item '>
-              <p>
-                Joining TIIDELab Fellowship was a dream come true in my tech
-                journey, it gave me the opportunity to view/understand the Tech
-                world better, now I can confidently call myself a junior
-                developer because I have gotten foundation and a path to follow
-                in growing into a top senior developer in the nearest future.
-              </p>
-              <h2>Godwin JACOB</h2>
-              <p>
-                <i>-Former student/Lead Engineer at Apple</i>
-              </p>
-              <img
-                width='100px'
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593457179/godwin_head_cie1kt.png'
-                alt=''
-              />
-            </div>
-            <div className='carousel-item '>
-              <p>
-                I had basic knowledge of HTML and CSS before TIIDELab and
-                looking back, I really did not know how vast software
-                development was. At the fellowship, we were taught front end web
-                development technologies such as HTML, CSS and JavaScript and
-                VUE JS as a JavaScript framework. We also learnt back end web
-                development technologies such as Node JS using Express JS as its
-                framework and also a database management system, which is MySQL.
-              </p>
-              <h2>Adebayo AJIBADE</h2>
-              <p>
-                <i>-Former student/Lead Engineer at Apple</i>
-              </p>
-              <img
-                width='100px'
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593457391/ajibade_head_hlcqmn.png'
-                alt=''
-              />
-            </div>
-          </div>
-          <a
-            className='carousel-control-prev'
-            href='#carouselExampleControls'
-            role='button'
-            data-slide='prev'
-          >
-            <span
-              className='carousel-control-prev-icon'
-              aria-hidden='true'
-            ></span>
-            <span className='sr-only'>Previous</span>
-          </a>
-          <a
-            className='carousel-control-next'
-            href='#carouselExampleControls'
-            role='button'
-            data-slide='next'
-          >
-            <span
-              className='carousel-control-next-icon'
-              aria-hidden='true'
-            ></span>
-            <span className='sr-only'>Next</span>
-          </a>
-        </div>
-      </Testimonial>
+      <Testimonial />
     </div>
   );
 }
-
-const Testimonial = styled.div`
-  text-align: center;
-  padding: 10rem 15rem;
-
-  img {
-    margin-top: 2rem;
-  }
-
-  h2 {
-    margin: 2rem 0;
-    color: #c13147;
-    font-weight: bold;
-  }
-
-  p {
-    max-width: 575px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 1200px) {
-    padding: 8rem 7rem;
-  }
-
-  @media (max-width: 1100px) {
-    padding: 8rem 3rem;
-  }
-
-  @media (max-width: 768px) {
-    padding: 6rem 4rem;
-  }
-`;
 
 const LightButton = styled(Button)`
   background: white;

@@ -69,20 +69,11 @@ export function About() {
 
         <div>
           <SubHeader>Our Vision</SubHeader>
+
           <p>
-            - To Develop Young Africans with a culture of solving problems to
-            African challenges
+            Develop young Africans who use technology enabled means in solving
+            everyday challenges.
           </p>
-          <p>
-            - Develop young Africans who use technology enabled means in solving
-            everyday challenges{" "}
-          </p>
-
-          <p>- Developing Africa’s largest pool of problem solvers</p>
-
-          <p>- Raising Africa’s next generation of problem solvers. </p>
-
-          <p>- To Build young Africans with a culture of problem solving </p>
         </div>
       </Vision>
       <div

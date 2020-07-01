@@ -97,6 +97,7 @@ export const Bottom = styled.div`
   }
 
   strong {
+    font-size: 2.5rem;
     font-weight: 600;
   }
 

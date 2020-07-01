@@ -5,7 +5,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import { Home, About, Contact, Gallery } from "./pages";
+import { Home, About, Contact, Gallery, Apply } from "./pages";
 import { Header, Footer } from "./components";
 import styled from "styled-components";
 
@@ -27,6 +27,9 @@ function App() {
         <Header />
         <div>
           <Switch>
+            <Route path='/apply'>
+              <Apply />
+            </Route>
             <Route path='/gallery'>
               <Gallery />
             </Route>
