@@ -124,7 +124,11 @@ export const Footer = () => {
             </Flink>
             <Flink>FAQs</Flink>
             <Flink>Terms & Conditions</Flink>
-            <Flink as='a' href='mailto:hi@tiidelab.com'>
+            <Flink
+              style={{ color: "#680D14" }}
+              as='a'
+              href='mailto:hi@tiidelab.com'
+            >
               hi@tiidelab.com
             </Flink>{" "}
           </div>

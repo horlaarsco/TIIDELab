@@ -62,7 +62,7 @@ export const Home = () => {
               The
               <strong className='font-weight-bold'> Process</strong>
             </SubHeader>
-            <div className='row'>
+            <Desktimeline className='row'>
               <div className='col-md'>
                 <div className='mb-5 mb-md-0'>
                   <h4>Get Admitted: </h4>
@@ -94,7 +94,33 @@ export const Home = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </Desktimeline>
+
+            <Mobtimeline>
+              <div className='mb-5 '>
+                <h4>Get Admitted: </h4>
+                <p>
+                  You require a laptop, pass our aptitude test, basic knowledge
+                  of HTML, CSS and JavaScript.
+                </p>
+              </div>
+              <div className='mb-5 '>
+                <h4>Get Trained: </h4>
+                <p>
+                  Free internet access for entire programme (5 months). Choose
+                  either front-end or back-end track. 80% remote and 20%
+                  classroom (Abuja and Lagos). Competency-based learning
+                </p>
+              </div>
+              <div className='mb-5 '>
+                <h4>Get Employed: </h4>
+                <p>
+                  Upon completion, you will be exposed to internship and job
+                  opportunities at partner companies. Earn while you advance
+                  your developer career.
+                </p>
+              </div>
+            </Mobtimeline>
             <main>
               <ApplyButton to='/apply' className='mt-5 '>
                 Apply Now
@@ -202,6 +228,29 @@ export const Home = () => {
     </>
   );
 };
+
+const Mobtimeline = styled.div`
+  display: none;
+
+  @media (max-width: 1200px) {
+    padding: 3rem 7rem;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 3rem 3rem;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+    padding: 4rem 4rem;
+  }
+`;
+
+const Desktimeline = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
 
 const ApplyButton = styled(Link)`
   color: white !important;
