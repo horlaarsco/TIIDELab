@@ -10,15 +10,7 @@ import {
   Bottom,
 } from "../components";
 import { Testimonial } from "../components";
-import Parser from "html-react-parser";
 import { Link } from "react-router-dom";
-
-const Above = styled.span`
-  background-image: url("/above.png");
-  height: 20px;
-  width: 100%;
-  display: block;
-`;
 
 const ImagesArray = [
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438037/dinner_with_CEO_cxq37b.jpg",
@@ -56,7 +48,6 @@ export function Gallery() {
             </div>
           </Top>
         </WrapTop>
-        <Above />
         <Bottom>
           <p>
             Great innovations begin from humble beginnings. this has been our

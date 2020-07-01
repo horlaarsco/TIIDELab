@@ -5,13 +5,6 @@ import VisibilitySensor from "react-visibility-sensor";
 import { SubHeader, SectionDiv, Button, Testimonial } from "../components";
 import { ReactComponent as Steps3 } from "../assets/icons/3-steps.svg";
 import { Link } from "react-router-dom";
-import Parser from "html-react-parser";
-
-const Above = styled.div`
-  background-image: url("/above.png");
-  height: 20px;
-  width: 100%;
-`;
 
 export const Home = () => {
   return (
@@ -61,7 +54,6 @@ export const Home = () => {
             </main>
           </main>
         </section>
-        <Above />
       </Hero>
       <main id='main'>
         <TimeLine>
@@ -142,7 +134,7 @@ export const Home = () => {
                     <VisibilitySensor onChange={start} delayedCall>
                       <div>
                         <Count ref={countUpRef} />
-                        <Paragraph>Applicant</Paragraph>
+                        <Paragraph>Applicants</Paragraph>
                       </div>
                     </VisibilitySensor>
                   )}
@@ -173,7 +165,7 @@ export const Home = () => {
                 </CountUp>
               </div>
               <div className='col-md-3 mb-4 text-center col-sm-6'>
-                <CountUp end={12}>
+                <CountUp end={16}>
                   {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
                       <div>
@@ -252,14 +244,7 @@ const LightButton = styled(Link)`
 const Hero = styled.header`
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(
-    to right,
-    white 0%,
-    white 50%,
-    #fff 50%,
-    rgba(0, 0, 0, 0.05) 50%,
-    rgba(0, 0, 0, 0.05) 100%
-  );
+
   section {
     display: flex;
     max-width: 1300px;

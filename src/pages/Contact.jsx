@@ -10,14 +10,7 @@ import {
   Absolute,
   Bottom,
 } from "../components";
-import Parser from "html-react-parser";
-
-const Above = styled.span`
-  background-image: url("/above.png");
-  height: 20px;
-  width: 100%;
-  display: block;
-`;
+import { Link } from "react-router-dom";
 
 export function Contact() {
   return (
@@ -39,7 +32,6 @@ export function Contact() {
             </div>
           </Top>
         </WrapTop>
-        <Above />
         <Bottom>
           <p>
             <br /> <br /> <strong>Call us today</strong>
@@ -129,14 +121,31 @@ export function Contact() {
             will help you accelerate your dream of becoming a world-class
             software developer or designer in record time.
           </p>
-          {Parser(
-            `<a class="typeform-share button light-button mt-5" href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Apply Now </a> `
-          )}{" "}
+          <LightButton to='/apply'>Apply Now</LightButton>
         </SectionDiv>
       </div>
     </div>
   );
 }
+
+const LightButton = styled(Link)`
+  color: #c13147 !important;
+  border: none;
+  padding: 1rem 3rem;
+  position: relative;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: white;
+  &:after {
+    content: " ";
+    border: 1px solid white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -7px;
+    bottom: -7px;
+  }
+`;
 
 const Answer = styled.p`
   display: flex;

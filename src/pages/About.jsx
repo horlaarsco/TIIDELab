@@ -9,14 +9,7 @@ import {
   Bottom,
   SectionDiv,
 } from "../components";
-import Parser from "html-react-parser";
-
-const Above = styled.span`
-  background-image: url("/above.png");
-  height: 20px;
-  width: 100%;
-  display: block;
-`;
+import { Link } from "react-router-dom";
 
 export function About() {
   return (
@@ -38,7 +31,6 @@ export function About() {
             </div>
           </Top>
         </WrapTop>
-        <Above />
         <Bottom>
           <p>
             Challenges around getting young people employed and productive in
@@ -78,8 +70,8 @@ export function About() {
         <div>
           <SubHeader>Our Vision</SubHeader>
           <p>
-            Develop young Africans who use technology enabled means
-            <br /> in solving everyday challenges.
+            To develop young Africans who use technology enabled means in
+            solving everyday challenges.
           </p>
         </div>
       </Vision>
@@ -138,14 +130,31 @@ export function About() {
             will help you accelerate your dream of becoming a world-class
             software developer or designer in record time.
           </p>
-          {Parser(
-            `<a class="typeform-share button light-button mt-5" href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Apply Now </a> `
-          )}{" "}
+          <LightButton to='/apply'>Apply Now</LightButton>
         </SectionDiv>
       </div>
     </div>
   );
 }
+
+const LightButton = styled(Link)`
+  color: #c13147 !important;
+  border: none;
+  padding: 1rem 3rem;
+  position: relative;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: white;
+  &:after {
+    content: " ";
+    border: 1px solid white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -7px;
+    bottom: -7px;
+  }
+`;
 
 const WhatWedo = styled.div`
   display: flex;

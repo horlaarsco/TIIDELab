@@ -67,15 +67,9 @@ const FooterLogo = styled.div`
   }
 `;
 
-const Bottom = styled.div`
-  background-image: url("/above.png");
-  height: 20px;
-  width: 100%;
-`;
 export const Footer = () => {
   return (
     <>
-      <Bottom></Bottom>
       <Foot>
         <FlexWrapper>
           <FooterLogo>

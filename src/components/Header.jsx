@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
-import Parser from "html-react-parser";
 
 export function Header() {
   const [showNav, setShowNav] = React.useState(false);
@@ -102,16 +101,20 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link
+            <Link onClick={() => setShowNav(false)} to='/gallery'>
+              {" "}
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <HireLink
               as='a'
               href='mailto:hi@tiidelab.com'
               style={{ color: "#c13147" }}
               onClick={() => setShowNav(false)}
-              to='/gallery'
             >
-              {" "}
               Hire
-            </Link>
+            </HireLink>
           </li>
         </ul>
         <ApplyButton to='/apply' mobile='true'>
@@ -121,6 +124,8 @@ export function Header() {
     </Head>
   );
 }
+
+const HireLink = styled(Link)``;
 
 const Ham = styled.div`
   display: block;
