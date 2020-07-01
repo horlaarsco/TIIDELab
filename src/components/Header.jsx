@@ -56,6 +56,18 @@ export function Header() {
               Contact Us
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              activeStyle={{
+                fontWeight: "700",
+                color: "black",
+              }}
+              to='/gallery'
+            >
+              {" "}
+              Gallery
+            </NavLink>
+          </li>
         </Nav>
         <HireBox>
           <Hire>
@@ -97,6 +109,7 @@ export function Header() {
               onClick={() => setShowNav(false)}
               to='/gallery'
             >
+              {" "}
               Hire
             </Link>
           </li>

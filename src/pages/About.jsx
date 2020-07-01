@@ -13,7 +13,7 @@ import Parser from "html-react-parser";
 
 const Above = styled.span`
   background-image: url("/above.png");
-  height: 40px;
+  height: 20px;
   width: 100%;
   display: block;
 `;
@@ -76,13 +76,10 @@ export function About() {
         </span>
 
         <div>
-          <SubHeader>Our Mission</SubHeader>
+          <SubHeader>Our Vision</SubHeader>
           <p>
-            - To train our fellows with relevant digital skills and tools in an
-            enabling environment to positively influence the African continent.
-            <br /> <br />
-            -To develop our fellows with relevant skills and use of digital
-            tools to become self-reliant.
+            Develop young Africans who use technology enabled means
+            <br /> in solving everyday challenges.
           </p>
         </div>
       </Vision>
@@ -92,11 +89,13 @@ export function About() {
         }}
       >
         <SectionDiv color='black' bg='#f4f2f2'>
-          <h3>Our Vision</h3>
+          <h3>Our Mission</h3>
 
           <p>
-            Develop young Africans who use technology enabled means
-            <br /> in solving everyday challenges.
+            Our mission is to train our fellows with relevant digital skills and
+            tools in an enabling environment to positively influence the African
+            continent and to develop our fellows with relevant skills and use of
+            digital tools to become self-reliant.
           </p>
         </SectionDiv>
       </div>

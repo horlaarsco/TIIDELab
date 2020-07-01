@@ -9,7 +9,7 @@ import Parser from "html-react-parser";
 
 const Above = styled.div`
   background-image: url("/above.png");
-  height: 40px;
+  height: 20px;
   width: 100%;
 `;
 
@@ -264,7 +264,7 @@ const Hero = styled.header`
     display: flex;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 5.5rem 15rem;
+    padding: 4rem 15rem;
     align-items: center;
   }
 

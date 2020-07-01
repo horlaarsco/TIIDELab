@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 const Above = styled.span`
   background-image: url("/above.png");
-  height: 40px;
+  height: 20px;
   width: 100%;
   display: block;
 `;

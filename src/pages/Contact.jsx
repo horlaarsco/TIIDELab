@@ -14,7 +14,7 @@ import Parser from "html-react-parser";
 
 const Above = styled.span`
   background-image: url("/above.png");
-  height: 40px;
+  height: 20px;
   width: 100%;
   display: block;
 `;
@@ -32,7 +32,7 @@ export function Contact() {
             <div>
               {/* <WineSemiCircle /> */}
               <img
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593449117/contact_Us_xltzmt.png'
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593644021/new_contact_us_nu3ucq.png'
                 alt=''
               />
               <span></span>
