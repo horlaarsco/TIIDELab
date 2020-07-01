@@ -10,6 +10,7 @@ import {
   Absolute,
   Bottom,
 } from "../components";
+import Parser from "html-react-parser";
 
 export function Contact() {
   return (
@@ -40,17 +41,18 @@ export function Contact() {
         </Bottom>
       </Hero>
       <FormDiv>
-        <Form action=''>
+        <Form action='https://formspree.io/xlepwkkp' method='POST'>
           <h2>Send us a Message</h2>
-          <input type='text' placeholder='Email Address*' />
-          <input type='text' placeholder='Subject*' />
+          <input type='text' placeholder='Email Address *' required />
+          <input type='text' placeholder='Subject *' required />
           <textarea
             name=''
             id=''
             rows='5'
-            placeholder='Message*            '
+            placeholder='Message *'
+            required
           ></textarea>
-          <Button>Send Message</Button>
+          <Button type='submit'>Send Message</Button>
         </Form>
         <div></div>
       </FormDiv>
@@ -119,7 +121,9 @@ export function Contact() {
             will help you accelerate your dream of becoming a world-class
             software developer or designer in record time.
           </p>
-          <LightApplyButton>Apply Now</LightApplyButton>
+          {Parser(
+            `<a class="typeform-share button light-button mt-5" href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Apply Now </a> `
+          )}{" "}
         </SectionDiv>
       </div>
     </div>
@@ -216,16 +220,6 @@ const Faq = styled.div`
         padding: 5rem 3rem;
       }
     }
-  }
-`;
-
-const LightApplyButton = styled(Button)`
-  background: white;
-  color: #c13147;
-  border: none;
-
-  &:after {
-    border: 1px solid white;
   }
 `;
 

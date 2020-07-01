@@ -8,8 +8,8 @@ import {
   Absolute,
   Bottom,
   SectionDiv,
-  Button,
 } from "../components";
+import Parser from "html-react-parser";
 
 export function About() {
   return (
@@ -130,7 +130,9 @@ export function About() {
             will help you accelerate your dream of becoming a world-class
             software developer or designer in record time.
           </p>
-          <LightApplyButton>Apply Now</LightApplyButton>
+          {Parser(
+            `<a class="typeform-share button light-button mt-5" href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Apply Now </a> `
+          )}{" "}
         </SectionDiv>
       </div>
     </div>
@@ -244,16 +246,6 @@ const Vision = styled.div`
       padding: 3rem 4rem;
       width: 100%;
     }
-  }
-`;
-
-const LightApplyButton = styled(Button)`
-  background: white;
-  color: #c13147;
-  border: none;
-
-  &:after {
-    border: 1px solid white;
   }
 `;
 

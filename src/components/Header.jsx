@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
+import Parser from "html-react-parser";
 
 export function Header() {
   const [showNav, setShowNav] = React.useState(false);
@@ -72,7 +73,10 @@ export function Header() {
           <Hire>
             <a href='mailto:hi@tiidelab.com'>Hire</a>
           </Hire>
-          <ApplyButton>Apply Now</ApplyButton>
+          {/* <ApplyButton>Apply Now</ApplyButton> */}
+          {Parser(
+            `<a class="typeform-share apply-header " href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Apply Now </a> `
+          )}{" "}
         </HireBox>
         <Ham onClick={() => setShowNav(!showNav)}>
           <div></div> <div></div>
@@ -238,10 +242,6 @@ const ApplyButton = styled.button`
     bottom: -7px;
   }
   margin-top: -7px;
-
-  @media (max-width: 768px) {
-    display: ${({ mobile }) => (mobile ? "block" : "none")};
-  }
 `;
 
 const Nav = styled.ul`

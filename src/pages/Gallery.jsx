@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import {
   SectionDiv,
-  Button,
   TopCircle,
   BottomCircle,
   SubHeader,
@@ -11,6 +10,7 @@ import {
   Bottom,
 } from "../components";
 import { Testimonial } from "../components";
+import Parser from "html-react-parser";
 
 const ImagesArray = [
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438037/dinner_with_CEO_cxq37b.jpg",
@@ -87,33 +87,15 @@ export function Gallery() {
             will help you accelerate your dream of becoming a world-class
             software developer or designer in record time.
           </p>
-          <LightApplyButton>Start Journey Now</LightApplyButton>
+          {Parser(
+            `<a class="typeform-share button light-button mt-5" href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Start Journey Now</a> `
+          )}{" "}
         </SectionDiv>
       </div>
       <Testimonial />
     </div>
   );
 }
-
-const LightButton = styled(Button)`
-  background: white;
-  color: #c13147;
-  border: none;
-
-  &:after {
-    border: 1px solid white;
-  }
-`;
-
-const LightApplyButton = styled(Button)`
-  background: white;
-  color: #c13147;
-  border: none;
-
-  &:after {
-    border: 1px solid white;
-  }
-`;
 
 const Images = styled.div`
   width: 100%;

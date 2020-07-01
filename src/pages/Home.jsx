@@ -4,21 +4,10 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { SubHeader, SectionDiv, Button, Testimonial } from "../components";
 import { ReactComponent as Steps3 } from "../assets/icons/3-steps.svg";
-import Slider from "react-slick";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Parser from "html-react-parser";
 
-const Apply = styled(Button)``;
-
 export const Home = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <>
       <Hero>
@@ -206,7 +195,9 @@ export const Home = () => {
               we will help you accelerate your dream of becoming a world-class
               software developer or designer in record time.
             </p>
-            <LightButton>Apply Now</LightButton>
+            {Parser(
+              `<a class="typeform-share button light-button mt-5" href="https://form.typeform.com/to/lWblM7mI" data-mode="popup"  data-hide-headers=true target="_blank">Apply Now </a> `
+            )}
           </SectionDiv>
         </div>
         <Testimonial />
@@ -382,13 +373,4 @@ const Count = styled.p`
   font-size: 41px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
-`;
-const LightButton = styled(Button)`
-  background: white;
-  color: #c13147;
-  border: none;
-
-  &:after {
-    border: 1px solid white;
-  }
 `;
