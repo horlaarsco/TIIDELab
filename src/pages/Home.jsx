@@ -252,6 +252,14 @@ const LightButton = styled(Link)`
 const Hero = styled.header`
   width: 100%;
   overflow: hidden;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 50%,
+    #fff 50%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
   section {
     display: flex;
     max-width: 1300px;
@@ -298,6 +306,7 @@ const Hero = styled.header`
   }
 
   @media (max-width: 768px) {
+    background: none;
     section {
       padding: 4rem 4rem;
       flex-direction: column;
