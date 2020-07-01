@@ -130,7 +130,9 @@ export const Footer = () => {
             </Flink>
             <Flink>FAQs</Flink>
             <Flink>Terms & Conditions</Flink>
-            <Flink>Help Center</Flink>
+            <Flink as='a' href='mailto:hi@tiidelab.com'>
+              hi@tiidelab.com
+            </Flink>{" "}
           </div>
           <div className=''>
             <Fheading>Company</Fheading>

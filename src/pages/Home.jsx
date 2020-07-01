@@ -67,7 +67,7 @@ export const Home = () => {
         <TimeLine>
           <section className='container'>
             <SubHeader className='font-weight-light text-center'>
-              The TIIDELab
+              The
               <strong className='font-weight-bold'> Process</strong>
             </SubHeader>
             <div className='row'>
