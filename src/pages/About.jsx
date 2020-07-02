@@ -200,6 +200,8 @@ const WhatWedo = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    margin: 2rem auto;
+
     div {
       padding: 3rem 4rem;
     }
@@ -255,6 +257,8 @@ const Vision = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    margin: 2rem auto;
+
     div {
       padding: 3rem 4rem;
     }
@@ -269,6 +273,10 @@ const Vision = styled.div`
 const Hero = styled.div`
   position: relative;
   margin-bottom: 100px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0px;
+  }
 `;
 
 const Top = styled.div`

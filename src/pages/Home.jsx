@@ -57,12 +57,12 @@ export const Home = () => {
       </Hero>
       <main id='main'>
         <TimeLine>
-          <section className='container'>
+          <Desktimeline className='container'>
             <SubHeader className='font-weight-light text-center'>
               The
               <strong className='font-weight-bold'> Process</strong>
             </SubHeader>
-            <Desktimeline className='row'>
+            <div className='row'>
               <div className='col-md'>
                 <div className='mb-5 mb-md-0'>
                   <h4>Get Admitted: </h4>
@@ -94,9 +94,20 @@ export const Home = () => {
                   </p>
                 </div>
               </div>
-            </Desktimeline>
+            </div>
 
-            <Mobtimeline>
+            <main>
+              <ApplyButton to='/apply' className='mt-5 '>
+                Apply Now
+              </ApplyButton>
+            </main>
+          </Desktimeline>
+          <Mobtimeline>
+            <SubHeader className='font-weight-light text-center'>
+              The
+              <strong className='font-weight-bold'> Process</strong>
+            </SubHeader>
+            <div>
               <div className='mb-5 '>
                 <h4>Get Admitted: </h4>
                 <p>
@@ -120,13 +131,13 @@ export const Home = () => {
                   your developer career.
                 </p>
               </div>
-            </Mobtimeline>
+            </div>
             <main>
               <ApplyButton to='/apply' className='mt-5 '>
                 Apply Now
               </ApplyButton>
             </main>
-          </section>
+          </Mobtimeline>
         </TimeLine>
         <Journey>
           <section>
@@ -242,7 +253,7 @@ const Mobtimeline = styled.div`
 
   @media (max-width: 768px) {
     display: block;
-    padding: 4rem 4rem;
+    padding: 3rem 3rem;
   }
 `;
 
@@ -342,15 +353,18 @@ const Hero = styled.header`
   @media (max-width: 768px) {
     background: none;
     section {
-      padding: 4rem 4rem;
+      padding: 3rem 3rem;
       flex-direction: column;
-      /* align-items: flex-start; */
+      align-items: flex-start;
     }
 
     img {
       width: 100%;
       margin-top: 9rem;
       align-self: center;
+    }
+    p {
+      max-width: 100% !important;
     }
   }
 `;
@@ -373,6 +387,9 @@ const TimeLine = styled.section`
     top: 0;
   }
 
+  @media (max-width: 768px) {
+    padding: 0;
+  }
   @media (min-width: 768px) {
     .col-md-2 {
       -ms-flex: 0 0 16.666667%;
@@ -398,6 +415,10 @@ const HParagraph = styled.p`
   font-weight: 300;
   font-family: "Overpass", sans-serif !important;
   font-size: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const Journey = styled.div`
@@ -431,7 +452,7 @@ const Journey = styled.div`
 
   @media (max-width: 1100px) {
     div {
-      padding: 3rem 4rem;
+      padding: 3rem 3rem;
     }
 
     img {
@@ -444,7 +465,7 @@ const Journey = styled.div`
       flex-direction: column;
     }
     div {
-      padding: 3rem 4rem;
+      padding: 3rem 3rem;
     }
 
     img {

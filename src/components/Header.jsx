@@ -5,9 +5,6 @@ import { Link, NavLink } from "react-router-dom";
 export function Header() {
   const [showNav, setShowNav] = React.useState(false);
 
-  React.useEffect(() => {
-    console.log(showNav);
-  }, [showNav]);
   return (
     <Head>
       <span>

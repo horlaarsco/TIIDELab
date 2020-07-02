@@ -75,6 +75,9 @@ export const SubHeader = styled.h2`
   color: #434343;
   font-weight: 900;
   margin: 4rem 0;
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 
 export const WrapTop = styled.section`
