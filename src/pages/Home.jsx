@@ -97,7 +97,7 @@ export const Home = () => {
             </div>
 
             <main>
-              <ApplyButton to='/apply' className='mt-5 '>
+              <ApplyButton href='/apply' className='mt-5 '>
                 Apply Now
               </ApplyButton>
             </main>
@@ -133,7 +133,7 @@ export const Home = () => {
               </div>
             </div>
             <main>
-              <ApplyButton to='/apply' className='mt-5 '>
+              <ApplyButton href='/apply' className='mt-5 '>
                 Apply Now
               </ApplyButton>
             </main>
@@ -231,7 +231,7 @@ export const Home = () => {
               we will help you accelerate your dream of becoming a world-class
               software developer or designer in record time.
             </p>
-            <LightButton to='/apply'>Apply Now</LightButton>
+            <LightButton href='/apply'>Apply Now</LightButton>
           </SectionDiv>
         </div>
         <Testimonial />
@@ -263,7 +263,7 @@ const Desktimeline = styled.div`
   }
 `;
 
-const ApplyButton = styled(Link)`
+const ApplyButton = styled.a`
   color: white !important;
   border: none;
   padding: 1rem 3rem;
@@ -282,7 +282,7 @@ const ApplyButton = styled(Link)`
   }
 `;
 
-const LightButton = styled(Link)`
+const LightButton = styled.a`
   color: #c13147 !important;
   border: none;
   padding: 1rem 3rem;

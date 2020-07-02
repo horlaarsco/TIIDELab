@@ -69,7 +69,7 @@ export function Header() {
           <Hire>
             <a href='mailto:hi@tiidelab.com'>Hire</a>
           </Hire>
-          <ApplyButton to='/apply'>Apply Now</ApplyButton>
+          <ApplyButton href='/apply'>Apply Now</ApplyButton>
         </HireBox>
         <Ham onClick={() => setShowNav(!showNav)}>
           <div></div> <div></div>
@@ -240,7 +240,7 @@ const HireBox = styled.div`
   align-items: center;
 `;
 
-const ApplyButton = styled(Link)`
+const ApplyButton = styled.a`
   background: #c13147;
   color: white !important;
   border: none;

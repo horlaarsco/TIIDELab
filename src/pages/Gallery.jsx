@@ -10,7 +10,6 @@ import {
   Bottom,
 } from "../components";
 import { Testimonial } from "../components";
-import { Link } from "react-router-dom";
 
 const ImagesArray = [
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438037/dinner_with_CEO_cxq37b.jpg",
@@ -87,7 +86,7 @@ export function Gallery() {
             will help you accelerate your dream of becoming a world-class
             software developer or designer in record time.
           </p>
-          <LightButton to='/apply'>Start Journey Now</LightButton>
+          <LightButton href='/apply'>Start Journey Now</LightButton>
         </SectionDiv>
       </div>
       <Testimonial />
@@ -95,7 +94,7 @@ export function Gallery() {
   );
 }
 
-const LightButton = styled(Link)`
+const LightButton = styled.a`
   color: #c13147 !important;
   border: none;
   padding: 1rem 3rem;

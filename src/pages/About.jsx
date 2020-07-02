@@ -9,7 +9,6 @@ import {
   Bottom,
   SectionDiv,
 } from "../components";
-import { Link } from "react-router-dom";
 
 export function About() {
   return (
@@ -130,14 +129,14 @@ export function About() {
             will help you accelerate your dream of becoming a world-class
             software developer or designer in record time.
           </p>
-          <LightButton to='/apply'>Apply Now</LightButton>
+          <LightButton href='/apply'>Apply Now</LightButton>
         </SectionDiv>
       </div>
     </div>
   );
 }
 
-const LightButton = styled(Link)`
+const LightButton = styled.a`
   color: #c13147 !important;
   border: none;
   padding: 1rem 3rem;

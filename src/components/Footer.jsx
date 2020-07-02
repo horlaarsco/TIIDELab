@@ -56,7 +56,7 @@ const FlexWrapper = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 10rem 3rem;
+    padding: 8rem 3rem;
   }
 `;
 
@@ -64,6 +64,11 @@ const FooterLogo = styled.div`
   align-self: flex-end;
   p {
     margin: 2rem 0 1rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 5rem;
   }
 `;
 
@@ -119,7 +124,7 @@ export const Footer = () => {
 
           <div className=''>
             <Fheading>Learn More</Fheading>
-            <Flink to='/apply' className='pt-4 '>
+            <Flink as='a' href='/apply' className='pt-4 '>
               Apply
             </Flink>
             <Flink>FAQs</Flink>
