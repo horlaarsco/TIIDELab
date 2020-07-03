@@ -60,6 +60,7 @@ export function Contact() {
           <div>
             <SubHeader>FAQs</SubHeader>
             <img
+              id='faq'
               src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593446879/FAQ_rud9fs.png'
               alt=''
             />

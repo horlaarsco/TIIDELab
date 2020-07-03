@@ -83,10 +83,8 @@ export function About() {
           <h3>Our Mission</h3>
 
           <p>
-            Our mission is to train our fellows with relevant digital skills and
-            tools in an enabling environment to positively influence the African
-            continent and to develop our fellows with relevant skills and use of
-            digital tools to become self-reliant.
+            To develop our fellows with relevant skills and use of digital tools
+            to become self-reliant
           </p>
         </SectionDiv>
       </div>

@@ -79,11 +79,10 @@ export const Footer = () => {
         <FlexWrapper>
           <FooterLogo>
             <img src='./tiidelab-logo.svg' alt='tiidelab logo' />
-            <Paragraph color='#680D14'>Copyright © 2020, TIIDELab.</Paragraph>
             <Row>
               <Flink
                 as='a'
-                href='https://web.twitter.com/TIIDELab/'
+                href='https://twitter.com/TIIDELab/'
                 className='mr-2'
               >
                 <img src='/twitter.svg' alt='' />
@@ -120,6 +119,7 @@ export const Footer = () => {
                 <img src='/medium.svg' alt='' />
               </Flink>
             </Row>
+            <Paragraph color='#680D14'>Copyright © 2020, TIIDELab.</Paragraph>
           </FooterLogo>
 
           <div className=''>
@@ -127,8 +127,12 @@ export const Footer = () => {
             <Flink as='a' href='/apply' className='pt-4 '>
               Apply
             </Flink>
-            <Flink>FAQs</Flink>
-            <Flink>Terms & Conditions</Flink>
+            <Flink as='a' href='/contact#faq'>
+              FAQs
+            </Flink>
+            <Flink as='a' href='/tandc.pdf'>
+              Terms & Conditions
+            </Flink>
             <Flink
               style={{ color: "#680D14" }}
               as='a'

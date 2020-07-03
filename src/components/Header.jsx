@@ -103,7 +103,7 @@ export function Header() {
               Gallery
             </Link>
           </li>
-          <li>
+          <li style={{ marginBottom: "2rem" }}>
             <HireLink
               as='a'
               href='mailto:hi@tiidelab.com'
@@ -115,7 +115,9 @@ export function Header() {
           </li>
         </ul>
         <div>
-          <MobApply to='/apply'>Apply Now</MobApply>
+          <MobApply as='a' href='/apply'>
+            Apply Now
+          </MobApply>
         </div>
       </MNav>
     </Head>
@@ -138,7 +140,6 @@ const MobApply = styled(Link)`
     left: -7px;
     bottom: -7px;
   }
-  margin-top: -7px;
 `;
 
 const HireLink = styled(Link)``;
@@ -162,9 +163,10 @@ const Ham = styled.div`
 `;
 const MNav = styled.div`
   position: absolute;
-  display: ${({ showNav }) => (showNav ? "block" : "none")};
-  padding: 0 4rem;
-  padding-bottom: 3rem;
+  height: ${({ showNav }) => (showNav ? "auto" : "0")};
+  /* display: ${({ showNav }) => (showNav ? "block" : "none")}; */
+  padding: ${({ showNav }) => (showNav ? "0 4rem" : "0")};
+  padding-bottom: ${({ showNav }) => (showNav ? "3rem" : "0")};
   background-color: #f4f2f2;
   width: 100%;
   -webkit-transition: all 0.26s ease-in-out;
@@ -172,6 +174,7 @@ const MNav = styled.div`
   -ms-transition: all 0.26s ease-in-out;
   -o-transition: all 0.26s ease-in-out;
   transition: all 0.26s ease-in-out;
+  overflow: hidden;
   ul {
     list-style-type: none;
     padding: 0;
@@ -230,7 +233,7 @@ const Head = styled.header`
 
   @media (max-width: 768px) {
     span {
-      padding: 2rem 2rem;
+      padding: 1rem 2rem;
     }
   }
 `;
