@@ -49,18 +49,19 @@ export function Gallery() {
         </WrapTop>
         <Bottom>
           <p>
-            Great innovations begin from humble beginnings. this has been our
+            Great innovations begin from humble beginnings. This has been our
             driving force at tiidelab as we have been able to train 28 amazing
-            africans, made them junior developers, and exposed them to a journey
-            of career development via internships and employment opportunities
-            over time.
-            <br /> <br />
-            The unique tiidelab experience is such that it encompasses software
-            development (remote and class activities, soft skills and
-            employability skills development, mentorship session, contests and
-            competition, routine fellowship exposure, fun, sports and
-            recreational activities. we are delighted to take you through this
-            amazing journey with us as we harness the African potential!
+            youth, made them junior developers, and exposed them to a journey of
+            career development via internships and employment opportunities over
+            time.
+            <br />
+            <br />
+            The unique TIIDELab experience is such that it encompasses Software
+            Development (remote and class activities). This includes Soft and
+            Employability Skills Development, Mentorship Sessions, Contests and
+            Competitions, Sports and Recreational activities. We are delighted
+            to take you through this amazing journey as we unveil the next
+            generation of problem solvers
           </p>
         </Bottom>
       </Hero>
@@ -80,7 +81,7 @@ export function Gallery() {
         }}
       >
         <SectionDiv bg='#c13147'>
-          <h3>Be a Junior Developer Today</h3>
+          <h3>Start Your Journey Now</h3>
           <p>
             Whether you are completely new to coding or had prior experience, we
             will help you accelerate your dream of becoming a world-class

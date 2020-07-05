@@ -67,8 +67,8 @@ export const Home = () => {
                 <div className='mb-5 mb-md-0'>
                   <h4>Get Admitted: </h4>
                   <p>
-                    You require a laptop, pass our aptitude test, basic
-                    knowledge of HTML, CSS and JavaScript.
+                    You are required to have a laptop, pass our aptitude test,
+                    have basic knowledge of HTML, CSS and JavaScript.
                   </p>
                 </div>
 
@@ -88,9 +88,10 @@ export const Home = () => {
                 <div className='mt-md-21 mb-5 mb-md-0'>
                   <h4>Get Trained: </h4>
                   <p>
-                    Free internet access for entire programme (5 months). Choose
-                    either front-end or back-end track. 80% remote and 20%
-                    classroom (Abuja and Lagos). Competency-based learning
+                    Free tuition and data subscription for entire programme
+                    (5months). Choose either front-end or back-end track. It
+                    will be 80% remote and 20% classroom (Abuja and Lagos).
+                    Competency based learning.
                   </p>
                 </div>
               </div>
@@ -111,16 +112,17 @@ export const Home = () => {
               <div className='mb-5 '>
                 <h4>Get Admitted: </h4>
                 <p>
-                  You require a laptop, pass our aptitude test, basic knowledge
-                  of HTML, CSS and JavaScript.
+                  You are required to have a laptop, pass our aptitude test,
+                  have basic knowledge of HTML, CSS and JavaScript.
                 </p>
               </div>
               <div className='mb-5 '>
                 <h4>Get Trained: </h4>
                 <p>
-                  Free internet access for entire programme (5 months). Choose
-                  either front-end or back-end track. 80% remote and 20%
-                  classroom (Abuja and Lagos). Competency-based learning
+                  Free tuition and data subscription for entire programme
+                  (5months). Choose either front-end or back-end track. It will
+                  be 80% remote and 20% classroom (Abuja and Lagos). Competency
+                  based learning.
                 </p>
               </div>
               <div className='mb-5 '>
@@ -146,9 +148,9 @@ export const Home = () => {
               <p>
                 Great innovations begin from humble beginnings. this has been
                 our driving force at tiidelab as we have been able to train 28
-                amazing africans, made them junior developers, and exposed them
-                to a journey of career development via internships and
-                employment opportunities over time.
+                amazing youth, made them junior developers, and exposed them to
+                a journey of career development via internships and employment
+                opportunities over time.
               </p>
               <span>
                 <Link to='/gallery'>
@@ -165,19 +167,7 @@ export const Home = () => {
         <section>
           <div className='container my-5 py-5'>
             <div className='row'>
-              <div className='col-md-3 mb-4 text-center col-sm-6'>
-                <CountUp end={700}>
-                  {({ countUpRef, start }) => (
-                    <VisibilitySensor onChange={start} delayedCall>
-                      <div>
-                        <Count ref={countUpRef} />
-                        <Paragraph>Applicants</Paragraph>
-                      </div>
-                    </VisibilitySensor>
-                  )}
-                </CountUp>
-              </div>
-              <div className='col-md-3 mb-4 text-center col-sm-6'>
+              <div className='col-md-4 mb-4 text-center col-sm-6'>
                 <CountUp end={35}>
                   {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
@@ -189,7 +179,7 @@ export const Home = () => {
                   )}
                 </CountUp>
               </div>
-              <div className='col-md-3 mb-4 text-center col-sm-6'>
+              <div className='col-md-4 mb-4 text-center col-sm-6'>
                 <CountUp end={28}>
                   {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
@@ -201,7 +191,7 @@ export const Home = () => {
                   )}
                 </CountUp>
               </div>
-              <div className='col-md-3 mb-4 text-center col-sm-6'>
+              <div className='col-md-4 mb-4 text-center col-sm-6'>
                 <CountUp end={16}>
                   {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>

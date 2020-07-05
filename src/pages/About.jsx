@@ -36,11 +36,12 @@ export function About() {
             the technological workplace inspired the birth of TIIDELab. Since
             then, we have trained 28 full stack developers through the first
             cohort of the TIIDELab Fellowship.
-            <br /> <br />
+            <br />
+            <br />
             With over a decade of experience in technology, business development
             and communications, our team continuously bridges the gap around
             employment, infrastructure, quality trainings and access to
-            opportunities. …Harnessing the African potentials.
+            opportunities.
           </p>
         </Bottom>
       </Hero>
@@ -52,9 +53,10 @@ export function About() {
         <SectionDiv bg='#c13147'>
           <h3>Who We are</h3>
           <p>
-            We are TIIDELab, an acronym for THINK, INNOVATE, IDEATE, DEVELOP and
-            EXECUTE. We are a technology driven enterprise focused on helping
-            African youths thrive and impact their society.
+            We are TIIDELab an initiative of Techspecialist Consulting Limited.
+            We THINK, INNOVATE, IDEATE, DEVELOP and EXECUTE. We are a technology
+            driven enterprise focused on helping youths thrive and impact their
+            society.
           </p>
         </SectionDiv>
       </div>
