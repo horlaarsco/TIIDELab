@@ -134,11 +134,8 @@ const Answer = styled.p`
   display: flex;
   margin-top: 2rem;
   line-height: 1.7;
-
-  strong {
-    margin-right: 1rem;
-    font-weight: 600;
-  }
+  font-weight: 300 !important;
+  margin-left: 4rem;
 `;
 
 const Faq = styled.div`
@@ -154,7 +151,8 @@ const Faq = styled.div`
   }
   p {
     color: #080808;
-    font-weight: 300;
+    font-weight: 700;
+
   }
 
   @media (max-width: 1200px) {

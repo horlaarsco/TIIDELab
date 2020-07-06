@@ -46,10 +46,10 @@ export function Header() {
                 fontWeight: "700",
                 color: "black",
               }}
-              to='/contact'
+              to='/gallery'
             >
               {" "}
-              Contact Us
+              Gallery
             </NavLink>
           </li>
           <li>
@@ -58,10 +58,10 @@ export function Header() {
                 fontWeight: "700",
                 color: "black",
               }}
-              to='/gallery'
+              to='/contact'
             >
               {" "}
-              Gallery
+              Contact Us
             </NavLink>
           </li>
         </Nav>

@@ -12,18 +12,18 @@ import {
 import { Testimonial } from "../components";
 
 const ImagesArray = [
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438037/dinner_with_CEO_cxq37b.jpg",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438038/Running_codes_in_class_wopugc.jpg",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593562493/Mr_Ricardo_addressing_fellows_copy_an5kwa.png",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438038/fellows_with_Mrs_Folusho_Samuel_cafatk.jpg",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438037/Female_fellow_coding_z90gft.jpg",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438036/Dr_Lanre_Philips_mentorship_session_rns5mi.jpg",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438035/Visit_to_NECA_Lagos_oepb85.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593438038/1.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593441746/2.png",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593441746/3.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594026300/4.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1594026305/5.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594026356/6.png",
+  " https://via.placeholder.com/150",
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438035/Visit_to_NECA_Lagos_1_kw0b2m.jpg",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438330/IMG-20200322-WA0012_sp6q7y.jpg",
+  " https://via.placeholder.com/150",
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593441746/20200220_200552_qfgq1y.jpg",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593441746/dinner_with_CEO_1_zebvjs.jpg",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593441746/OSC_fest_Lagos_zgomfk.jpg",
+  " https://via.placeholder.com/150",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594026402/Business_Developmmet_Class_ahmwhr.png",
 ];
 
 export function Gallery() {
@@ -87,7 +87,7 @@ export function Gallery() {
             will help you accelerate your dream of becoming a world-class
             software developer or designer in record time.
           </p>
-          <LightButton href='/apply'>Start Journey Now</LightButton>
+          <LightButton href='/apply'>Apply Now</LightButton>
         </SectionDiv>
       </div>
       <Testimonial />
