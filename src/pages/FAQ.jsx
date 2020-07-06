@@ -70,7 +70,7 @@ export function FAQ() {
             <SubHeader>FAQs</SubHeader>
             <div>
               <img
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594024258/FAQ_new_bnoohb.png'
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594053319/FAQ_latest_jnk29k.png'
                 alt=''
               />
               <span></span>

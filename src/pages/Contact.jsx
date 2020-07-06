@@ -24,7 +24,7 @@ export function Contact() {
             <div>
               {/* <WineSemiCircle /> */}
               <img
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594024987/contact_us_new_vclpbw.png'
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594053326/Contact_us_latest_xtgk1e.png'
                 alt=''
               />
               <span></span>
@@ -114,7 +114,7 @@ const FormDiv = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 15rem;
-  margin-top: 20rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
   @media (max-width: 1200px) {
     padding: 5rem 10rem;
