@@ -159,7 +159,7 @@ export const Home = () => {
               </span>
             </div>
             <img
-              src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593446951/our_journey_so_far_ozylur.png'
+              src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594025014/our_journey_so_far_new_zbjimq.png'
               alt=''
             />
           </section>

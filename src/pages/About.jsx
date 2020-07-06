@@ -23,7 +23,7 @@ export function About() {
             <div>
               {/* <WineSemiCircle /> */}
               <img
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593449129/about_us_bp5pqk.png'
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594024963/about_us_new_next_o1mlyv.png'
                 alt=''
               />
               <span></span>
@@ -63,7 +63,7 @@ export function About() {
       <Vision>
         <span>
           <img
-            src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593449077/our_vision_jejivh.png'
+            src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594025036/our_vision_new_lej5sc.png'
             alt=''
           />
         </span>

@@ -92,17 +92,18 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowNav(false)} to='/contact'>
-              {" "}
-              Contact Us
-            </Link>
-          </li>
-          <li>
             <Link onClick={() => setShowNav(false)} to='/gallery'>
               {" "}
               Gallery
             </Link>
           </li>
+          <li>
+            <Link onClick={() => setShowNav(false)} to='/contact'>
+              {" "}
+              Contact Us
+            </Link>
+          </li>
+
           <li style={{ marginBottom: "2rem" }}>
             <HireLink
               as='a'

@@ -6,8 +6,6 @@ import {
   SubHeader,
   WrapTop,
   Absolute,
-  Bottom,
-  SectionDiv,
 } from "../components";
 
 const Hero = styled.div`
@@ -20,7 +18,7 @@ const Top = styled.div`
   position: relative;
   max-width: 1300px;
   img {
-    width: 350px;
+    width: 300px;
   }
 
   @media (max-width: 1200px) {
@@ -30,10 +28,10 @@ const Top = styled.div`
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     padding: 6rem 5rem;
     img {
-      width: 300px;
+      width: 250px;
     }
   }
 
@@ -72,7 +70,7 @@ export function FAQ() {
             <SubHeader>FAQs</SubHeader>
             <div>
               <img
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593446879/FAQ_rud9fs.png'
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594024258/FAQ_new_bnoohb.png'
                 alt=''
               />
               <span></span>
@@ -84,47 +82,47 @@ export function FAQ() {
         <div>
           <p> 1. What is the duration of the training?</p>
           <Answer>
-            <strong> Answer:</strong> The TIIDELab Fellowship is a 5-month
-            intensive training from 6th August – 19th December, 2020
+            The TIIDELab Fellowship is a 5-month intensive training from 6th
+            August – 19th December, 2020
           </Answer>
 
           <p> 2. Will I pay for this opportunity?</p>
           <Answer>
-            <strong> Answer:</strong> TIIDELab Fellowship is totally free. We
-            are proud to partner with ITF and NECA whose values align with our
-            core mission. Also, seclected participants would be provided with
-            free data subscription.
+            TIIDELab Fellowship is totally free. We are proud to partner with
+            ITF and NECA whose values align with our core mission. Also,
+            seclected participants would be provided with free data
+            subscription.
           </Answer>
           <p> 3. Must I reside in Lagos or Abuja?</p>
           <Answer>
-            <strong> Answer:</strong> You must not reside in Abuja or Lagos
-            provided you will not miss the physical meet up once a week. The
-            physical meet up is an important requirement and will add you to
-            your overall performance score required to become a TIIDELab fellow.
+            You must not reside in Abuja or Lagos provided you will not miss the
+            physical meet up once a week. The physical meet up is an important
+            requirement and will add you to your overall performance score
+            required to become a TIIDELab fellow.
           </Answer>
           <p> 4. Can I apply if I have a job?</p>
           <Answer>
-            <strong> Answer:</strong> If your job will allow you to take a
-            temporary leave of absence for the duration of the training, then we
-            recommend you apply. The training will be very intensive and we do
-            not want any distractions that could hinder your progress.
+            If your job will allow you to take a temporary leave of absence for
+            the duration of the training, then we recommend you apply. The
+            training will be very intensive and we do not want any distractions
+            that could hinder your progress.
           </Answer>
           <p> 5. What Learning methods will be employed?</p>
           <Answer>
-            <strong> Answer:</strong> We use a blended learning approach which
-            is a competency based self-learning process and mentors available
-            round the clock for proper guidance.
+            We use a blended learning approach which is a competency based
+            self-learning process and mentors available round the clock for
+            proper guidance.
           </Answer>
           <p> 6. What might prevent me from graduating?</p>
           <Answer>
-            <strong> Answer:</strong> Consecutive failure in completing assigned
-            tasks and absence from both remote or physical sessions.
+            Consecutive failure in completing assigned tasks and absence from
+            both remote or physical sessions.
           </Answer>
           <p> 7. Will I get employed after my training?</p>
           <Answer>
-            <strong> Answer:</strong> After the training, you will be
-            interviewed by partner companies who need interns with the
-            possibility of full-time employment after an evaluation period.
+            After the training, you will be interviewed by partner companies who
+            need interns with the possibility of full-time employment after an
+            evaluation period.
           </Answer>
         </div>
       </Faq>

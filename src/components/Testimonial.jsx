@@ -12,12 +12,10 @@ export function Testimonial() {
         <div className='carousel-inner'>
           <div className='carousel-item active'>
             <p>
-              Tiidelab has helped me gain more focus and shed more light on what
-              I want to do and how to go about it. Within the space of five
-              months, I've been able to learn how to look for growing problems
-              in the society, how to come up with a solution and how to create
-              the solution using tech. I've improved not only as a developer and
-              a business personnel but also as a person.
+              TIIDELab has provided a platform to realize my dream of becoming a
+              software developer. I have learned the ropes of front end and back
+              end software development, honed my skills to build amazing
+              projects and secured a paid internship afterwards.
             </p>
             <h2>Sanusi Micheal HAYATU</h2>
             <p>

@@ -24,20 +24,20 @@ export function Contact() {
             <div>
               {/* <WineSemiCircle /> */}
               <img
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/v1593644021/new_contact_us_nu3ucq.png'
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594024987/contact_us_new_vclpbw.png'
                 alt=''
               />
               <span></span>
             </div>
           </Top>
         </WrapTop>
-        <Bottom>
+        {/* <Bottom>
           <p>
             <br /> <br /> <strong>Call us today</strong>
           </p>
           <Number> +234 906 0000 293, +234 817 7098 608</Number>
           <p> Mon - Sat (9am - 6pm). Sun (2pm - 6pm)</p>
-        </Bottom>
+        </Bottom> */}
       </Hero>
       <FormDiv>
         <Form action='https://formspree.io/xlepwkkp' method='POST'>
@@ -102,11 +102,10 @@ const Form = styled.form`
 
   @media (max-width: 768px) {
     width: 100% !important;
-    
   }
 
   @media (max-width: 1200px) {
-    width: 400px;x
+    width: 400px;
   }
 `;
 
@@ -114,7 +113,9 @@ const FormDiv = styled.div`
   position: relative;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 5rem 15rem;
+  padding: 0 15rem;
+  margin-top: 20rem;
+  margin-bottom: 10rem;
   @media (max-width: 1200px) {
     padding: 5rem 10rem;
   }
@@ -125,6 +126,8 @@ const FormDiv = styled.div`
 
   @media (max-width: 768px) {
     padding: 6rem 3rem;
+    margin-top: 0rem;
+    margin-bottom: 5rem;
 
     div {
       display: none;
