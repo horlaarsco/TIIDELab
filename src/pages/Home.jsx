@@ -166,10 +166,10 @@ export const Home = () => {
             <div>
               <SubHeader> Our Journey so far</SubHeader>
               <p>
-                Great innovations begin from humble beginnings. this has been
-                our driving force at tiidelab as we have been able to train 28
-                amazing youth, made them junior developers, and exposed them to
-                a journey of career development via internships and employment
+                Great innovations begins from humble beginnings. This has been
+                our driving force at TIIDELAB as we have been able to train 28
+                amazing youths, make them junior developers and expose them to a
+                journey of career development via internships and employment
                 opportunities over time.
               </p>
               <span>

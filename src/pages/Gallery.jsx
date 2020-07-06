@@ -17,13 +17,13 @@ const ImagesArray = [
   "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593441746/3.jpg",
   "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594026300/4.jpg",
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1594026305/5.jpg",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594026356/6.png",
-  " https://via.placeholder.com/150",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594026356/6.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594042722/Mentorship_with_Ricardo_1_mpfubb.jpg",
   "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438035/Visit_to_NECA_Lagos_1_kw0b2m.jpg",
-  " https://via.placeholder.com/150",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593441746/20200220_200552_qfgq1y.jpg",
-  " https://via.placeholder.com/150",
-  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594026402/Business_Developmmet_Class_ahmwhr.png",
+  " https://res.cloudinary.com/ddxgfwoao/image/upload/v1593441746/20200220_200552_qfgq1y.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594026402/Business_Developmmet_Class_ahmwhr.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/v1593438330/IMG-20200322-WA0012_sp6q7y.jpg",
+  "https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1593439208/12.jpg",
 ];
 
 export function Gallery() {
