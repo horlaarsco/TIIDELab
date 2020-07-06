@@ -110,15 +110,18 @@ export const Home = () => {
             </SubHeader>
             <div>
               <div className='mb-5 '>
+                <img className='mt-3 mb-3' src='/getaddmited.svg' alt='' />
                 <h4>Get Admitted: </h4>
-                <p>
+                <p className='mb-3'>
                   You are required to have a laptop, pass our aptitude test,
                   have basic knowledge of HTML, CSS and JavaScript.
                 </p>
               </div>
               <div className='mb-5 '>
+                <img className='mt-3 mb-3' src='/gettrained.svg' alt='' />
+
                 <h4>Get Trained: </h4>
-                <p>
+                <p className='mb-3'>
                   Free tuition and data subscription for entire programme
                   (5months). Choose either front-end or back-end track. It will
                   be 80% remote and 20% classroom (Abuja and Lagos). Competency
@@ -126,8 +129,10 @@ export const Home = () => {
                 </p>
               </div>
               <div className='mb-5 '>
+                <img className='mt-3 mb-3' src='/getemployed.svg' alt='' />
+
                 <h4>Get Employed: </h4>
-                <p>
+                <p className='mb-3'>
                   Upon completion, you will be exposed to internship and job
                   opportunities at partner companies. Earn while you advance
                   your developer career.
