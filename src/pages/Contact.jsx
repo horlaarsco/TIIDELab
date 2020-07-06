@@ -116,6 +116,7 @@ const FormDiv = styled.div`
   padding: 0 15rem;
   margin-top: 10rem;
   margin-bottom: 10rem;
+  z-index: -1;
   @media (max-width: 1200px) {
     padding: 5rem 10rem;
   }

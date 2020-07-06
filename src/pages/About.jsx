@@ -132,11 +132,11 @@ export function About() {
           <LightButton href='/apply'>Apply Now</LightButton>
         </SectionDiv>
       </div>
-      <div>
+      {/* <div>
         <SectionDiv color='black' bg='#f4f2f2'>
           <h3>Key Management</h3>
         </SectionDiv>
-      </div>
+      </div> */}
     </div>
   );
 }
