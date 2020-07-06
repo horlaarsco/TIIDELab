@@ -110,7 +110,12 @@ export const Home = () => {
             </SubHeader>
             <div>
               <div className='mb-5 '>
-                <img className='mt-3 mb-3' src='/getaddmited.svg' alt='' />
+                <img
+                  width='60px'
+                  className='mt-5 mb-5'
+                  src='/getaddmited.svg'
+                  alt=''
+                />
                 <h4>Get Admitted: </h4>
                 <p className='mb-3'>
                   You are required to have a laptop, pass our aptitude test,
@@ -118,7 +123,12 @@ export const Home = () => {
                 </p>
               </div>
               <div className='mb-5 '>
-                <img className='mt-3 mb-3' src='/gettrained.svg' alt='' />
+                <img
+                  width='60px'
+                  className='mt-5 mb-5'
+                  src='/gettrained.svg'
+                  alt=''
+                />
 
                 <h4>Get Trained: </h4>
                 <p className='mb-3'>
@@ -129,7 +139,12 @@ export const Home = () => {
                 </p>
               </div>
               <div className='mb-5 '>
-                <img className='mt-3 mb-3' src='/getemployed.svg' alt='' />
+                <img
+                  width='60px'
+                  className='mt-5 mb-5'
+                  src='/getemployed.svg'
+                  alt=''
+                />
 
                 <h4>Get Employed: </h4>
                 <p className='mb-3'>
