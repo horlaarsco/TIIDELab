@@ -129,14 +129,14 @@ export function About() {
             will help you accelerate your dream of becoming a world-class
             software developer or designer in record time.
           </p>
-          <LightButton href='/apply'>Apply Now</LightButton>
+          <LightButton target="_blank"  rel="noopener noreferrer" href='/apply'>Apply Now</LightButton>
         </SectionDiv>
       </div>
     
      */}
       <div style={{ background: "#f4f2f2" }}>
         <Key>
-          <h3>Key Management</h3>
+          <h3>Management Team</h3>
         </Key>
       </div>
 
@@ -145,14 +145,22 @@ export function About() {
           <Manager>
             <div>
               <TopImg src='/kadri.png' alt='' />
-              <h3>Kadri Salami</h3>
+              <h3>Kadir Salami</h3>
               <p>Founder, TIIDELab Initiative</p>
             </div>
             <div>
-              <a href='https://www.linkedin.com/in/kadir-salami-0a090054/'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://www.linkedin.com/in/kadir-salami-0a090054/'
+              >
                 <img width='30px' src='/linkedin.svg' alt='' />
               </a>{" "}
-              <a href='http://twitter.com/kadir_salami'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='http://twitter.com/kadir_salami'
+              >
                 <img width='30px' src='/twitter.svg' alt='' />
               </a>{" "}
             </div>
@@ -167,10 +175,18 @@ export function About() {
               <p>Business Development Lead</p>
             </div>
             <div>
-              <a href='https://www.linkedin.com/in/pishikeni-tukura-60128b153/'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://www.linkedin.com/in/pishikeni-tukura-60128b153/'
+              >
                 <img width='30px' src='/linkedin.svg' alt='' />
               </a>{" "}
-              <a href='http://twitter.com/Tukura_the_3rd'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='http://twitter.com/Tukura_the_3rd'
+              >
                 <img width='30px' src='/twitter.svg' alt='' />
               </a>{" "}
             </div>
@@ -181,31 +197,44 @@ export function About() {
             <div>
               <BottomImg src='/shamsudeen.png' alt='' />
               <h3>Shamsudeen Aderoju</h3>
-              <p>Project Co-ordinator</p>
+              <p>Programme Coordinator</p>
             </div>
             <div>
-              <a href='https://www.linkedin.com/in/aderoju-shamsudeen-adedapo-03288774/'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://www.linkedin.com/in/aderoju-shamsudeen-adedapo-03288774/'
+              >
                 <img width='30px' src='/linkedin.svg' alt='' />
               </a>{" "}
-              <a href='http://twitter.com/shamdex2000'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='http://twitter.com/shamdex2000'
+              >
                 <img width='30px' src='/twitter.svg' alt='' />
               </a>{" "}
             </div>
           </Manager>
           <Manager>
             <div>
-              <BottomImg
-                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594084056/cele_wjpnak.png'
-                alt=''
-              />
+              <BottomImg src='/celestine.png' alt='' />
               <h3>Celestine Omin</h3>
-              <p>Mentor</p>
+              <p>Senior Mentor </p>
             </div>
             <div>
-              <a href='https://www.linkedin.com/in/celestineomin/'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://www.linkedin.com/in/celestineomin/'
+              >
                 <img width='30px' src='/linkedin.svg' alt='' />
               </a>{" "}
-              <a href='http://twitter.com/cyberomin'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='http://twitter.com/cyberomin'
+              >
                 <img width='30px' src='/twitter.svg' alt='' />
               </a>{" "}
             </div>
@@ -217,13 +246,21 @@ export function About() {
                 alt=''
               />
               <h3>Fikayo Adepoju</h3>
-              <p>Mentor</p>
+              <p>Senior Mentor </p>
             </div>
             <div>
-              <a href='https://www.linkedin.com/in/fikayoadepoju/'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://www.linkedin.com/in/fikayoadepoju/'
+              >
                 <img width='30px' src='/linkedin.svg' alt='' />
               </a>{" "}
-              <a href='http://twitter.com/coderonfleek'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='http://twitter.com/coderonfleek'
+              >
                 <img width='30px' src='/twitter.svg' alt='' />
               </a>
             </div>
