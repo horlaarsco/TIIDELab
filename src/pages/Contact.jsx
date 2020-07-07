@@ -8,7 +8,6 @@ import {
   SubHeader,
   WrapTop,
   Absolute,
-  Bottom,
 } from "../components";
 
 export function Contact() {
@@ -174,9 +173,9 @@ const FormDiv = styled.div`
   }
 `;
 
-const Number = styled.p`
-  line-height: 1;
-`;
+// const Number = styled.p`
+//   line-height: 1;
+// `;
 
 const Top = styled.div`
   padding: 6rem 15rem;

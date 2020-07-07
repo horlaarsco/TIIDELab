@@ -127,9 +127,7 @@ export const Footer = () => {
             <Flink as='a' href='/apply' className='pt-4 '>
               Apply
             </Flink>
-            <Flink as='a' href='/faq'>
-              FAQs
-            </Flink>
+            <Flink to='/faq'>FAQs</Flink>
             <Flink as='a' href='/tandc.pdf'>
               Terms & Conditions
             </Flink>

@@ -114,7 +114,7 @@ export function About() {
         </span>
       </WhatWedo>
 
-      <div
+      {/* <div
         style={{
           backgroundImage:
             "url(https://res.cloudinary.com/ddxgfwoao/image/upload/c_scale,q_auto:eco,w_1068/v1593431132/image_ntvtkj.png)",
@@ -132,6 +132,8 @@ export function About() {
           <LightButton href='/apply'>Apply Now</LightButton>
         </SectionDiv>
       </div>
+    
+     */}
       <div style={{ background: "#f4f2f2" }}>
         <Key>
           <h3>Key Management</h3>
@@ -142,12 +144,14 @@ export function About() {
         <div>
           <Manager>
             <div>
-              <TopImg src='/cele.svg' alt='' />
+              <TopImg src='/kadri.png' alt='' />
               <h3>Kadri Salami</h3>
               <p>Founder, TIIDELab Initiative</p>
             </div>
             <div>
-              <img width='30px' src='/linkedin.svg' alt='' />
+              <a href='https://www.linkedin.com/in/kadir-salami-0a090054/'>
+                <img width='30px' src='/linkedin.svg' alt='' />
+              </a>{" "}
               <a href='http://twitter.com/kadir_salami'>
                 <img width='30px' src='/twitter.svg' alt='' />
               </a>{" "}
@@ -163,7 +167,9 @@ export function About() {
               <p>Business Development Lead</p>
             </div>
             <div>
-              <img width='30px' src='/linkedin.svg' alt='' />
+              <a href='https://www.linkedin.com/in/pishikeni-tukura-60128b153/'>
+                <img width='30px' src='/linkedin.svg' alt='' />
+              </a>{" "}
               <a href='http://twitter.com/Tukura_the_3rd'>
                 <img width='30px' src='/twitter.svg' alt='' />
               </a>{" "}
@@ -173,12 +179,14 @@ export function About() {
         <div>
           <Manager>
             <div>
-              <BottomImg src='/cele.svg' alt='' />
+              <BottomImg src='/shamsudeen.png' alt='' />
               <h3>Shamsudeen Aderoju</h3>
               <p>Project Co-ordinator</p>
             </div>
             <div>
-              <img width='30px' src='/linkedin.svg' alt='' />
+              <a href='https://www.linkedin.com/in/aderoju-shamsudeen-adedapo-03288774/'>
+                <img width='30px' src='/linkedin.svg' alt='' />
+              </a>{" "}
               <a href='http://twitter.com/shamdex2000'>
                 <img width='30px' src='/twitter.svg' alt='' />
               </a>{" "}
@@ -194,7 +202,9 @@ export function About() {
               <p>Mentor</p>
             </div>
             <div>
-              <img width='30px' src='/linkedin.svg' alt='' />
+              <a href='https://www.linkedin.com/in/celestineomin/'>
+                <img width='30px' src='/linkedin.svg' alt='' />
+              </a>{" "}
               <a href='http://twitter.com/cyberomin'>
                 <img width='30px' src='/twitter.svg' alt='' />
               </a>{" "}
@@ -210,7 +220,9 @@ export function About() {
               <p>Mentor</p>
             </div>
             <div>
-              <img width='30px' src='/linkedin.svg' alt='' />
+              <a href='https://www.linkedin.com/in/fikayoadepoju/'>
+                <img width='30px' src='/linkedin.svg' alt='' />
+              </a>{" "}
               <a href='http://twitter.com/coderonfleek'>
                 <img width='30px' src='/twitter.svg' alt='' />
               </a>
