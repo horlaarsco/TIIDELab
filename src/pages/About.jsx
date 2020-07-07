@@ -132,14 +132,164 @@ export function About() {
           <LightButton href='/apply'>Apply Now</LightButton>
         </SectionDiv>
       </div>
-      {/* <div>
-        <SectionDiv color='black' bg='#f4f2f2'>
+      <div style={{ background: "#f4f2f2" }}>
+        <Key>
           <h3>Key Management</h3>
-        </SectionDiv>
-      </div> */}
+        </Key>
+      </div>
+
+      <KeyGrid>
+        <div>
+          <Manager>
+            <div>
+              <TopImg src='/cele.svg' alt='' />
+              <h3>Kadri Salami</h3>
+              <p>Founder, TIIDELab Initiative</p>
+            </div>
+            <div>
+              <img width='30px' src='/linkedin.svg' alt='' />
+              <a href='http://twitter.com/kadir_salami'>
+                <img width='30px' src='/twitter.svg' alt='' />
+              </a>{" "}
+            </div>
+          </Manager>
+          <Manager>
+            <div>
+              <TopImg
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594084032/Group_3_wmt1pe.png'
+                alt=''
+              />
+              <h3>Pishikeni Tukura</h3>
+              <p>Business Development Lead</p>
+            </div>
+            <div>
+              <img width='30px' src='/linkedin.svg' alt='' />
+              <a href='http://twitter.com/Tukura_the_3rd'>
+                <img width='30px' src='/twitter.svg' alt='' />
+              </a>{" "}
+            </div>
+          </Manager>
+        </div>
+        <div>
+          <Manager>
+            <div>
+              <BottomImg src='/cele.svg' alt='' />
+              <h3>Shamsudeen Aderoju</h3>
+              <p>Project Co-ordinator</p>
+            </div>
+            <div>
+              <img width='30px' src='/linkedin.svg' alt='' />
+              <a href='http://twitter.com/shamdex2000'>
+                <img width='30px' src='/twitter.svg' alt='' />
+              </a>{" "}
+            </div>
+          </Manager>
+          <Manager>
+            <div>
+              <BottomImg
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594084056/cele_wjpnak.png'
+                alt=''
+              />
+              <h3>Celestine Omin</h3>
+              <p>Mentor</p>
+            </div>
+            <div>
+              <img width='30px' src='/linkedin.svg' alt='' />
+              <a href='http://twitter.com/cyberomin'>
+                <img width='30px' src='/twitter.svg' alt='' />
+              </a>{" "}
+            </div>
+          </Manager>
+          <Manager>
+            <div>
+              <BottomImg
+                src='https://res.cloudinary.com/ddxgfwoao/image/upload/q_auto:eco/v1594084039/Group_6_pfdpcd.png'
+                alt=''
+              />
+              <h3>Fikayo Adepoju</h3>
+              <p>Mentor</p>
+            </div>
+            <div>
+              <img width='30px' src='/linkedin.svg' alt='' />
+              <a href='http://twitter.com/coderonfleek'>
+                <img width='30px' src='/twitter.svg' alt='' />
+              </a>
+            </div>
+          </Manager>
+        </div>
+      </KeyGrid>
     </div>
   );
 }
+
+const BottomImg = styled.img`
+  width: 200px;
+`;
+
+const TopImg = styled.img`
+  width: 250px;
+
+  @media (max-width: 768px) {
+    width: 200px;
+  }
+`;
+
+const KeyGrid = styled.div`
+  max-width: 1240px;
+  margin: 0 auto;
+  & > div {
+    display: flex;
+    justify-content: center;
+    margin: 8rem 0;
+  }
+
+  @media (max-width: 768px) {
+    margin: 8rem auto;
+    & > div {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+  }
+`;
+
+const Manager = styled.div`
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  margin: 0 2rem;
+  img {
+    margin-bottom: 1rem;
+  }
+  & > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > div:nth-of-type(2) {
+    margin-left: 1rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    margin: 2rem;
+  }
+`;
+const Key = styled.div`
+  padding: 4rem;
+  text-align: center;
+  max-width: 1240px;
+  margin: 0 auto;
+  h3 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 900;
+  }
+`;
 
 const LightButton = styled.a`
   color: #c13147 !important;
