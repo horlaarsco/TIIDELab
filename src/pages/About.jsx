@@ -329,7 +329,7 @@ const Manager = styled.div`
   }
 `;
 const Key = styled.div`
-  padding: 4rem;
+  padding: 8rem;
   text-align: center;
   max-width: 1240px;
   margin: 0 auto;
