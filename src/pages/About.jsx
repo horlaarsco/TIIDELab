@@ -340,24 +340,24 @@ const Key = styled.div`
   }
 `;
 
-const LightButton = styled.a`
-  color: #c13147 !important;
-  border: none;
-  padding: 1rem 3rem;
-  position: relative;
-  font-size: 1.6rem;
-  cursor: pointer;
-  background: white;
-  &:after {
-    content: " ";
-    border: 1px solid white;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -7px;
-    bottom: -7px;
-  }
-`;
+// const LightButton = styled.a`
+//   color: #c13147 !important;
+//   border: none;
+//   padding: 1rem 3rem;
+//   position: relative;
+//   font-size: 1.6rem;
+//   cursor: pointer;
+//   background: white;
+//   &:after {
+//     content: " ";
+//     border: 1px solid white;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     left: -7px;
+//     bottom: -7px;
+//   }
+// `;
 
 const WhatWedo = styled.div`
   display: flex;

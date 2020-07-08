@@ -97,8 +97,8 @@ export function FAQ() {
           <Answer>
             You must not reside in Abuja or Lagos provided you will not miss the
             physical meet up once a week. The physical meet up is an important
-            requirement and will add you to your overall performance score
-            required to become a TIIDELab fellow.
+            requirement and will add to your overall performance score required
+            to become a TIIDELab fellow.
           </Answer>
           <p> 4. Can I apply if I have a job?</p>
           <Answer>
